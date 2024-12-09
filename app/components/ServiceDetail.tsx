@@ -81,9 +81,9 @@ const ServiceDetail = () => {
           real-time to ensure peak performance.
         </p>
       </div>,
-      <div>Content for Tab 2</div>,
-      <div>Content for Tab 3</div>,
-      <div>Content for Tab 4</div>,
+      <div className="text-white">Content for Tab 2</div>,
+      <div className="text-white">Content for Tab 3</div>,
+      <div className="text-white">Content for Tab 4</div>,
     ];
 
     return (
