@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* globals.css */
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Client section bacground image  */
+.image-container::before {
+  content: "";
+  display: block;
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/homepage/red-spread.png"); /* Path to your image in the public folder */
+  background-size: cover; /* Ensure the image covers the element */
+  background-position: center; /* Center the image */
+  z-index: -1; /* Place the image behind the content */
+}
+
+.image-container {
+  position: relative; /* Make sure the container is positioned for ::before */
+}
+
+/* Client logo Csss */
+/* AutoRotatingSlider.module.css */
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: scroll-left 1s ease-in-out;
+}
+
+.logoWrapper {
+  flex: 0 0 12.5%; /* 8 logos, so each takes up 12.5% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px; /* For spacing on the edges */
+}
+
+.logo {
+  max-width: 100%;
+  display: block;
+  opacity: 0.9;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(150px); /* Move Down */
+  }
+  100% {
+    transform: translateY(0); /* Return to Top */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 5s infinite ease-in-out;
+}
