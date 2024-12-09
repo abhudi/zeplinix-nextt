@@ -1,3 +1,5 @@
+/* styles/globals.css (or your CSS module) */
+
 /* Our Standout Products css */
 
 .carousel-container {
@@ -9,17 +11,23 @@
 
 .carousel {
   display: flex;
-  gap: 20px;
+  gap: 0; /* No gap between images */
   animation: scroll 15s linear infinite;
 }
 
-/* Ensure the cards have a fixed width */
-.carousel > div {
+/* Remove unnecessary flex styling */
+.carousel > .carousel-background {
   flex: 0 0 300px; /* Set a width suitable for your design */
   background-color: rgb(15, 15, 15);
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  width: 100%; /* Set the width of each image */
+  height: auto; /* Set the height of the images */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
 }
 
 /* Keyframes for the continuous scroll effect */
