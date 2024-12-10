@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="relative w-full h-auto sm:h-[100%] lg:h-[40rem] xl:h-[50rem] flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-gray-800 text-white mb-8 lg:px-10">
+    <div className="relative w-full h-auto sm:h-[100%] lg:h-[40rem] xl:h-[48rem] flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-gray-800 text-white mb-8 lg:px-10">
       {/* Video Background using ::before */}
       <div className="absolute inset-0 before:absolute before:inset-0 before:bg-black/40 before:z-10">
         <video className="w-full h-full object-cover" autoPlay loop muted>
