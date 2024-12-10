@@ -33,7 +33,7 @@ const Aboutheader = () => {
 
   return (
     <div>
-      <div className="relative lg:mx-9 mx-4">
+      <div className="relative lg:mx-9 mx-4 mt-20 mb-20">
         {/* Main heading with dynamic text */}
         <h1 className="p-4 lg:text-fs-54 text-fs-30 lg:text-left text-justify-center text-white">
           {mainText.split(" ").map((word, index) => {
@@ -67,7 +67,7 @@ const Aboutheader = () => {
         </h1>
 
         {/* Video */}
-        <div className="absolute lg:top-[15px] top-[100px] z-[-1] lg:right-[20%] right-[5%]">
+        <div className="absolute lg:top-[-20px] top-[100px] z-[-1] lg:right-[20%] right-[5%]">
           <video
             className="lg:w-[371px] lg:h-[209px] w-[100px] h-[80px] object-cover"
             autoPlay
