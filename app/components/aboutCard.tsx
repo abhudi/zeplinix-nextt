@@ -14,19 +14,19 @@ const AboutUsCard: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 lg:mx-10 2xl:mx-24 h-auto lg:h-80   max-w-full bg-white shadow-lg overflow-hidden mb-10 mt-10 lg:mt-20 ">
+    <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 lg:mx-10 2xl:mx-24 h-auto lg:h-80   max-w-full bg-white shadow-lg overflow-hidden mb-10 mt-10 lg:mt-24 ">
       {/* Left Section */}
-      <div className="w-full lg:w-4/12 bg-secondary p-6 flex flex-col justify-center text-center lg:text-left">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-5 lg:mb-6 pt-5 lg:pt-10">
+      <div className="w-full lg:w-4/12 bg-secondary p-8 flex flex-col justify-center text-center lg:text-left">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-5 lg:mb-16 pt-5 lg:pt-1">
           About Us<span className="text-primary">.</span>
         </h2>
-        <p className="mt-3 sm:mt-5 pb-2 lg:pb-8 text-base sm:text-lg">
+        <p className="mt-3 sm:mt-5 pb-2 lg:pb-2 text-base sm:text-lg text-[#CDCDCD] text-fs-16">
           Zeplinix deliver innovative, technology-driven solutions to simplify
           operations, boost efficiency, and drive success across industries.
         </p>
 
         <Link href={"/about"}>
-          <button className=" text-primary font-semibold rounded-full transition">
+          <button className=" text-primary font-semibold rounded-full transition mt-4">
             Read more →
           </button>
         </Link>

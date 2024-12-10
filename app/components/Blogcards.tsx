@@ -47,10 +47,10 @@ const blogs = [
 
 export default function Blogcards() {
   return (
-    <section className="relative text-white py-16 px-4 sm:px-8 lg:px-10">
+    <section className="relative text-white py-16 px-4 sm:px-8 lg:px-10 mt-20">
       <div className="text-center mb-16">
         <h1 className="text-fs-54">Read our blog</h1>
-        <p className="text-fs-24">Learn new technology</p>
+        <p className="text-fs-18 text-[#909090] ">Learn new technology</p>
       </div>
       {/* Background Gradient */}
       <div
@@ -71,7 +71,7 @@ export default function Blogcards() {
         {/* First Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* First Blog: Larger with Image on the Left */}
-          <div className="flex flex-col lg:flex-row col-span-1 p-[18px] lg:col-span-2 w-full h-auto border-[0.4px] rounded-[12px] overflow-hidden">
+          <div className="flex flex-col lg:flex-row col-span-1 p-[18px] lg:col-span-2 w-full h-auto border-[0.4px] border-[#8b8b8b] rounded-[12px] overflow-hidden">
             <Image
               src={blogs[0].image}
               alt={blogs[0].title}
@@ -79,14 +79,16 @@ export default function Blogcards() {
               height={405}
               className="object-cover w-full lg:w-[55%] h-[200px] lg:h-full rounded-[12px]"
             />
-            <div className="flex flex-col p-4 w-full lg:w-[45%]">
+            <div className="flex flex-col pl-4 w-full lg:w-[45%]">
               <h3 className="text-base lg:text-lg font-semibold mb-2">
                 {blogs[0].title}
               </h3>
               <p className="text-sm text-gray-400 mb-4">
                 {blogs[0].author} • {blogs[0].date}
               </p>
-              <p className="text-sm text-red-400">{blogs[0].category}</p>
+              <p className="text-sm text-white items-center gap-3">
+                <span>{blogs[0].category}</span>
+              </p>
               <a
                 href="#"
                 className="text-red-400 text-sm mt-4 flex items-center"

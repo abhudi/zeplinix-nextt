@@ -17,8 +17,8 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
 }) => {
   return (
     <div
-      className="relative w-[344px] h-[369px] p-6 bg-bg-card rounded-lg text-white shadow-lg flex flex-col justify-between border border-card-border mt-40 mb-40"
-      style={{ borderWidth: "0.4px" }}
+      className="relative w-[344px] h-[369px] p-6 bg-bg-card  text-white shadow-lg flex flex-col justify-between border border-[#8b8b8b]  mt-40 mb-40"
+      style={{ borderWidth: "0.4px", borderRadius: "20px" }}
     >
       {/* Image wrapper with absolute positioning */}
       <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 w-[100%]">
@@ -36,11 +36,13 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
       <div className="mt-24 flex flex-col flex-grow justify-between">
         <div>
           <h2 className="text-2xl font-semibold text-left">{title}</h2>
-          <p className="text-sm my-4 text-left">{description}</p>
+          <p className="text-fs-14 my-4 text-left text-[#909090]">
+            {description}
+          </p>
         </div>
         <a
           href={linkHref}
-          className="flex items-center text-left text-red-500 hover:underline font-medium"
+          className="flex items-center text-left text-red-500 hover:underline font-bold"
         >
           {linkText} <span className="ml-2">→</span>
         </a>

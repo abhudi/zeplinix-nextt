@@ -21,20 +21,26 @@ const Banner: React.FC = () => {
 
       {/* Foreground Content */}
       <div className="relative z-20 flex flex-col w-full sm:w-1/2 mx-auto p-4 text-center lg:text-left">
-        <div className="mb-4">
+        <div className="mb-4 lg:mb-10 space-y-6">
           {" "}
           {/* Reduced the margin to decrease space */}
-          <button className="px-6 py-3 bg-[#424242A6] text-white font-semibold rounded-md shadow-lg transition mb-4 leading-tight">
+          <button className="px-6 py-3 bg-[#424242A6] text-white font-normal rounded-md shadow-lg transition mb-4 leading-tight">
             {" "}
             {/* Reduced the margin here */}
             Building your Dreams
           </button>
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+          <h1
+            className="text-3xl sm:text-4xl lg:text-5xl font-normal "
+            style={{ lineHeight: "67px" }}
+          >
             Zeplinix where <span className="text-red-500">innovation</span>{" "}
             meets digital transformation
           </h1>
-          <p className="text-sm sm:text-base lg:text-lg mt-4 leading-tight">
+          <p
+            className="text-sm sm:text-base lg:text-lg mt-4 leading-tight text-[#909090]"
+            style={{ lineHeight: "32px" }}
+          >
             Transform your business with innovative software solutions designed
             to adapt, scale, and thrive.
           </p>
@@ -59,7 +65,7 @@ const Banner: React.FC = () => {
           <div className="flex gap-5 w-full lg:justify-end justify-center  px-4">
             {/* Left Box */}
             <div className="w-1/3 flex justify-center items-center">
-              <div className="w-full max-w-[152px] h-[122px] bg-glass text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray">
+              <div className="w-full max-w-[152px] h-[122px] bg-glass text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Valued projects</h2>
                 <p className="font-semibold text-[30px] mt-10">60+</p>
               </div>
@@ -68,13 +74,13 @@ const Banner: React.FC = () => {
             {/* Right Box (Stacked) */}
             <div className="flex flex-col space-y-4 w-1/3">
               {/* Box 1 */}
-              <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray">
+              <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Trusted clients</h2>
                 <p className="font-semibold text-[30px] mt-10">24+</p>
               </div>
 
               {/* Box 2 */}
-              <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray">
+              <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Team size</h2>
                 <p className="font-semibold text-[30px] mt-10">45+</p>
               </div>

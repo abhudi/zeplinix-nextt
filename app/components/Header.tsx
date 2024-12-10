@@ -3,15 +3,21 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
+import { usePathname } from "next/navigation"; // Import usePathname
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // Get the current pathname
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  // Function to determine if the link is active
+  const isActive = (path: string) =>
+    pathname === path ? "text-primary" : "text-gray-400";
+
   return (
-    <header className="bg-black text-white px-4 py-3 ">
+    <header className="bg-black text-white px-4 py-3 mx-0 lg:mx-10">
       <div className="flex justify-between items-center container mx-auto">
         {/* Logo */}
         <div className="flex items-center z-10">
@@ -28,19 +34,19 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className="hidden lg:flex sm:absolute inset-x-0 mx-auto justify-center space-x-6">
-          <Link href="/" className="hover:text-primary">
+          <Link href="/" className={`${isActive("/")}`}>
             Home
           </Link>
-          <Link href="/about" className="hover:text-primary">
+          <Link href="/about" className={`${isActive("/about")}`}>
             About
           </Link>
-          <Link href="/service" className="hover:text-primary">
+          <Link href="/service" className={`${isActive("/service")}`}>
             Services
           </Link>
-          <Link href="/portfolio" className="hover:text-primary">
+          <Link href="/portfolio" className={`${isActive("/portfolio")}`}>
             Portfolio
           </Link>
-          <Link href="/blog" className="hover:text-primary">
+          <Link href="/blog" className={`${isActive("/blog")}`}>
             Blog
           </Link>
         </nav>
@@ -75,33 +81,33 @@ const Header = () => {
           ✕
         </button>
         <nav className="mt-16 flex flex-col space-y-4 px-6">
-          <Link href="/" className="hover:text-primary" onClick={toggleMenu}>
+          <Link href="/" className={`${isActive("/")}`} onClick={toggleMenu}>
             Home
           </Link>
           <Link
             href="/about"
-            className="hover:text-primary"
+            className={`${isActive("/about")}`}
             onClick={toggleMenu}
           >
             About
           </Link>
           <Link
             href="/service"
-            className="hover:text-primary"
+            className={`${isActive("/service")}`}
             onClick={toggleMenu}
           >
             Services
           </Link>
           <Link
             href="/portfolio"
-            className="hover:text-primary"
+            className={`${isActive("/portfolio")}`}
             onClick={toggleMenu}
           >
             Portfolio
           </Link>
           <Link
             href="/blog"
-            className="hover:text-primary"
+            className={`${isActive("/blog")}`}
             onClick={toggleMenu}
           >
             Blog

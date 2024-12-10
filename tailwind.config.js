@@ -22,7 +22,9 @@ module.exports = {
         "home-card": "#29292961",
       },
       fontSize: {
+        "fs-14": "14px", // Custom font size of 20px
         "fs-16": "16px", // Custom font size of 20px
+        "fs-18": "18px", // Custom font size of 20px
         "fs-20": "20px", // Custom font size of 20px
         "fs-24": "24px", // Custom font size of 20px
         "fs-25": "25px", // Custom font size of 20px

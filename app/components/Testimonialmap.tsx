@@ -22,17 +22,19 @@ export default function TestimonialMap() {
       name: "John Doe",
       title: "CEO of InnovateX",
       description:
-        "InnovateX is revolutionizing tech solutions for businesses.",
+        "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
     {
       name: "Sara Smith",
       title: "Founder of GreenTech",
-      description: "GreenTech leads the way in sustainable energy solutions.",
+      description:
+        "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
     {
       name: "Tom Harris",
       title: "Co-Founder of Healthify",
-      description: "Healthify empowers people to take control of their health.",
+      description:
+        "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
     // Add more content as needed
   ];
@@ -41,7 +43,7 @@ export default function TestimonialMap() {
     <>
       <div className="text-center">
         <h1 className="text-fs-54">Over 1000+ people trust us</h1>
-        <p className="text-fs-16 mt-1">
+        <p className="text-fs-16 mt-1 text-[#909090]">
           Clarity gives you the blocks & components you need to create a truly
           professional <br className="sm:hidden lg:block" /> website, landing
           page, or admin panel for your SaaS.
@@ -72,7 +74,7 @@ export default function TestimonialMap() {
             return (
               <div
                 key={popup.id}
-                className="absolute flex w-[200px] sm:w-[225px] h-[130px] sm:h-[149px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm animate-pop border-0.4 border-light-gray"
+                className="absolute flex w-[200px] sm:w-[225px] h-[160px] sm:h-[170px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm animate-pop border-0.4 border-light-gray"
                 style={{
                   left: `${popup.x}%`,
                   top: `${popup.y}%`,
@@ -84,12 +86,26 @@ export default function TestimonialMap() {
                   borderBottomLeftRadius: "10px",
                 }}
               >
-                <p className="font-semibold">{name}</p>
-                <p className="text-[10px] sm:text-[12px]">{title}</p>
-                <p className="mt-1 text-gray-300">{description}</p>
+                <div>
+                  <p className=" text-gray-300">{description}</p>
+                  <div className="flex mt-1 items-center gap-3 justify-start">
+                    <div>
+                      <Image
+                        src={"/map-client.png"}
+                        alt={""}
+                        width={30}
+                        height={30}
+                      />
+                    </div>
+                    <div>
+                      <p className="font-semibold">{name}</p>
+                      <p className="text-[10px] sm:text-[12px]">{title}</p>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Add small circle at the lower-right corner */}
-                <div
+                {/* <div
                   className="absolute rounded-full"
                   style={{
                     width: "14px", // Adjust size for smaller devices
@@ -101,7 +117,7 @@ export default function TestimonialMap() {
                     zIndex: "-1", // Place it behind the popup
                     transform: "translate(50%, 50%)", // Move half outside the popup
                   }}
-                ></div>
+                ></div> */}
               </div>
             );
           })}
