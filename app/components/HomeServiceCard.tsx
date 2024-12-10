@@ -6,9 +6,17 @@ import Link from "next/link";
 const HomeServiceCard: React.FC = () => {
   return (
     <>
-      <div className="text-fs-44 text-left mx-11 lg:mx-32 lg:mt-40">
-        Our services
+      <div className="relative text-fs-44 text-left mx-11 lg:mx-32 lg:mt-40">
+        Our services{" "}
+        <Image
+          className="absolute w-8 left-[235px] top-[40px]"
+          src={"/icon.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
       </div>
+
       <div className="relative w-full mx-auto mt-12 mb-24 h-auto flex flex-col gap-6 items-center">
         {/* Fixed Element */}
 
