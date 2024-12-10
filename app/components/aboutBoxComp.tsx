@@ -49,8 +49,8 @@ const AboutBoxComp = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-full lg:max-w-[671px] bg-[#303030] text-white p-6 sm:p-8 rounded-lg shadow-lg">
-          <h2 className="text-fs-24 sm:text-fs-34 lg:text-fs-54 font-bold mb-4 sm:mb-6 leading-tight">
+        <div className="w-full lg:max-w-[671px] bg-[#303030] text-white p-6 sm:p-8  shadow-lg">
+          <h2 className="text-fs-24 sm:text-fs-34 lg:text-fs-54 font-medium mb-4 sm:mb-6 leading-tight">
             Crafting Solutions For Every Challenge
             <span className="inline-block bg-red-600 w-3 h-3 rounded-full mx-1"></span>
           </h2>
@@ -58,22 +58,22 @@ const AboutBoxComp = () => {
             Delivering innovative, customized solutions to help businesses
             thrive in a dynamic digital world.
           </p>
-          <div className="space-y-6">
-            <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#8E8E8E] pb-5">
+          <div className="space-y-6 mt-32">
+            <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#686868] pb-7">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%]">
                 Custom Solutions
               </h3>
-              <p className="text-sm sm:text-base text-gray-400 md:w-[50%]">
+              <p className="text-sm sm:text-base text-[#909090] md:w-[50%]">
                 We collaborate with clients to understand their specific
                 challenges and develop customized strategies that enhance
                 effectiveness.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#8E8E8E] pb-5">
+            <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#686868] pb-7">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%]">
                 Innovative Approaches
               </h3>
-              <p className="text-sm sm:text-base text-gray-400 md:w-[50%]">
+              <p className="text-sm sm:text-base text-[#909090] md:w-[50%]">
                 By utilizing cutting-edge technologies, we create scalable
                 solutions that adapt to changing market conditions, ensuring
                 sustained growth.
@@ -83,7 +83,7 @@ const AboutBoxComp = () => {
               <h3 className="text-base sm:text-lg font-normal md:w-[50%]">
                 Comprehensive Insights
               </h3>
-              <p className="text-sm sm:text-base text-gray-400 md:w-[50%]">
+              <p className="text-sm sm:text-base text-[#909090] md:w-[50%]">
                 Our team provides end-to-end support, ensuring all aspects of
                 the solution are optimized and continuously improved for the
                 best results.

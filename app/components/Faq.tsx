@@ -44,23 +44,23 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8 mb-10 ">
-      <h2 className="text-3xl font-bold text-center mb-2 text-white">
+    <div className="w-full max-w-4xl mx-auto px-4 py-8 mb-28 ">
+      <h2 className="text-3xl font-semibold text-center mb-2 text-white">
         FAQs – Your Questions Answered
       </h2>
-      <p className="text-[#909090] mb-8 text-center ">
+      <p className="text-[#909090] mb-14 text-center ">
         Find quick answers to common queries about our services, solutions, and
         how we can help your business thrive.
       </p>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-300">
+          <div key={index} className="border-b border-[#505050]">
             <div
               className="flex items-center justify-between cursor-pointer py-3"
               onClick={() => toggleAnswer(index)}
             >
               {/* Question text on the left */}
-              <span className="text-lg font-semibold text-white">
+              <span className="text-lg font-medium text-white">
                 {faq.question}
               </span>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutGrow = () => {
   return (
-    <div className="lg:mt-28 lg:mb-28 mb-10 mt-10">
+    <div className="lg:mt-36 lg:mb-28 mb-10">
       <div className="relative mx-4 md:mx-8 lg:mx-12">
         <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center">
           <div className="text-center">

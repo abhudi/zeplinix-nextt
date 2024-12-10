@@ -38,18 +38,20 @@ const Foundationintegrity = () => {
   ];
 
   return (
-    <div className="mx-4 lg:mx-9 lg:mt-10">
-      <div className="p-4">
+    <div className="mx-4 lg:mx-9 lg:mt-20">
+      <div className="">
         <h1 className="text-white text-fs-44 text-left ">
           A Foundation Of <span className="text-primary">Integrity</span>
         </h1>
       </div>
-      <div className="p-4">
+      <div className=" mt-10">
         <div className="grid gap-6 lg:grid-cols-4 sm:grid-cols-1">
           {features.map((feature, index) => (
             <div key={index} className=" rounded shadow">
-              <h1 className="text-white">{feature.title}</h1>
-              <p className="text-[#909090]">{feature.description}</p>
+              <h1 className="text-white text-fs-22">{feature.title}</h1>
+              <p className="text-[#909090] mt-4 text-fs-18">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

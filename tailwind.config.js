@@ -26,6 +26,7 @@ module.exports = {
         "fs-16": "16px", // Custom font size of 20px
         "fs-18": "18px", // Custom font size of 20px
         "fs-20": "20px", // Custom font size of 20px
+        "fs-22": "22px", // Custom font size of 20px
         "fs-24": "24px", // Custom font size of 20px
         "fs-25": "25px", // Custom font size of 20px
         "fs-26": "26px", // Custom font size of 20px
@@ -53,6 +54,7 @@ module.exports = {
       },
       lineHeight: {
         1.2: "5px",
+        26: "26px",
       },
       animation: {
         "square-1":
