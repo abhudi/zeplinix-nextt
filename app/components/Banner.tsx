@@ -72,7 +72,7 @@ const Banner: React.FC = () => {
             </div>
 
             {/* Right Box (Stacked) */}
-            <div className="flex flex-col space-y-4 w-1/3">
+            <div className="flex flex-col space-y-4 xl:space-y-8 w-1/3">
               {/* Box 1 */}
               <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Trusted clients</h2>

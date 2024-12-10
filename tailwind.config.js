@@ -31,6 +31,7 @@ module.exports = {
         "fs-26": "26px", // Custom font size of 20px
         "fs-30": "30px", // Custom font size of 20px
         "fs-44": "44px", // Custom font size of 20px
+        "fs-52": "52px", // Custom font size of 20px
         "fs-54": "54px", // Custom font size of 20px
         "fs-64": "64px", // Custom font size of 20px
       },
