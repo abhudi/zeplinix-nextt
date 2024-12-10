@@ -45,7 +45,7 @@ export default function ProjectRequirementForm() {
         ></div>
 
         {/* Left Section */}
-        <div className="relative p-6 sm:p-10 bg-glass border-[0.4px] border-white rounded-lg shadow-lg space-y-6 z-10">
+        <div className="relative p-6 sm:p-10 bg-glass border-[0.4px] border-[#9b9b9b] rounded-lg shadow-lg space-y-6 z-10">
           <p className="text-lg md:text-xl">Im Interested in...</p>
           <div className="flex flex-wrap gap-4">
             {[
@@ -65,7 +65,7 @@ export default function ProjectRequirementForm() {
                 className={`px-4 py-2 rounded-full transition-all border text-sm md:text-base ${
                   selectedInterests.includes(interest)
                     ? "bg-[#E63946] border-[#E63946] text-white"
-                    : "bg-transparent border-white text-white hover:bg-red-600 hover:border-red-600"
+                    : "bg-transparent border-[#777676] text-white hover:bg-red-600 hover:border-red-600"
                 }`}
               >
                 {interest}
@@ -74,7 +74,7 @@ export default function ProjectRequirementForm() {
           </div>
 
           <p className="font-normal text-lg md:text-xl mt-6">
-            Project budget (INR)
+            Project budget <span className="text-[#909090]">(INR)</span>
           </p>
           <div className="flex flex-wrap gap-3">
             {["10-20k", "30-40k", "40-50k", "40-100k", "100k+"].map(
@@ -85,7 +85,7 @@ export default function ProjectRequirementForm() {
                   className={`px-4 py-2 rounded-full transition-all border text-sm md:text-base ${
                     selectedBudgets.includes(budget)
                       ? "bg-[#E63946] border-[#E63946] text-white"
-                      : "bg-transparent border-white text-white hover:bg-red-500 hover:border-red-500"
+                      : "bg-transparent border-[#777676] text-white hover:bg-red-500 hover:border-red-500"
                   }`}
                 >
                   {budget}
@@ -102,7 +102,7 @@ export default function ProjectRequirementForm() {
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none focus:ring-0 border-b border-gray-800 focus:border-white transition-colors"
+                className="w-full px-4 py-3 bg-transparent text-white placeholder-[#9F9F9F] focus:outline-none focus:ring-0 border-b border-[#646464] focus:border-white transition-colors"
               />
             </div>
 
@@ -110,7 +110,7 @@ export default function ProjectRequirementForm() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none focus:ring-0 border-b border-gray-800 focus:border-white transition-colors"
+                className="w-full px-4 py-3 bg-transparent text-white placeholder-[#9F9F9F] focus:outline-none focus:ring-0 border-b border-[#646464] focus:border-white transition-colors"
               />
             </div>
 
@@ -118,7 +118,7 @@ export default function ProjectRequirementForm() {
               <input
                 type="tel"
                 placeholder="Enter your phone number"
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none focus:ring-0 border-b border-gray-800 focus:border-white transition-colors"
+                className="w-full px-4 py-3 bg-transparent text-white placeholder-[#9F9F9F] focus:outline-none focus:ring-0 border-b border-[#646464] focus:border-white transition-colors"
               />
             </div>
 
@@ -126,25 +126,25 @@ export default function ProjectRequirementForm() {
               <input
                 type="text"
                 placeholder="Tell us about the project"
-                className="w-full px-4 py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none focus:ring-0 border-b border-gray-800 focus:border-white transition-colors"
+                className="w-full px-4 py-3 bg-transparent text-white placeholder-[#9F9F9F] focus:outline-none focus:ring-0 border-b border-[#646464] focus:border-white transition-colors"
               />
             </div>
 
-            <div className="flex items-center py-3 px-4 gap-2 border-b border-gray-800 focus-within:border-white transition-colors">
-              <CgAttachment className="text-gray-500" size={20} />
+            <div className="flex items-center py-3 px-4 gap-2 border-b border-[#646464] focus-within:border-white transition-colors">
+              <CgAttachment className="text-[#9F9F9F]" size={20} />
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
                   type="file"
                   className="hidden"
                   onChange={(e) => handleFileUpload(e)}
                 />
-                <span className="text-gray-500">Add Attachment</span>
+                <span className="text-[#9F9F9F]">Add Attachment</span>
               </label>
             </div>
 
             <button
               type="submit"
-              className="w-full py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all"
+              className="w-full py-3  bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all"
             >
               Send Request
             </button>

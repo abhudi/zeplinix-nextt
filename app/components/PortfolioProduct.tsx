@@ -49,7 +49,7 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
           <button
             key={tab}
             className={`px-6 py-2 rounded-full w-full sm:w-auto mb-2 sm:mb-0 ${
-              selectedTab === tab ? "bg-[#E63946] text-white" : "text-gray-200"
+              selectedTab === tab ? "bg-[#E63946] text-white" : "text-[#909090]"
             }`}
             onClick={() => setSelectedTab(tab)}
           >
@@ -98,11 +98,11 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
                       <h1 className="text-white text-lg font-bold">
                         {card.title}
                       </h1>
-                      <button className="px-3 py-1 bg-gray-700 text-white text-sm font-medium rounded-md">
+                      <button className="px-3 py-1 bg-[#2f2c2c] text-white text-sm font-medium rounded-md">
                         {card.buttonLabel}
                       </button>
                     </div>
-                    <p className="text-gray-400 text-sm mb-4">
+                    <p className="text-gray-400 text-sm mb-4 leading-tight">
                       {card.description}
                     </p>
                     <div>

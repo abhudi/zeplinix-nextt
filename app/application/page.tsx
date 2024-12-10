@@ -220,7 +220,7 @@ const serviceDetails = () => {
           {/* Left Side Content */}
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
             <div className="relative">
-              <div className="w-12 h-12 rounded-full border-2 border-red-600 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full border-2 border-[#4e4e4e] flex items-center justify-center">
                 <Link href="/service">
                   <span className="text-red-600 font-bold text-lg">&larr;</span>
                 </Link>
