@@ -159,8 +159,10 @@ export default function Service() {
   };
   return (
     <>
-      <Aboutheader />
-      {ServicePage()}
+      <div className="mx-0 2xl:mx-24">
+        <Aboutheader />
+        {ServicePage()}
+      </div>
     </>
   );
 }

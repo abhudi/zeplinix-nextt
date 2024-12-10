@@ -13,7 +13,7 @@ const PortfolioVideo: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 lg:mx-10 h-auto lg:h-90 max-w-full bg-white shadow-lg overflow-hidden mb-10 mt-10 lg:mt-20 ">
+    <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 lg:mx-10 2xl:mx-24 h-auto lg:h-90 max-w-full bg-white shadow-lg overflow-hidden mb-10 mt-10 lg:mt-20 ">
       {/* Right Section */}
       <div className="relative w-full  h-90 lg:h-auto">
         <video

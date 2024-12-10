@@ -7,11 +7,13 @@ import Foundationintegrity from "../components/Foundationintegrity";
 export default function About() {
   return (
     <>
-      <Aboutheader />
-      <AboutStats />
-      <Foundationintegrity />
-      <AboutGrow />
-      <FAQ />
+      <div className="mx-0 2xl:mx-24">
+        <Aboutheader />
+        <AboutStats />
+        <Foundationintegrity />
+        <AboutGrow />
+        <FAQ />
+      </div>
     </>
   );
 }

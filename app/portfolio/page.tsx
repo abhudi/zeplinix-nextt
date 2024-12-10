@@ -5,7 +5,7 @@ import PortfolioProduct from "../components/PortfolioProduct";
 
 const Product = () => {
   return (
-    <div>
+    <div className="mx-0 2xl:mx-24">
       <Aboutheader />
       <PortfolioProduct />
       <PortfolioVideo />

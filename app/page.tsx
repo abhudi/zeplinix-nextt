@@ -7,7 +7,7 @@ import Testimonialmap from "./components/Testimonialmap";
 
 export default function Home() {
   return (
-    <div className="min-h-[50%] text-white">
+    <div className="min-h-[50%] text-white mx-0 2xl:mx-24">
       <Banner />
       <Brandssection />
       <HomeServiceCard />

@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import React, { useState, ChangeEvent, FormEvent } from "react";
+
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";
 
-// Define the shape of the form data
 interface FormData {
   name: string;
   email: string;
@@ -11,7 +12,6 @@ interface FormData {
 }
 
 const GetInTouchForm: React.FC = () => {
-  // State to manage form input with type
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -19,7 +19,10 @@ const GetInTouchForm: React.FC = () => {
     message: "",
   });
 
-  // Handle form input changes
+  const [responseMessage, setResponseMessage] = useState<string | null>(null);
+  const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
+  const [cooldown, setCooldown] = useState<number | null>(null);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -30,13 +33,15 @@ const GetInTouchForm: React.FC = () => {
     });
   };
 
-  // Handle form submission
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
+    if (cooldown !== null) {
+      return; // Prevent submission during cooldown
+    }
+
     const { name, email, phone, message } = formData;
 
-    // Call your API to send the email
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -47,22 +52,38 @@ const GetInTouchForm: React.FC = () => {
       });
 
       if (response.ok) {
-        alert("Thank you for contacting us! We'll get back to you soon.");
-        // Clear the form after submission
+        setIsSuccess(true);
+        setResponseMessage(
+          "Thank you for contacting us! We'll get back to you soon."
+        );
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        alert("Something went wrong, please try again.");
+        setIsSuccess(false);
+        setResponseMessage("Something went wrong, please try again.");
       }
     } catch (error) {
-      console.error("Error sending message:", error);
-      alert("An error occurred while sending your message.");
+      setIsSuccess(false);
+      setResponseMessage("An error occurred while sending your message.");
     }
+
+    // Start the cooldown period
+    setCooldown(120); // 2 minutes = 120 seconds
   };
+
+  useEffect(() => {
+    if (cooldown !== null) {
+      const timer = setInterval(() => {
+        setCooldown((prev) => (prev && prev > 1 ? prev - 1 : null));
+      }, 1000);
+
+      return () => clearInterval(timer); // Cleanup timer
+    }
+  }, [cooldown]);
 
   return (
     <div className="relative flex items-center justify-center min-h-screen bg-black overflow-hidden">
       {/* Form Container */}
-      <div className="relative z-10 p-8 md:p-12 lg:p-16 rounded-lg shadow-xl flex flex-col md:flex-row max-w-5xl w-full mx-4">
+      <div className="relative z-10 p-8 md:p-12 lg:p-0 rounded-lg shadow-xl flex flex-col md:flex-row max-w-[1200px] w-full mx-4 lg:mt-20 mt-5 lg:mb-20 mb-5 bg-opacity-80">
         {/* Left Side Form */}
         <form className="w-full md:w-1/2" onSubmit={handleSubmit}>
           <h2 className="text-white text-5xl font-bold">
@@ -72,7 +93,18 @@ const GetInTouchForm: React.FC = () => {
           <p className="text-gray-300 mt-3 mb-10 mx-1">
             We are here for you! How can we help you?
           </p>
-          <div className="space-y-5">
+
+          {responseMessage && (
+            <p
+              className={`text-center mb-6 ${
+                isSuccess ? "text-green-500" : "text-red-500"
+              }`}
+            >
+              {responseMessage}
+            </p>
+          )}
+
+          <div className="space-y-5 md:space-y-7">
             <input
               type="text"
               placeholder="Enter your name"
@@ -80,6 +112,7 @@ const GetInTouchForm: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
+              required
             />
             <input
               type="email"
@@ -88,6 +121,7 @@ const GetInTouchForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
+              required
             />
             <input
               type="tel"
@@ -96,6 +130,7 @@ const GetInTouchForm: React.FC = () => {
               value={formData.phone}
               onChange={handleChange}
               className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
+              required
             />
             <textarea
               placeholder="Go ahead, we are listening"
@@ -103,15 +138,18 @@ const GetInTouchForm: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400 h-32"
+              required
             ></textarea>
             <button
-              className="bg-red-600 text-white p-3 rounded shadow-lg w-full"
+              className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700"
               type="submit"
+              disabled={cooldown !== null}
             >
-              Submit
+              {cooldown !== null ? `Please wait ${cooldown} seconds` : "Submit"}
             </button>
           </div>
         </form>
+
         {/* Right Side Contact Details */}
         <div className="w-full md:w-1/2 mt-16 md:mt-0 md:ml-12 text-white space-y-8">
           <div className="relative w-full">
@@ -129,8 +167,8 @@ const GetInTouchForm: React.FC = () => {
               <Image
                 src="/contact/icons/first.png"
                 alt="Address Icon"
-                width={60}
-                height={60}
+                width={45}
+                height={45}
               />
               <p>
                 <span className="font-bold">Address:</span> 99 St. Jomblo Park
@@ -141,8 +179,8 @@ const GetInTouchForm: React.FC = () => {
               <Image
                 src="/contact/icons/second.png"
                 alt="Email Icon"
-                width={60}
-                height={60}
+                width={45}
+                height={45}
               />
               <p>
                 <span className="font-bold">Email:</span> info@Zeplinix.com
@@ -152,8 +190,8 @@ const GetInTouchForm: React.FC = () => {
               <Image
                 src="/contact/icons/third.png"
                 alt="Phone Icon"
-                width={60}
-                height={60}
+                width={45}
+                height={45}
               />
               <p>
                 <span className="font-bold">Phone:</span> (0761) 654-123987

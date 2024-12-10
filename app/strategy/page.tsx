@@ -241,7 +241,7 @@ const serviceDetails = () => {
 
   return (
     <>
-      <div className="mx-4 sm:mx-8 lg:mx-10">
+      <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
         <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-2 border-[#7A7878] mb-5">
           {/* Left Side Content */}
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
