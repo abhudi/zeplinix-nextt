@@ -9,7 +9,7 @@ const AboutBoxComp = () => {
   ];
 
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between lg:px-6 py-12 bg-gradient-to-br">
+    <div className="relative flex flex-col md:flex-row items-center justify-between lg:justify-center lg:px-6 py-12 bg-gradient-to-br">
       {/* Parent container ensures equal height */}
       <div className="flex flex-col lg:flex-row gap-6 w-fulxl relative">
         <div
@@ -22,7 +22,7 @@ const AboutBoxComp = () => {
         ></div>
 
         {/* Animated Box Container */}
-        <div className="hidden lg:flex flex-col md:flex-row gap-6 w-full md:w-[424px] lg:h-[510px] overflow-hidden animate-scroll">
+        <div className="hidden lg:flex flex-col md:flex-row gap-6 w-full md:w-[424px] lg:w-[624px] lg:h-[510px] overflow-hidden animate-scroll">
           {/* Left Side - Static Boxes for Small Screens */}
           <div className="flex flex-col gap-4">
             <AboutBox title={data[0].title} value={data[0].value} />
@@ -38,7 +38,7 @@ const AboutBoxComp = () => {
           </div>
         </div>
         {/* Animated Box Container */}
-        <div className="lg:hidden flex flex-col gap-6 w-full md:w-[424px] lg:h-[510px] overflow-hidden md:animate-scroll mb-10">
+        <div className="lg:hidden flex flex-col gap-6 w-full md:w-[424px] lg:w-[1024px] lg:h-[510px] overflow-hidden md:animate-scroll mb-10">
           {/* Left Side - Static Boxes for Small Screens */}
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-col">
             <AboutBox title={data[0].title} value={data[0].value} />

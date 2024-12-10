@@ -10,8 +10,8 @@ export default function Home() {
     <div className="min-h-[50%] text-white">
       <Banner />
       <Brandssection />
-      <StandardProduct />
       <HomeServiceCard />
+      <StandardProduct />
       <Testimonialmap />
       <Blogcards />
     </div>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define a type for card data
 type CardData = {
@@ -10,6 +11,7 @@ type CardData = {
   description: string;
   buttonLabel: string;
   coreTech: string;
+  linkHref: string;
 };
 
 const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
@@ -76,35 +78,39 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
               .map((card, index) => (
                 <div
                   key={card.id}
-                  className={`card w-full sm:w-[572px] h-[532px] p-6 rounded-lg shadow-lg ${
-                    (index + 1) % 2 === 0 ? "mt-5 md:mt-52 lg:mt-52" : ""
+                  className={`card w-full sm:w-[572px] h-auto p-6 rounded-lg shadow-lg mb-20 bg-glass ${
+                    (index + 1) % 2 === 0 ? "mt-5 md:mt-0 lg:mt-0" : ""
                   }`}
                 >
                   <div className="mb-4">
-                    <Image
-                      src={card.image}
-                      alt={`${card.title} Image`}
-                      width={385}
-                      height={200}
-                      className="object-cover w-full rounded-md"
-                    />
+                    <Link href={card.linkHref} passHref>
+                      <Image
+                        src={card.image}
+                        alt={`${card.title} Image`}
+                        width={385}
+                        height={200}
+                        className="object-cover w-full rounded-md"
+                      />
+                    </Link>
                   </div>
-                  <div className="flex justify-between items-center mb-4">
-                    <h1 className="text-white text-lg font-bold">
-                      {card.title}
-                    </h1>
-                    <button className="px-3 py-1 bg-gray-700 text-white text-sm font-medium rounded-md">
-                      {card.buttonLabel}
-                    </button>
-                  </div>
-                  <p className="text-gray-400 text-sm mb-4">
-                    {card.description}
-                  </p>
-                  <div>
-                    <h2 className="text-white font-semibold">
-                      {card.coreTech}
-                    </h2>
-                  </div>
+                  <Link href={card.linkHref} passHref>
+                    <div className="flex justify-between items-center mb-4">
+                      <h1 className="text-white text-lg font-bold">
+                        {card.title}
+                      </h1>
+                      <button className="px-3 py-1 bg-gray-700 text-white text-sm font-medium rounded-md">
+                        {card.buttonLabel}
+                      </button>
+                    </div>
+                    <p className="text-gray-400 text-sm mb-4">
+                      {card.description}
+                    </p>
+                    <div>
+                      <h2 className="text-white font-semibold">
+                        {card.coreTech}
+                      </h2>
+                    </div>
+                  </Link>
                 </div>
               ))}
           </div>
@@ -122,6 +128,7 @@ const cardData: CardData[] = [
       "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
     buttonLabel: "Web application",
     coreTech: "Core Technology",
+    linkHref: "/convertiq-detail/",
   },
   {
     id: 2,
@@ -131,6 +138,7 @@ const cardData: CardData[] = [
       "HRFusion is an all-in-one HR management platform designed to simplify and automate your workforce operations. From recruitment and onboarding to performance evaluations, payroll, and employee engagement, HRFusion streamlines every aspect of employee management. ",
     buttonLabel: "AI Tool",
     coreTech: "Core Technology",
+    linkHref: "/hr-detail/",
   },
   {
     id: 3,
@@ -140,6 +148,7 @@ const cardData: CardData[] = [
       "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
     buttonLabel: "CRM Platform",
     coreTech: "Core Technology",
+    linkHref: "/evalflow-detail/",
   },
   {
     id: 4,
@@ -149,6 +158,7 @@ const cardData: CardData[] = [
       "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
     buttonLabel: "Analytics Platform",
     coreTech: "Core Technology",
+    linkHref: "/datasense-detail/",
   },
   {
     id: 5,
@@ -158,6 +168,7 @@ const cardData: CardData[] = [
       "301io is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
     buttonLabel: "Marketing Tool",
     coreTech: "Core Technology",
+    linkHref: "/301io-detail/",
   },
   {
     id: 6,
@@ -167,6 +178,7 @@ const cardData: CardData[] = [
       "Invoice Management is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
     buttonLabel: "Dev Tool",
     coreTech: "Core Technology",
+    linkHref: "/invoicemanagement-detail/",
   },
 ];
 

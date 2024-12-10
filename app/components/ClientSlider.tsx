@@ -1,41 +1,53 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-const ClientSlider = () => {
-  const imageData = [
-    { imageSrc: "/images/image1.jpg", alt: "Image 1" },
-    { imageSrc: "/images/image2.jpg", alt: "Image 2" },
-    { imageSrc: "/images/image3.jpg", alt: "Image 3" },
-    { imageSrc: "/images/image4.jpg", alt: "Image 4" },
-    // Add more images as needed
+
+// Define the type for the logo object
+interface Logo {
+  src: string;
+  alt: string;
+}
+
+const ClientSlider: React.FC = () => {
+  const logosData: Logo[] = [
+    {
+      src: "/clients/1st.png",
+      alt: "Logo 1",
+    },
+    {
+      src: "/clients/1st.png",
+      alt: "Logo 2",
+    },
+    {
+      src: "/clients/1st.png",
+      alt: "Logo 3",
+    },
+    {
+      src: "/clients/1st.png",
+      alt: "Logo 4",
+    },
+    {
+      src: "/clients/1st.png",
+      alt: "Logo 5",
+    },
+    {
+      src: "/clients/1st.png",
+      alt: "Logo 6",
+    },
   ];
 
+  // Replicate the logo array to simulate infinite scrolling
+  const logos = [...logosData, ...logosData]; // Concatenate the logos array
+
   return (
-    <div className="carousel-container overflow-hidden">
-      <div className="carousel flex transition-all duration-500 ease-in-out">
-        {imageData.map((image, index) => (
-          <div key={index} className="carousel-background w-full flex-shrink-0">
+    <div className="slider ">
+      <div className="slide-track">
+        {logos.map((logo, index) => (
+          <div className="slide " key={index}>
             <Image
-              src={image.imageSrc}
-              alt={image.alt}
-              width={800}
-              height={400}
-              className="object-cover w-full h-auto"
-            />
-          </div>
-        ))}
-        {/* Duplicate images for seamless loop */}
-        {imageData.map((image, index) => (
-          <div
-            key={`duplicate-${index}`}
-            className="carousel-background w-full flex-shrink-0"
-          >
-            <Image
-              src={image.imageSrc}
-              alt={image.alt}
-              width={800}
-              height={400}
-              className="object-cover w-full h-auto"
+              src={logo.src}
+              alt={logo.alt}
+              width={50} // Smaller width
+              height={50} // Smaller height
             />
           </div>
         ))}

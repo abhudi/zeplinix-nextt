@@ -8,21 +8,6 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* Client section bacground image  */
-.image-container::before {
-  content: "";
-  display: block;
-  position: absolute; /* Position it relative to the parent */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/homepage/red-spread.png"); /* Path to your image in the public folder */
-  background-size: cover; /* Ensure the image covers the element */
-  background-position: center; /* Center the image */
-  z-index: -1; /* Place the image behind the content */
-}
-
 .image-container {
   position: relative; /* Make sure the container is positioned for ::before */
 }
@@ -60,7 +45,7 @@ body {
 }
 
 /* animation */
-@keyframes scroll {
+@keyframes topscroll {
   0% {
     transform: translateY(0);
   }
@@ -72,6 +57,85 @@ body {
   }
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  animation: scrollhorizontal 15s linear infinite; /* Adjust the duration for speed */
+}
+
+/* Ensure the cards have a fixed width */
+.carousel > div {
+  flex: 0 0 300px; /* Set a width suitable for your design */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel > div:hover {
+  animation-play-state: paused;
+}
+
+/* Keyframes for the continuous scroll effect */
+@keyframes scrollhorizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
+}
 .animate-scroll {
-  animation: scroll 5s infinite ease-in-out;
+  animation: topscroll 5s infinite ease-in-out;
+}
+
+/* client slider */
+/* styles/globals.css */
+/* Tailwind Custom Classes or Global CSS */
+/* Infinite scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-150px * 7)
+    ); /* Adjust based on the new logo size */
+  }
+}
+
+.slider {
+  height: 70px; /* Adjust container height */
+  margin: auto;
+  overflow: hidden; /* Hide overflow to keep it neat */
+  position: relative;
+  width: 100%; /* Make it responsive */
+}
+
+.slide-track {
+  display: flex;
+  width: calc(150px * 14); /* Adjust to match the new size */
+  animation: scroll 40s linear infinite; /* Adjust speed with animation time */
+}
+
+.slide {
+  height: 70px; /* Adjust height of each logo */
+  width: 150px; /* Adjust width of each logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; /* Space between the logos */
+}
+
+.slide img {
+  height: 50px; /* Smaller logo size */
+  width: 50px; /* Smaller logo size */
 }

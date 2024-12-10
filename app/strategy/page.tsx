@@ -3,9 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./css/standardproduct.css";
 
-const ServiceDetail = () => {
+const serviceDetails = () => {
   const ServiceData = () => {
     const [activeTab, setActiveTab] = useState<number>(0);
 
@@ -248,7 +247,7 @@ const ServiceDetail = () => {
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
             <div className="relative">
               <div className="w-12 h-12 rounded-full border-2 border-red-600 flex items-center justify-center">
-                <Link href="/blog/my-first-post">
+                <Link href="/service">
                   <span className="text-red-600 font-bold text-lg">&larr;</span>
                 </Link>
               </div>
@@ -295,16 +294,16 @@ const ServiceDetail = () => {
         </div>
 
         {/* Tab Section */}
-        <ServiceData />
+        {ServiceData()}
 
         {/* Call to Action */}
-        <ServiceBox />
+        {ServiceBox()}
 
         {/* Service Slider */}
-        <ServiceSlider />
+        {ServiceSlider()}
       </div>
     </>
   );
 };
 
-export default ServiceDetail;
+export default serviceDetails;
