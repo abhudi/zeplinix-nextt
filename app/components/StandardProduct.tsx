@@ -69,7 +69,7 @@ const StandardProduct = () => {
             "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.34) 0%, rgba(128, 32, 39, 0) 100%)",
         }}
       ></div>
-      <h1 className="text-center text-white lg:mt-40 pt-6 text-4xl">
+      <h1 className="text-center text-white lg:mt-40 pt-6 text-fs-54">
         Our Standout Products
       </h1>
       <div className="carousel-container">
