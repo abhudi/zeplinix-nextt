@@ -26,8 +26,23 @@ const AboutUsCard: React.FC = () => {
         </p>
 
         <Link href={"/about"}>
-          <button className=" text-primary font-semibold rounded-full transition mt-4">
-            Read more →
+          <button className="text-primary font-semibold rounded-full transition mt-4 flex items-center gap-2">
+            Read more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-5 h-5"
+              style={{ rotate: "-35deg" }}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
           </button>
         </Link>
       </div>

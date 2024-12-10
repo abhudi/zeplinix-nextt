@@ -265,12 +265,27 @@ const serviceDetails = () => {
               decision-making.
             </p>
 
-            <a
+            <Link
               href="#"
-              className="text-red-500 font-semibold flex items-center justify-center md:justify-start hover:underline"
+              className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation &rarr;
-            </a>
+              Free Consultation
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5"
+                style={{ rotate: "-35deg" }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Right Side Video */}

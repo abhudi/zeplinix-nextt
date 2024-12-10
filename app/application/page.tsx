@@ -90,7 +90,7 @@ const serviceDetails = () => {
       <div className="flex flex-col md:flex-row mt-10 md:mt-20">
         {/* Left Side: Tabs */}
         <div className="md:w-1/4 w-full mb-6 md:mb-0">
-          <div className="space-y-2">
+          <div className="space-y-4">
             {tabs.map((tab, index) => (
               <div
                 key={index}
@@ -216,7 +216,7 @@ const serviceDetails = () => {
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24 ">
-        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-2 border-[#7A7878] mb-5">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-0.4 border-[#616161] mb-5">
           {/* Left Side Content */}
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
             <div className="relative">
@@ -227,11 +227,11 @@ const serviceDetails = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left">
               AI/ML Services
             </h1>
 
-            <p className="text-lg text-gray-300 text-center md:text-left">
+            <p className="text-fs-18 text-[#909090] text-center md:text-left">
               Unlock the potential of your business with cutting-edge AI and
               Machine Learning solutions. At Zeplinix Technologies, we harness
               the power of artificial intelligence to transform data into
@@ -239,12 +239,27 @@ const serviceDetails = () => {
               decision-making.
             </p>
 
-            <a
+            <Link
               href="#"
-              className="text-red-500 font-semibold flex items-center justify-center md:justify-start hover:underline"
+              className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation &rarr;
-            </a>
+              Free Consultation
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5"
+                style={{ rotate: "-35deg" }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Right Side Video */}

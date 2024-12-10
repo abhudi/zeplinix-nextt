@@ -12,20 +12,21 @@ export async function POST(req) {
       );
     }
 
+    console.log("Parsed data:", { name, email, message, cc, bcc }); // Log data for debugging
+
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      host: "smtp.hostinger.com", // Replace with your SMTP host
-      port: 587, // or 465 if using SSL
-      secure: false, // Use true for port 465, false for others
+      host: "smtp.hostinger.com",
+      port: 587,
+      secure: false,
       auth: {
-        user: "info@zeplinix.com", // Replace with your SMTP username
-        pass: "admin@3Tyt887", // Replace with your SMTP password
+        user: "info@zeplinix.com",
+        pass: "admin@3Tyt887",
       },
     });
 
-    // Define the HTML email template
-    const htmlTemplate = `
-      <div
+    // Define the HTML email template (same as before)
+    const htmlTemplate = ` <div
   style="
     font-family: Arial, sans-serif;
     max-width: 600px;
@@ -189,22 +190,21 @@ export async function POST(req) {
       <a href="#" style="color: #f04d58; text-decoration: none">click here</a>.
     </p>
   </div>
-</div>
-
-    `;
+</div>`; // Your existing HTML template
 
     // Define the email options
     const mailOptions = {
-      from: '"Zeplinix Support"', // Replace with your email
-      to: email, // User's email
+      from: '"Zeplinix Support" <info@zeplinix.com>',
+      to: email,
       subject: "Thank you for contacting us!",
-      html: htmlTemplate, // Use the HTML template
-      cc: cc || "abhijitp@301io.com", // Add CC if provided
-      bcc: bcc || "atmaramd@301io.com", // Add BCC if provided
+      html: htmlTemplate,
+      cc: cc || "deshmukhabhishek7020@gmail.com",
+      bcc: bcc || "atmaramd@301io.com",
     };
 
     // Send the email
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent:", info); // Log the response from the email server
 
     return new Response(
       JSON.stringify({ success: true, message: "Email sent successfully" }),
@@ -214,8 +214,11 @@ export async function POST(req) {
     );
   } catch (error) {
     console.error("Error sending email:", error);
-    return new Response(JSON.stringify({ error: "Failed to send email" }), {
-      status: 500,
-    });
+    return new Response(
+      JSON.stringify({ error: error.message || "Failed to send email" }),
+      {
+        status: 500,
+      }
+    );
   }
 }

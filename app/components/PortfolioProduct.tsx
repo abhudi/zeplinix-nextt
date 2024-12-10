@@ -78,7 +78,7 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
               .map((card, index) => (
                 <div
                   key={card.id}
-                  className={`card w-full sm:w-[572px] h-auto p-6 rounded-lg shadow-lg mb-20 bg-glass ${
+                  className={`card w-full sm:w-[572px] h-auto p-6 rounded-lg shadow-lg lg:mb-20 md:mb-20 bg-glass ${
                     (index + 1) % 2 === 0 ? "mt-5 md:mt-0 lg:mt-0" : ""
                   }`}
                 >
@@ -184,7 +184,7 @@ const cardData: CardData[] = [
 
 const App: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 ">
       <PortfolioProduct data={cardData} />
     </div>
   );

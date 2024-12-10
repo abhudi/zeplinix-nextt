@@ -84,17 +84,32 @@ export default function Blogcards() {
                 {blogs[0].title}
               </h3>
               <p className="text-sm text-gray-400 mb-4">
-                {blogs[0].author} • {blogs[0].date}
+                {blogs[0].author} <span className="mx-2">•</span>{" "}
+                {blogs[0].date}
               </p>
               <p className="text-sm text-white items-center gap-3">
-                <span>{blogs[0].category}</span>
+                <li>{blogs[0].category}</li>
               </p>
               <a
                 href="#"
-                className="text-red-400 text-sm mt-4 flex items-center"
+                className="text-red-400 text-sm mt-4 flex items-center gap-2"
               >
                 Read More
-                <span className="ml-2">&rarr;</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-4 h-4"
+                  style={{ rotate: "-35deg" }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>

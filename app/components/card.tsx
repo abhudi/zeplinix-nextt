@@ -42,9 +42,24 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
         </div>
         <a
           href={linkHref}
-          className="flex items-center text-left text-red-500 hover:underline font-bold"
+          className="flex items-center text-left text-red-500 hover:underline font-bold gap-1"
         >
-          {linkText} <span className="ml-2">→</span>
+          {linkText}{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-5"
+            style={{ rotate: "-35deg" }}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
         </a>
       </div>
     </div>
