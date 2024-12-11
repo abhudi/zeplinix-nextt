@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 
 interface Popup {
@@ -9,12 +10,11 @@ interface Popup {
 
 export default function TestimonialMap() {
   const popups: Popup[] = [
-    { id: "1", x: 10, y: 15 }, // Define static positions here
+    { id: "1", x: 10, y: 15 },
     { id: "2", x: 70, y: 15 },
     { id: "3", x: 45, y: 45 },
     { id: "4", x: 16, y: 70 },
     { id: "5", x: 75, y: 70 },
-    // Add more positions as needed
   ];
 
   const popupContent = [
@@ -36,11 +36,16 @@ export default function TestimonialMap() {
       description:
         "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
-    // Add more content as needed
   ];
 
+  const [activePopup, setActivePopup] = useState<string | null>(null);
+
+  const handleOutsideClick = () => {
+    setActivePopup(null);
+  };
+
   return (
-    <>
+    <div onClick={handleOutsideClick} className="relative">
       <div className="text-center">
         <h1 className="text-fs-54">Over 1000+ people trust us</h1>
         <p className="text-fs-16 mt-1 text-[#909090]">
@@ -50,9 +55,7 @@ export default function TestimonialMap() {
         </p>
       </div>
       <div className="flex items-center justify-center bg-black">
-        {/* Map Container */}
         <div className="relative w-[90%] max-w-5xl aspect-video mt-20">
-          {/* Map Image */}
           <Image
             src="/homepage/map.svg"
             alt="World Map"
@@ -60,43 +63,37 @@ export default function TestimonialMap() {
             width={100}
             height={100}
           />
-          <div
-            className="absolute w-[100%] inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,_rgba(230,_57,_70,_0.24)_0%,_rgba(128,_32,_39,_0)_100%)]"
-            style={{
-              zIndex: "1", // Make sure it’s behind the map
-            }}
-          ></div>
-          {/* Static Popups */}
+
+          {/* Popups for Large and Medium Devices */}
           {popups.map((popup, index) => {
             const { name, title, description } =
-              popupContent[index % popupContent.length]; // Cycle through the content array
+              popupContent[index % popupContent.length];
 
             return (
-              <div
-                key={popup.id}
-                className="absolute flex w-[200px] sm:w-[225px] h-[160px] sm:h-[170px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm animate-pop border-0.4 border-light-gray"
-                style={{
-                  left: `${popup.x}%`,
-                  top: `${popup.y}%`,
-                  transform: "translate(-50%, -50%)",
-                  backdropFilter: "blur(2px)", // Apply background blur
-                  WebkitBackdropFilter: "blur(2px)", // Support for Safari
-                  borderTopLeftRadius: "10px",
-                  borderTopRightRadius: "10px",
-                  borderBottomLeftRadius: "10px",
-                }}
-              >
-                <div>
-                  <p className=" text-gray-300">{description}</p>
+              <div key={popup.id}>
+                {/* Original Popup Design */}
+                <div
+                  className="absolute flex flex-col items-center justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray hidden sm:flex"
+                  style={{
+                    left: `${popup.x}%`,
+                    top: `${popup.y}%`,
+                    transform: "translate(-50%, -50%)",
+                    backdropFilter: "blur(2px)",
+                    WebkitBackdropFilter: "blur(2px)",
+                    borderRadius: "10px",
+                    width: "200px",
+                    height: "160px",
+                  }}
+                >
+                  <p className="text-gray-300">{description}</p>
                   <div className="flex mt-1 items-center gap-3 justify-start">
-                    <div>
-                      <Image
-                        src={"/map-client.png"}
-                        alt={""}
-                        width={30}
-                        height={30}
-                      />
-                    </div>
+                    <Image
+                      src="/map-client.png"
+                      alt=""
+                      width={30}
+                      height={30}
+                      className="rounded-full"
+                    />
                     <div>
                       <p className="font-semibold">{name}</p>
                       <p className="text-[10px] sm:text-[12px]">{title}</p>
@@ -104,25 +101,56 @@ export default function TestimonialMap() {
                   </div>
                 </div>
 
-                {/* Add small circle at the lower-right corner */}
-                {/* <div
-                  className="absolute rounded-full"
+                {/* Red Dots for Small Devices */}
+                <div
+                  className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
                   style={{
-                    width: "14px", // Adjust size for smaller devices
-                    height: "14px", // Adjust size for smaller devices
-                    bottom: "0", // Align with the bottom of the popup
-                    right: "0", // Align with the right of the popup
-                    background: "#E63946",
-                    border: "2px solid #FBCACE",
-                    zIndex: "-1", // Place it behind the popup
-                    transform: "translate(50%, 50%)", // Move half outside the popup
+                    left: `${popup.x}%`,
+                    top: `${popup.y}%`,
+                    transform: "translate(-50%, -50%)",
+                    zIndex: "10",
                   }}
-                ></div> */}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActivePopup(popup.id);
+                  }}
+                ></div>
+
+                {/* Popup for Small Devices */}
+                {activePopup === popup.id && (
+                  <div
+                    className="absolute flex w-[200px] h-[160px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs animate-pop border-0.4 border-light-gray sm:hidden"
+                    style={{
+                      left: `${popup.x}%`,
+                      top: `${popup.y}%`,
+                      transform: "translate(-50%, -50%)",
+                      backdropFilter: "blur(2px)",
+                      WebkitBackdropFilter: "blur(2px)",
+                      borderRadius: "10px",
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <p className="text-gray-300">{description}</p>
+                    <div className="flex mt-1 items-center gap-3 justify-start">
+                      <Image
+                        src="/map-client.png"
+                        alt=""
+                        width={30}
+                        height={30}
+                        className="rounded-full"
+                      />
+                      <div>
+                        <p className="font-semibold">{name}</p>
+                        <p className="text-[10px] sm:text-[12px]">{title}</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }

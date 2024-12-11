@@ -11,103 +11,170 @@ const ProductsDetail = () => {
     const [activeTab, setActiveTab] = useState<number>(0);
 
     // Define the tab titles
-    const tabs = [
-      "Core features",
-      "AI/ML Features in BohoHR",
-      "Benefits of BohoHR",
-      "Industries We Cater To",
-      "Integrated Modules",
-    ];
+    const tabs = ["Core features", "Industries We Cater To", "Why choose us"];
 
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Smart Recruitment & Talent Acquisition
+          1. Integrated Point of Sale (POS)
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-driven candidate screening and shortlisting.</li>
-          <li>Automated job postings and candidate communication.</li>
+          <li>Simplify transactions with fast, user-friendly POS systems. </li>
           <li>
-            Predictive hiring analytics to identify the best-fit candidates.
+            Manage sales across multiple locations with real-time updates.{" "}
+          </li>
+          <li>
+            Support for online and offline transactions for uninterrupted
+            operations.
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Employee Lifecycle Management
+          2. Advanced Inventory Management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Track and manage the entire employee journey, from onboarding
-            tooffboarding.
+            Track inventory levels, stock movements, and reorder points
+            effortlessly.
           </li>
           <li>
-            Centralized employee records and streamlined document management.
+            Automate stock replenishment to avoid overstocking or stockouts.
+          </li>
+          <li>
+            Monitor warehouse operations and multi-location inventory with ease.
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. AI-Enabled Workforce Insights
+          3. Order and Procurement Management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Real-time analytics to monitor employee performance, engagement, and
-            retention.
+            Streamline purchase orders, vendor management, and order tracking.
           </li>
-          <li>Predictive modeling to forecast workforce trends and needs.</li>
+          <li>Optimize procurement processes with automated workflows. </li>
+          <li>Maintain complete visibility into supply chain operations. </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Automated Payroll & Compliance
+          4. Comprehensive Financial Management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Hassle-free payroll processing with integrated tax compliance.
-          </li>
-          <li>Employee benefits administration and error-free calculations.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Customizable Performance Management
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-powered performance reviews and goal tracking.</li>
-          <li>Tailored feedback mechanisms and 360-degree evaluation.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Time & Attendance Tracking
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Advanced scheduling and time tracking integrated with biometric
-            systems.
+            Manage accounts, billing, and financial reporting in one platform.
           </li>
           <li>
-            AI-enabled attendance pattern analysis to enhance workforce
-            efficiency.
+            Automate tax calculations and ensure compliance with regulations.
+          </li>
+          <li>Generate real-time insights into financial performance.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          5. Customizable Reporting and Analytics
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Access dashboards with actionable insights into sales, inventory,
+            and performance.
+          </li>
+          <li>Generate custom reports for better decision-making. </li>
+          <li>
+            Predict trends and optimize strategies with AI-driven analytics.
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Employee Engagement Tools
+          6. Employee and Workforce Management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Track employee shifts, attendance, and payroll.</li>
           <li>
-            Interactive employee portals for communication and collaboration.
-          </li>
-          <li>
-            Gamified recognition programs and surveys to boost engagement.
+            Enable seamless collaboration with integrated team management tools.
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. Leave & Expense Management
+          7. Customer Relationship Management (CRM)
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Simplified leave applications with automated approval workflows.
+            Enhance customer engagement with loyalty programs and personalized
+            offers.
           </li>
-          <li>Integrated expense reporting and reimbursement systems.</li>
+          <li>
+            Manage customer data, purchase history, and feedback in one place.
+          </li>
+          <li>Drive repeat business with targeted promotions.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          8. Cloud-Based and Scalable
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Access your ERP anytime, anywhere with a secure cloud-based
+            platform.
+          </li>
+          <li>
+            Scale effortlessly as your business grows, adding new locations and
+            features.
+          </li>
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
-      <div className="text-white">Content for Tab 5</div>,
+
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">1. Retail</h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>POS systems integrated with real-time inventory tracking.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Hospitality
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Manage restaurant or hotel operations with advanced POS features.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Manufacturing
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Streamline production with automated inventory control.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. E-commerce
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Sync online and offline sales with unified inventory and order
+            management.
+          </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. All-in-One Platform
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Manage operations, sales, inventory, and finances in one system.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Customizable and Scalable
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Tailored solutions to fit your business needs.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. AI-Driven Efficiency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Enhance productivity with intelligent insights and automation.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Secure and Reliable
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Built with the latest security protocols for peace of mind.</li>
+        </p>
+      </div>,
     ];
 
     return (
@@ -159,12 +226,12 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
-              Transform Your HR with BohoHR
+              Empower Your Business with Our ERP Solution
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
-              Experience the future of HR management with BohoHR’s seamless,
-              intelligent, and scalable platform. Let us help you create a
-              thriving workplace culture while simplifying your HR processes.
+              Simplify operations, enhance productivity, and scale effortlessly
+              with our ERP solution. Contact us today to learn how we can
+              revolutionize your business operations.
             </p>
             <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
               <p className="flex gap-2 items-center">
@@ -209,7 +276,6 @@ const ProductsDetail = () => {
       </div>
     );
   };
-
   const Marquee = () => {
     return (
       <div className="relative w-full overflow-hidden cursor-pointer pt-5">
@@ -224,7 +290,7 @@ const ProductsDetail = () => {
               >
                 {/* First Boho HR text */}
                 <span className="bordereffect text-[96px]  lg:ml-20">
-                  Boho HR
+                  StockIQ
                 </span>
 
                 {/* Single Image between Boho HR texts */}
@@ -242,7 +308,6 @@ const ProductsDetail = () => {
       </div>
     );
   };
-
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
@@ -258,23 +323,39 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              <span className="text-primary">Redefining</span> HR Management
+              <span className="text-primary">StockIQ </span>- Inventory
+              Management (ERP)
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">
-              Streamline your HR operations and elevate your workforce
-              management with BohoHR, a cutting-edge platform designed to handle
-              every aspect of human resources. Built with the latest AI and ML
-              technologies, BohoHR delivers intelligent solutions that empower
-              businesses to attract, manage, and retain top talent.
+              Streamline your business operations with our robust ERP solution,
+              integrated with advanced POS and inventory management features.
+              Designed to optimize efficiency and enhance productivity, our
+              solution offers a one-stop platform to manage your entire business
+              seamlessly.
             </p>
 
-            <a
+            <Link
               href="#"
-              className="text-red-500 font-semibold flex items-center justify-center md:justify-start hover:underline"
+              className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation &rarr;
-            </a>
+              Free Consultation
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5"
+                style={{ rotate: "-35deg" }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
 

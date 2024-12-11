@@ -36,7 +36,7 @@ const ProductCard = () => {
     },
     {
       id: 4,
-      title: "DataSense",
+      title: "StockIQ",
       image: "/products/stockiq.png",
       description:
         "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",

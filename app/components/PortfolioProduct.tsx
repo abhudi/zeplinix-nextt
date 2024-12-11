@@ -152,23 +152,23 @@ const cardData: CardData[] = [
   },
   {
     id: 4,
-    title: "DataSense",
+    title: "StockIQ",
     image: "/products/stockiq.png",
     description:
       "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
     buttonLabel: "Analytics Platform",
     coreTech: "Core Technology",
-    linkHref: "/datasense-detail/",
+    linkHref: "/stockiq-detail/",
   },
   {
     id: 5,
-    title: "301io",
+    title: "PredictEase",
     image: "/products/301io.png",
     description:
-      "301io is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
+      "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike. ",
     buttonLabel: "Marketing Tool",
     coreTech: "Core Technology",
-    linkHref: "/301io-detail/",
+    linkHref: "/predictease-detail/",
   },
   {
     id: 6,

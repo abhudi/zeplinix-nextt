@@ -21,73 +21,141 @@ const serviceDetails = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Predictive Analytics
+          1.Bespoke Application Development
         </h2>
+        <p className="text-[18px]  text-[#909090]">
+          Create software that fits your business processes like a glove.
+        </p>
         <p className="text-[18px] mb-4 text-[#909090]">
-          Leverage data-driven predictions to forecast trends, customer
-          behavior, and business outcomes. Optimize decision-making processes
-          using statistical models and machine learning algorithms.
+          Develop scalable and intuitive applications for web, mobile, and
+          desktop.
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Natural Language Processing (NLP)
+          2. Enterprise Software Solutions
         </h2>
+        <p className="text-[18px]  text-[#909090]">
+          Build robust, secure, and efficient systems for enterprise needs.
+        </p>
         <p className="text-[18px] mb-4 text-[#909090]">
-          Extract value from unstructured text data through sentiment analysis,
-          text summarization, and semantic understanding. Build intelligent
-          chatbots and virtual assistants for enhanced customer interaction.
+          Streamline operations with customized ERP, CRM, and HRMS platforms.
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. Computer Vision
+          3. Legacy System Modernization
         </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          Develop applications that interpret and analyze visual data such as
-          images and videos. Enable facial recognition, object detection, and
-          quality inspection for diverse industries.
+        <p className="text-[18px]  text-[#909090]">
+          Upgrade outdated systems to enhance performance and user experience.
+        </p>
+        <p className="text-[18px] mb-4  text-[#909090]">
+          Integrate new features without disrupting ongoing operations.
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. AI-Powered Automation
+          4.SaaS Product Development
         </h2>
+        <p className="text-[18px]  text-[#909090]">
+          Develop multi-tenant SaaS platforms tailored to industry-specific
+          needs.
+        </p>
         <p className="text-[18px] mb-4 text-[#909090]">
-          Streamline repetitive tasks using Robotic Process Automation (RPA)
-          integrated with AI. Boost productivity by automating workflows across
-          departments.
+          Implement seamless subscription management and cloud-native solutions.
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Recommendation Systems
+          5. API Development & Integration
         </h2>
+        <p className="text-[18px] text-[#909090]">
+          Create powerful APIs to integrate existing tools and third-party
+          platforms.
+        </p>
         <p className="text-[18px] mb-4 text-[#909090]">
-          Personalize user experiences with advanced recommendation engines.
-          Enhance product discovery and customer satisfaction with AI-driven
-          suggestions.
+          Enable smooth data exchange and enhanced system interoperability.
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Custom Machine Learning Models
+          6. Quality Assurance & Testing
         </h2>
+        <p className="text-[18px] text-[#909090]">
+          Ensure high-quality deliverables with rigorous testing and validation.
+        </p>
         <p className="text-[18px] mb-4 text-[#909090]">
-          Design and deploy tailored machine learning models to solve specific
-          business challenges. Improve efficiency, accuracy, and scalability
-          with customized AI solutions.
+          Perform functional, performance, and security testing for reliability.
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Data Engineering & Preprocessing
+          7. Maintenance & Support
         </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          Ensure clean, structured, and usable datasets for effective AI model
-          training. Handle data transformation, feature extraction, and
-          real-time data pipelines.
+        <p className="text-[18px]  text-[#909090]">
+          Provide ongoing support and updates to keep your software performing
+          at its best.
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. AI Model Deployment & Monitoring
-        </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
-          Seamlessly integrate AI models into your existing systems with
-          scalable architecture. Monitor, evaluate, and optimize models in
-          real-time to ensure peak performance.
+          Monitor, troubleshoot, and optimize applications post-deployment.
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Tailored Solutions
+        </h2>
+        <p className="text-[18px] mb-4  text-[#909090]">
+          Built specifically for your business needs.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Agility
+        </h2>
+        <p className="text-[18px] mb-4  text-[#909090]">
+          Rapid development using modern methodologies like Agile and DevOps.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Expert Team
+        </h2>
+        <p className="text-[18px] mb-4  text-[#909090]">
+          Experienced professionals delivering quality and innovation.
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">1. Retail</h2>
+        <p className="text-[18px] mb-4  text-[#909090]">
+          Custom POS systems and inventory management solutions.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Healthcare
+        </h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          Patient portals and appointment management systems.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Finance
+        </h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          Secure transaction processing and risk management software.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Real Estate
+        </h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          Property listing and customer engagement platforms.
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Frontend
+        </h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          React, Angular, Vue.js
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Backend
+        </h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          Node.js, Python, PHP, Java
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Database
+        </h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          MySQL, PostgreSQL, MongoDB
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">3. DevOps</h2>
+        <p className="text-[18px]  mb-4  text-[#909090]">
+          Docker, Kubernetes, Jenkins
+        </p>
+      </div>,
     ];
 
     return (
@@ -139,16 +207,32 @@ const serviceDetails = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
-              Transform Your Business with AI/ML
+              Transform Your Ideas Into Reality
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
-              Empower your organization with smarter, faster, and more efficient
-              processes. Let us help you lead in the era of AI. Contact us today
-              to discuss your AI/ML needs and take the first step towards
-              innovation!
+              From concept to deployment, we turn your vision into fully
+              functional software solutions. Contact us today to explore how our
+              Custom Software Development services can empower your business.
             </p>
-            <button className="px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-[white] font-semibold rounded-full shadow-lg transition border border-light-gray">
-              Contact now
+            <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
+              <p className="flex gap-2 items-center">
+                Contact now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                  style={{ rotate: "-35deg" }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </p>
             </button>
           </div>
 
@@ -248,15 +332,15 @@ const serviceDetails = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              AI/ML Services
+              Software Development Services
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">
-              Unlock the potential of your business with cutting-edge AI and
-              Machine Learning solutions. At Zeplinix Technologies, we harness
-              the power of artificial intelligence to transform data into
-              actionable insights, automate workflows, and drive smarter
-              decision-making.
+              Drive innovation and achieve your business goals with tailor-made
+              software solutions. At Zeplinix Technologies, we specialize in
+              designing, developing, and delivering custom software that aligns
+              perfectly with your unique requirements, helping you stay ahead in
+              a competitive market.
             </p>
 
             <Link

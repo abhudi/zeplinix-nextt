@@ -13,101 +13,184 @@ const ProductsDetail = () => {
     // Define the tab titles
     const tabs = [
       "Core features",
-      "AI/ML Features in BohoHR",
-      "Benefits of BohoHR",
+      "Benefits of PredictEase",
       "Industries We Cater To",
-      "Integrated Modules",
+      "Why choose PredictEase",
     ];
 
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Smart Recruitment & Talent Acquisition
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Warranty Purchase Made Easy
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-driven candidate screening and shortlisting.</li>
-          <li>Automated job postings and candidate communication.</li>
+          <li>Browse and compare warranty plans tailored to your products.</li>
           <li>
-            Predictive hiring analytics to identify the best-fit candidates.
+            Enjoy a seamless buying experience with secure payment options.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Employee Lifecycle Management
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Intelligent Claims Management
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>File claims effortlessly with step-by-step guided workflows.</li>
+          <li>Track claim statuses in real-time and receive timely updates.</li>
+        </p>
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Custom Protection Plans
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Track and manage the entire employee journey, from onboarding
-            tooffboarding.
+            Create warranty plans that suit individual lifestyles and needs.
           </li>
           <li>
-            Centralized employee records and streamlined document management.
+            Bundle product coverage with additional benefits like maintenance
+            services.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. AI-Enabled Workforce Insights
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          4. User-Friendly Interface (UI)
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Real-time analytics to monitor employee performance, engagement, and
-            retention.
-          </li>
-          <li>Predictive modeling to forecast workforce trends and needs.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Automated Payroll & Compliance
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Hassle-free payroll processing with integrated tax compliance.
-          </li>
-          <li>Employee benefits administration and error-free calculations.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Customizable Performance Management
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-powered performance reviews and goal tracking.</li>
-          <li>Tailored feedback mechanisms and 360-degree evaluation.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Time & Attendance Tracking
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Advanced scheduling and time tracking integrated with biometric
-            systems.
+            Navigate the platform with ease using an intuitive and responsive
+            design.
           </li>
           <li>
-            AI-enabled attendance pattern analysis to enhance workforce
-            efficiency.
+            Accessible across devices, ensuring convenience for every user.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Employee Engagement Tools
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          5. AI-Driven Recommendations
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Interactive employee portals for communication and collaboration.
+            Receive personalized warranty suggestions based on product usage and
+            history.
+          </li>
+          <li>Optimize coverage plans with intelligent analytics.</li>
+        </p>
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          6. Seamless Integrations
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Integrate with retailer systems for automated warranty
+            registrations.
           </li>
           <li>
-            Gamified recognition programs and surveys to boost engagement.
+            Connect with third-party service providers for claim approvals and
+            repairs.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. Leave & Expense Management
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          7. Paperless Documentation
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Upload, store, and access warranty documents digitally.</li>
+          <li>Retrieve receipts and contracts anytime, anywhere.</li>
+        </p>
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          8. Secure & Compliant
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Safeguard sensitive customer data with advanced encryption.</li>
           <li>
-            Simplified leave applications with automated approval workflows.
+            Stay compliant with regional regulations and industry standards.
           </li>
-          <li>Integrated expense reporting and reimbursement systems.</li>
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
-      <div className="text-white">Content for Tab 5</div>,
+      <div className="bg-[#303030] text-white p-6">Content for Tab 2</div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Convenience
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Manage warranties and claims anytime, from anywhere.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Transparency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Track claims, expenses, and coverage details in real time. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Customization
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Tailored warranty plans for individuals and businesses. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          4. Efficiency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Automate processes, reducing manual effort and errors. </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Electronics & Appliances
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Extended warranties for gadgets, appliances, and smart devices.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Automotive
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Comprehensive coverage for vehicles and parts.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Furniture
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Protection plans for wear and tear over time. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">4. Retail</h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Partner with retailers to enhance post-purchase customer experience.
+          </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. End-to-End Solution
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            From purchasing to claims, everything is handled in one platform.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. User-Centric Design
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Built for seamless navigation and effortless management.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. AI-Enabled Insights
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Optimize offerings with data-driven recommendations. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          4. Trusted Platform
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Reliable, secure, and designed to exceed expectations. </li>
+        </p>
+      </div>,
     ];
 
     return (
@@ -159,12 +242,13 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
-              Transform Your HR with BohoHR
+              Transform Warranty Management with PredictEase
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
-              Experience the future of HR management with BohoHR’s seamless,
-              intelligent, and scalable platform. Let us help you create a
-              thriving workplace culture while simplifying your HR processes.
+              Whether you’re an individual protecting your purchases or a
+              business offering tailored warranty plans, PredictEase is your
+              ultimate solution. Contact us today to see how we can redefine
+              your warranty experience.
             </p>
             <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
               <p className="flex gap-2 items-center">
@@ -224,7 +308,7 @@ const ProductsDetail = () => {
               >
                 {/* First Boho HR text */}
                 <span className="bordereffect text-[96px]  lg:ml-20">
-                  HR management
+                  Predictease
                 </span>
 
                 {/* Single Image between Boho HR texts */}
@@ -242,6 +326,7 @@ const ProductsDetail = () => {
       </div>
     );
   };
+
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
@@ -257,42 +342,29 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              <span className="text-primary">Redefining</span> HR Management
+              <span className="text-primary">Predictease </span>- Your
+              End-to-End Warranty Solution
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">
-              Streamline your HR operations and elevate your workforce
-              management with BohoHR, a cutting-edge platform designed to handle
-              every aspect of human resources. Built with the latest AI and ML
-              technologies, BohoHR delivers intelligent solutions that empower
-              businesses to attract, manage, and retain top talent.
+              Simplify warranty management with Predictease, a comprehensive
+              platform designed to handle everything from warranty purchases to
+              claims. With an intuitive interface and robust backend,
+              Predictease ensures a seamless experience for customers and
+              businesses alike.
             </p>
 
-            <Link
+            <a
               href="#"
-              className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
+              className="text-red-500 font-semibold flex items-center justify-center md:justify-start hover:underline"
             >
-              Free Consultation
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="w-5 h-5"
-                style={{ rotate: "-35deg" }}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
+              Free Consultation &rarr;
+            </a>
           </div>
         </div>
 
         <Marquee />
+
         <div className="relative ">
           <Image
             src="/product-details/bohohr.png"

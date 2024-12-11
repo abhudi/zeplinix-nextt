@@ -257,7 +257,8 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              <span className="text-primary">Redefining</span> HR Management
+              <span className="text-primary">BohoHr </span>- Redefining HR
+              Management
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">

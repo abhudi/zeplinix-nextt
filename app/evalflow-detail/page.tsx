@@ -13,101 +13,184 @@ const ProductsDetail = () => {
     // Define the tab titles
     const tabs = [
       "Core features",
-      "AI/ML Features in BohoHR",
-      "Benefits of BohoHR",
+      "Benefits of Evalflow",
       "Industries We Cater To",
-      "Integrated Modules",
+      "Why choose us",
     ];
 
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Smart Recruitment & Talent Acquisition
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Customizable Scoring Criteria
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-driven candidate screening and shortlisting.</li>
-          <li>Automated job postings and candidate communication.</li>
           <li>
-            Predictive hiring analytics to identify the best-fit candidates.
+            Define and configure evaluation parameters to suit your business
+            needs.
+          </li>
+          <li>
+            Include metrics such as timeliness, quality, cost efficiency, and
+            engagement.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Employee Lifecycle Management
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Automated Rating System
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Track and manage the entire employee journey, from onboarding
-            tooffboarding.
+            Assign scores automatically based on predefined rules and real-time
+            data.
+          </li>
+          <li>Reduce human errors and ensure unbiased evaluations.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Dynamic Reporting and Dashboards
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Visualize client performance with detailed dashboards and analytics.
           </li>
           <li>
-            Centralized employee records and streamlined document management.
+            Generate comprehensive reports for review and strategic planning.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. AI-Enabled Workforce Insights
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          4. Client Comparison and Benchmarking
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Real-time analytics to monitor employee performance, engagement, and
-            retention.
-          </li>
-          <li>Predictive modeling to forecast workforce trends and needs.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Automated Payroll & Compliance
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Hassle-free payroll processing with integrated tax compliance.
-          </li>
-          <li>Employee benefits administration and error-free calculations.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Customizable Performance Management
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-powered performance reviews and goal tracking.</li>
-          <li>Tailored feedback mechanisms and 360-degree evaluation.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Time & Attendance Tracking
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Advanced scheduling and time tracking integrated with biometric
-            systems.
+            Compare scores across clients to identify top performers and
+            improvement areas.
           </li>
           <li>
-            AI-enabled attendance pattern analysis to enhance workforce
-            efficiency.
+            Benchmark performance against industry standards or custom
+            thresholds.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Employee Engagement Tools
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          5. Multi-Factor Integration
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Interactive employee portals for communication and collaboration.
+            Aggregate data from various sources, such as CRM, ERP, or financial
+            tools.
+          </li>
+          <li>Synchronize with existing systems for a seamless data flow.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          6. Alerts and Notifications
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Receive alerts for underperforming scores or critical thresholds.
           </li>
           <li>
-            Gamified recognition programs and surveys to boost engagement.
+            Stay updated with timely notifications for periodic evaluations.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. Leave & Expense Management
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          7. Access Control and User Management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Simplified leave applications with automated approval workflows.
+            Assign roles and permissions to ensure secure access to scorecard
+            data.
           </li>
-          <li>Integrated expense reporting and reimbursement systems.</li>
+          <li>Maintain data confidentiality and compliance.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          8. AI-Driven Insights
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Use predictive analytics to forecast trends and potential risks.
+          </li>
+          <li>
+            Leverage anomaly detection to identify outliers and deviations.
+          </li>
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
-      <div className="text-white">Content for Tab 5</div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Enhanced Decision-Making
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Rely on data-backed insights for better client evaluations.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Improved Client Relationships
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Use ratings to address gaps and improve collaboration.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Efficiency and Accuracy
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Automate evaluations and reduce manual efforts.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Transparency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li> Ensure objective and unbiased scoring across all clients. </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Pharmaceuticals
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Evaluate suppliers on quality, timeliness, and compliance. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">2. Retail</h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Assess vendor performance based on cost and delivery timelines.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Manufacturing
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Rate suppliers on raw material quality and production efficiency.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. IT Services
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Measure client engagement and project success rates.</li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Customizable and Scalable
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Tailored to fit businesses of any size or industry.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. User-Friendly Interface
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Easy to adopt with minimal learning curve. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Actionable Insights
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Gain deeper understanding with intuitive analytics.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Secure and Reliable
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Built on robust security standards to protect your data. </li>
+        </p>
+      </div>,
     ];
 
     return (
@@ -159,12 +242,12 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
-              Transform Your HR with BohoHR
+              Evaluate Better, Perform Smarter
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
-              Experience the future of HR management with BohoHR’s seamless,
-              intelligent, and scalable platform. Let us help you create a
-              thriving workplace culture while simplifying your HR processes.
+              Transform how you assess and engage with clients using our
+              Scorecard Management Tool. Contact us today to learn how our
+              solution can drive growth and build stronger partnerships.
             </p>
             <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
               <p className="flex gap-2 items-center">
@@ -256,15 +339,16 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              <span className="text-primary">Redefining</span> HR Management
+              <span className="text-primary">Evalflow </span>- Evaluate and
+              Empower with Precision
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">
-              Streamline your HR operations and elevate your workforce
-              management with BohoHR, a cutting-edge platform designed to handle
-              every aspect of human resources. Built with the latest AI and ML
-              technologies, BohoHR delivers intelligent solutions that empower
-              businesses to attract, manage, and retain top talent.
+              Make informed decisions and foster better client relationships
+              with our Scorecard Management Tool, a powerful solution designed
+              to evaluate and rate clients based on multiple factors. With
+              real-time insights and automated scoring, our tool ensures
+              transparency, efficiency, and data-driven decision-making.
             </p>
 
             <Link

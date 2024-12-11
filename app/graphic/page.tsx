@@ -20,95 +20,191 @@ const serviceDetails = () => {
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
-        <h2 className="text-2xl font-semibold mb-4">1. Predictive Analytics</h2>
-        <p className="text-lg mb-2">
-          Leverage data-driven predictions to forecast trends, customer
-          behavior, and business outcomes. Optimize decision-making processes
-          using statistical models and machine learning algorithms.
-        </p>
-        <h2 className="text-2xl font-semibold mb-4">
-          2. Natural Language Processing (NLP)
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Creative Graphic Design
         </h2>
-        <p className="text-lg mb-2">
-          Extract value from unstructured text data through sentiment analysis,
-          text summarization, and semantic understanding. Build intelligent
-          chatbots and virtual assistants for enhanced customer interaction.
+        <p className="text-[18px] text-[#909090]">
+          Eye-catching logos, brochures, banners, and more that reflect your
+          brand identity.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">3. Computer Vision</h2>
-        <p className="text-lg mb-2">
-          Develop applications that interpret and analyze visual data such as
-          images and videos. Enable facial recognition, object detection, and
-          quality inspection for diverse industries.
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Custom illustrations and visuals to captivate and engage your
+          audience.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
-          4. AI-Powered Automation
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Social Media Marketing (SMM)
         </h2>
-        <p className="text-lg mb-2">
-          Streamline repetitive tasks using Robotic Process Automation (RPA)
-          integrated with AI. Boost productivity by automating workflows across
-          departments.
+        <p className="text-[18px] text-[#909090]">
+          Build a strong online presence with targeted campaigns on platforms
+          like Facebook, Instagram, LinkedIn, and Twitter.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
-          5. Recommendation Systems
-        </h2>
-        <p className="text-lg mb-2">
-          Personalize user experiences with advanced recommendation engines.
-          Enhance product discovery and customer satisfaction with AI-driven
-          suggestions.
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Boost engagement and reach with paid promotions, organic content
+          strategies, and influencer collaborations.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
-          6. Custom Machine Learning Models
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Digital Advertising Campaigns
         </h2>
-        <p className="text-lg mb-2">
-          Design and deploy tailored machine learning models to solve specific
-          business challenges. Improve efficiency, accuracy, and scalability
-          with customized AI solutions.
+        <p className="text-[18px] text-[#909090]">
+          Develop and manage Google Ads, Facebook Ads, and PPC campaigns to
+          maximize ROI.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
-          7. Data Engineering & Preprocessing
-        </h2>
-        <p className="text-lg mb-2">
-          Ensure clean, structured, and usable datasets for effective AI model
-          training. Handle data transformation, feature extraction, and
-          real-time data pipelines.
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Run remarketing campaigns to re-engage potential customers.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
-          8. AI Model Deployment & Monitoring
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Branding and Identity Creation
         </h2>
-        <p className="text-lg mb-2">
-          Seamlessly integrate AI models into your existing systems with
-          scalable architecture. Monitor, evaluate, and optimize models in
-          real-time to ensure peak performance.
+        <p className="text-[18px] text-[#909090]">
+          Craft compelling brand strategies that resonate with your audience.
+        </p>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Develop consistent branding across all platforms and materials.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          5. Content Creation
+        </h2>
+        <p className="text-[18px] text-[#909090]">
+          Create high-quality, engaging content tailored to your audience.
+        </p>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Develop blogs, ad copy, and social media posts that drive action.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          6. Video and Motion Graphics
+        </h2>
+        <p className="text-[18px] text-[#909090]">
+          Deliver stunning explainer videos, promotional animations, and product
+          showcases.
+        </p>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Use storytelling and dynamic visuals to leave a lasting impression.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          7. Campaign Analytics and Reporting
+        </h2>
+        <p className="text-[18px] text-[#909090]">
+          Monitor performance with detailed insights into reach, engagement, and
+          conversions.
+        </p>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Optimize campaigns based on data-driven decisions for maximum impact.
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">1. Retail</h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Dynamic product campaigns and seasonal promotions.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Healthcare
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Trust-building graphics and educational content.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Real Estate
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          High-impact visuals and geo-targeted ads.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. E-commerce
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Retargeting ads and conversion-focused creatives.
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Creative Expertise
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Designs that inspire, content that converts, and campaigns that
+          deliver.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Strategic Approach
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Data-driven strategies to amplify your brand’s voice.
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. End-to-End Solutions
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          From ideation to execution, we cover it all.
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">1. Design</h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Adobe Photoshop, Illustrator, After Effects, Canva
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Advertising
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Google Ads, Facebook Ads Manager, LinkedIn Campaign Manager
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Social Tools
+        </h2>
+
+        <p className="text-[18px] mb-4 text-[#909090]">
+          Hootsuite, Buffer, Sprout Social
+        </p>
+      </div>,
     ];
 
     return (
       <div className="flex flex-col md:flex-row mt-10 md:mt-20">
         {/* Left Side: Tabs */}
-        <div className="md:w-1/4 w-full mb-6 md:mb-0">
+        <div className="md:w-2/5 w-full mb-6 md:mb-0">
           <div className="space-y-2">
             {tabs.map((tab, index) => (
               <div
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`p-3 cursor-pointer rounded-md ${
+                className={`p-3 pt-5 cursor-pointer rounded-md flex items-center gap-2 ${
                   activeTab === index
                     ? "border-t-0.4 border-[#454545] text-primary text-xl md:text-2xl"
                     : "border-t-0.4 border-[#454545] text-white text-xl md:text-2xl"
                 }`}
               >
                 {tab}
+                {/* Show SVG only if activeTab matches index and on small screens */}
+                {activeTab === index && (
+                  <svg
+                    className="w-5 h-5 sm:inline hidden"
+                    width="28"
+                    height="21"
+                    viewBox="0 0 28 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                      fill="#E63946"
+                    />
+                  </svg>
+                )}
               </div>
             ))}
           </div>
         </div>
 
         {/* Right Side: Tab content */}
-        <div className="md:w-3/4 w-full">{tabContent[activeTab]}</div>
+        <div className="md:w-3/5 w-full">{tabContent[activeTab]}</div>
       </div>
     );
   };
@@ -119,16 +215,32 @@ const serviceDetails = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
-              Transform Your Business with AI/ML
+              Amplify Your Brand’s Reach
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
-              Empower your organization with smarter, faster, and more efficient
-              processes. Let us help you lead in the era of AI. Contact us today
-              to discuss your AI/ML needs and take the first step towards
-              innovation!
+              Let us craft impactful designs, engaging content, and winning
+              strategies to elevate your business. Contact us today to start
+              making waves in the digital space.
             </p>
-            <button className="px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-[white] font-semibold rounded-full shadow-lg transition border border-light-gray">
-              Contact now
+            <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
+              <p className="flex gap-2 items-center">
+                Contact now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                  style={{ rotate: "-35deg" }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </p>
             </button>
           </div>
 
@@ -228,15 +340,15 @@ const serviceDetails = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              AI/ML Services
+              Graphic Services
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">
-              Unlock the potential of your business with cutting-edge AI and
-              Machine Learning solutions. At Zeplinix Technologies, we harness
-              the power of artificial intelligence to transform data into
-              actionable insights, automate workflows, and drive smarter
-              decision-making.
+              Elevate your brand presence and connect with your audience like
+              never before. At Zeplinix Technologies, we combine creative
+              design, strategic advertising, and impactful social media
+              campaigns to help businesses stand out in the digital world and
+              achieve measurable results.
             </p>
 
             <Link

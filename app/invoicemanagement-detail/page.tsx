@@ -13,101 +13,198 @@ const ProductsDetail = () => {
     // Define the tab titles
     const tabs = [
       "Core features",
-      "AI/ML Features in BohoHR",
-      "Benefits of BohoHR",
+      "AI/ML features in invoice management",
+      "Benefits of invoice management",
       "Industries We Cater To",
-      "Integrated Modules",
+      "Why choose invoice management?",
     ];
 
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Smart Recruitment & Talent Acquisition
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Automated Invoice Generation
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-driven candidate screening and shortlisting.</li>
-          <li>Automated job postings and candidate communication.</li>
           <li>
-            Predictive hiring analytics to identify the best-fit candidates.
+            Create professional invoices instantly with pre-designed templates.
+          </li>
+          <li>
+            Automate recurring invoices for subscription-based businesses.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Employee Lifecycle Management
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Multi-Currency Support
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Track and manage the entire employee journey, from onboarding
-            tooffboarding.
+            Seamlessly generate and process invoices in multiple currencies.
           </li>
           <li>
-            Centralized employee records and streamlined document management.
+            Stay compliant with global tax regulations for cross-border
+            transactions.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. AI-Enabled Workforce Insights
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Real-Time Payment Tracking
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Real-time analytics to monitor employee performance, engagement, and
-            retention.
-          </li>
-          <li>Predictive modeling to forecast workforce trends and needs.</li>
+          <li>Monitor payment status with automated updates.</li>
+          <li>Send reminders for pending payments to reduce delays.</li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Automated Payroll & Compliance
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          4. Customizable Invoice Templates
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Tailor invoice designs to reflect your brand identity.</li>
           <li>
-            Hassle-free payroll processing with integrated tax compliance.
-          </li>
-          <li>Employee benefits administration and error-free calculations.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Customizable Performance Management
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>AI-powered performance reviews and goal tracking.</li>
-          <li>Tailored feedback mechanisms and 360-degree evaluation.</li>
-        </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Time & Attendance Tracking
-        </h2>
-        <p className="text-[18px] mb-4 text-[#909090]">
-          <li>
-            Advanced scheduling and time tracking integrated with biometric
-            systems.
-          </li>
-          <li>
-            AI-enabled attendance pattern analysis to enhance workforce
-            efficiency.
+            Include personalized notes, payment terms, and client details.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Employee Engagement Tools
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          5. Integration with Financial Tools
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Interactive employee portals for communication and collaboration.
+            Sync seamlessly with your existing accounting software like
+            QuickBooks, Xero, or SAP.
           </li>
           <li>
-            Gamified recognition programs and surveys to boost engagement.
+            Connect with payment gateways for effortless payment processing.
           </li>
         </p>
-        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. Leave & Expense Management
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          6. Tax Calculation & Compliance
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Simplified leave applications with automated approval workflows.
+            Automate tax calculations, including GST, VAT, and other
+            region-specific requirements.
           </li>
-          <li>Integrated expense reporting and reimbursement systems.</li>
+          <li>Generate accurate reports for audits and filings.</li>
+        </p>
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          7. Comprehensive Reporting & Insights
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Gain insights into receivables, payment trends, and client behavior.
+          </li>
+          <li>
+            Access real-time dashboards for better financial decision-making.
+          </li>
+        </p>
+
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          8. Secure Data Storage
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Store and access invoices securely with advanced encryption.</li>
+          <li>
+            Ensure compliance with GDPR and other data protection standards.
+          </li>
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
-      <div className="text-white">Content for Tab 5</div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Fraud Detection
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Identify anomalies in transactions to prevent fraud.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Smart Payment Predictions
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Forecast payment cycles based on client behavior. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. OCR Integration
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Automatically extract details from scanned documents. </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Efficiency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Save time with automation and reduce manual errors. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Scalability
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Designed to grow with your business, from small startups to large
+            enterprises.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Transparency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Gain full visibility into your financial processes.</li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Retail & E-Commerce
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Automated billing for high-volume transactions. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. Professional Services
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Streamlined invoicing for recurring and project-based payments.{" "}
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Healthcare
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Easy billing for clinics, hospitals, and pharmacies.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          4. Real Estate
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            {" "}
+            Simplified invoice management for property sales and rentals.{" "}
+          </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          1. Custom Solutions
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Tailored to meet your industry-specific needs.</li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          2. User-Friendly Design
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Easy to adopt with minimal learning curve. </li>
+        </p>
+        <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
+          3. Secure and Compliant
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>Built with security and regulatory standards in mind. </li>
+        </p>
+      </div>,
     ];
 
     return (
@@ -159,12 +256,12 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
-              Transform Your HR with BohoHR
+              Revolutionize Your Invoice Management
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
-              Experience the future of HR management with BohoHR’s seamless,
-              intelligent, and scalable platform. Let us help you create a
-              thriving workplace culture while simplifying your HR processes.
+              Take the hassle out of invoicing with our smart, efficient, and
+              reliable solution. Contact us today to explore how our Invoice
+              Management Solution can simplify your business operations.
             </p>
             <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
               <p className="flex gap-2 items-center">
@@ -224,7 +321,7 @@ const ProductsDetail = () => {
               >
                 {/* First Boho HR text */}
                 <span className="bordereffect text-[96px]  lg:ml-20">
-                  Boho HR
+                  Invoice management
                 </span>
 
                 {/* Single Image between Boho HR texts */}
@@ -257,15 +354,16 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              <span className="text-primary">Redefining</span> HR Management
+              <span className="text-primary">Invoice</span> Management Solution
             </h1>
 
             <p className="text-lg text-gray-300 text-center md:text-left">
-              Streamline your HR operations and elevate your workforce
-              management with BohoHR, a cutting-edge platform designed to handle
-              every aspect of human resources. Built with the latest AI and ML
-              technologies, BohoHR delivers intelligent solutions that empower
-              businesses to attract, manage, and retain top talent.
+              Simplify billing and improve cash flow with our Invoice Management
+              Solution, designed to automate your invoicing process, enhance
+              accuracy, and provide real-time insights into your financial
+              operations. Perfect for businesses of all sizes, our solution
+              ensures you spend less time on paperwork and more time growing
+              your business.
             </p>
 
             <Link
