@@ -92,22 +92,21 @@ export default function Blogcards() {
               </p>
               <a
                 href="#"
-                className="text-red-400 text-sm mt-4 flex items-center gap-2"
+                className="text-[#E63946] text-sm mt-4 flex items-center gap-2"
               >
                 Read More
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 sm:inline hidden"
+                  width="28"
+                  height="21"
+                  viewBox="0 0 28 21"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
                   style={{ rotate: "-35deg" }}
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                    fill="#E63946"
                   />
                 </svg>
               </a>
