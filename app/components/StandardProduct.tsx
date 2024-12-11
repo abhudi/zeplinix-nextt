@@ -105,7 +105,7 @@ const CardCarousel = () => {
       >
         {cardsData.map((card, index) => (
           <SwiperSlide key={index} className="flex justify-center">
-            <div className="max-w-xs transform -translate-x-2">
+            <div className="max-w-md transform -translate-x-2">
               <RenewalCard
                 imageSrc={card.imageSrc}
                 title={card.title}

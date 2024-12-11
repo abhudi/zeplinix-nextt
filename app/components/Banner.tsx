@@ -96,27 +96,27 @@ const Banner: React.FC = () => {
         {" "}
         {/* Adjusted padding here */}
         <div className="relative flex lg:justify-end items-center w-full lg:h-screen">
-          <div className="flex gap-5 w-full lg:justify-end justify-center  px-4">
+          <div className="flex gap-5 w-full lg:justify-end justify-center px-4">
             {/* Left Box */}
             <div className="w-1/3 flex justify-center items-center">
-              <div className="w-full max-w-[152px] lg:h-[122px] md:h-[122px] h-[135px]  bg-glass text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
-                <h2 className="text-sm ">Valued projects</h2>
-                <p className="font-semibold text-[30px] mt-10">60+</p>
+              <div className="w-full max-w-[152px] lg:h-[122px] md:h-[122px] h-[135px] sm:h-[135px] bg-glass text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg flex flex-col justify-between">
+                <h2 className="text-sm">Valued projects</h2>
+                <p className="font-semibold text-[30px]">60+</p>
               </div>
             </div>
 
             {/* Right Box (Stacked) */}
             <div className="flex flex-col space-y-4 xl:space-y-12 w-1/3">
               {/* Box 1 */}
-              <div className="bg-glass max-w-[152px] h-[122px] sm:h-auto text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
-                <h2 className="text-sm ">Trusted clients</h2>
-                <p className="font-semibold text-[30px] mt-10">24+</p>
+              <div className="bg-glass max-w-[152px] h-[135px] sm:h-[135px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg flex flex-col justify-between">
+                <h2 className="text-sm">Trusted clients</h2>
+                <p className="font-semibold text-[30px]">24+</p>
               </div>
 
               {/* Box 2 */}
-              <div className="bg-glass max-w-[152px] h-[122px] sm:h-auto text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
-                <h2 className="text-sm ">Team size</h2>
-                <p className="font-semibold text-[30px] mt-10">45+</p>
+              <div className="bg-glass max-w-[152px] h-[135px] sm:h-[135px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg flex flex-col justify-between">
+                <h2 className="text-sm">Team size</h2>
+                <p className="font-semibold text-[30px]">45+</p>
               </div>
             </div>
           </div>
