@@ -22,19 +22,19 @@ export default function TestimonialMap() {
       name: "John Doe",
       title: "CEO of InnovateX",
       description:
-        "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
     {
       name: "Sara Smith",
       title: "Founder of GreenTech",
       description:
-        "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
     {
       name: "Tom Harris",
       title: "Co-Founder of Healthify",
       description:
-        "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },
   ];
 

@@ -32,15 +32,17 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Strategy and Consultancy
+                Software Development
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
-                Expert insights to drive your business forward. We analyze your
-                current operations, identify growth opportunities, and develop
-                tailored strategies to optimize performance.
+                Drive innovation and achieve your business goals with
+                tailor-made software solutions. At Zeplinix , we specialize in
+                designing, developing, and delivering custom software that
+                aligns perfectly with your requirements, helping you stay ahead
+                in a market.
               </p>
               <Link
-                href="/"
+                href="/software"
                 className="text-primary text-fs-16 font-bold flex items-center gap-1"
               >
                 Learn more
@@ -96,15 +98,16 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Strategy and Consultancy
+                Data Analytics
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
-                Expert insights to drive your business forward. We analyze your
-                current operations, identify growth opportunities, and develop
-                tailored strategies to optimize performance.
+                Transform your data into actionable insights with our advanced
+                Data Analytics solutions. At Zeplinix Technologies, we empower
+                businesses to make informed decisions, optimize operations, and
+                uncover new opportunities through data-driven strategies.
               </p>
               <Link
-                href="/"
+                href="/data"
                 className="text-primary text-fs-16 font-bold flex items-center gap-1"
               >
                 Learn more
@@ -152,15 +155,16 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Strategy and Consultancy
+                Cloud Services
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
-                Expert insights to drive your business forward. We analyze your
-                current operations, identify growth opportunities, and develop
-                tailored strategies to optimize performance.
+                Empower your business with scalable, secure, and efficient cloud
+                and infrastructure solutions. At Zeplinix Technologies, we help
+                businesses modernize their IT operations, optimize performance,
+                and enhance agility through cutting-edge cloud technologies .
               </p>
               <Link
-                href="/"
+                href="/cloud"
                 className="text-primary text-fs-16 font-bold flex items-center gap-1"
               >
                 Learn more
@@ -208,15 +212,16 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Strategy and Consultancy
+                Graphic Designing
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
-                Expert insights to drive your business forward. We analyze your
-                current operations, identify growth opportunities, and develop
-                tailored strategies to optimize performance.
+                Elevate your brand presence and connect with your audience like
+                never before. At Zeplinix Technologies, we combine creative
+                design, strategic advertising, and impactful social media
+                campaigns to help businesses stand out in the digital world .
               </p>
               <Link
-                href="/"
+                href="/graphic"
                 className="text-primary text-fs-16 font-bold flex items-center gap-1"
               >
                 Learn more

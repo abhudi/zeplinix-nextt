@@ -16,35 +16,51 @@ interface CardData {
 const cardsData: CardData[] = [
   {
     imageSrc: "/homepage/renewal.png",
-    title: "Renewal Tool",
+    title: "Convert IQ",
     description:
-      "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes. It streamlines the management of warranty expirations, helping businesses track and communicate.",
+      "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
     linkText: "Explore More",
-    linkHref: "#",
+    linkHref: "/convertiq-detail",
   },
   {
     imageSrc: "/homepage/renewal.png",
-    title: "Analytics Tool",
+    title: "Boho HR",
     description:
-      "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes. It streamlines the management of warranty expirations, helping businesses track and communicate.",
-    linkText: "Learn More",
-    linkHref: "#",
+      "BohoHR is an all-in-one HR management platform designed to simplify and automate your workforce operations. From recruitment and onboarding to performance evaluations, payroll, and employee engagement, BohoHR streamlines every aspect of employee management.",
+    linkText: "Explore More",
+    linkHref: "/hr-detail",
   },
   {
     imageSrc: "/homepage/renewal.png",
-    title: "Project Management",
+    title: "Evalflow",
     description:
-      "The Renewal Tool is a software solution designed to automate the generation of warranty renewal notifications and processes. It streamlines the management of warranty expirations, helping businesses track and communicate.",
-    linkText: "Get Started",
-    linkHref: "#",
+      "Make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency.",
+    linkText: "Explore More",
+    linkHref: "/evalflow-detail",
   },
   {
     imageSrc: "/homepage/renewal.png",
-    title: "Customer Support",
+    title: "StockIQ",
     description:
-      "The Customer Support tool enhances communication and response times, helping businesses improve customer satisfaction and support processes.",
-    linkText: "Contact Us",
-    linkHref: "#",
+      "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
+    linkText: "Explore More",
+    linkHref: "/stockiq-detail",
+  },
+  {
+    imageSrc: "/homepage/renewal.png",
+    title: "PredictEase",
+    description:
+      "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike.",
+    linkText: "Explore More",
+    linkHref: "/predictease-detail",
+  },
+  {
+    imageSrc: "/homepage/renewal.png",
+    title: "Invoice Management",
+    description:
+      "Invoice Management is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
+    linkText: "Explore More",
+    linkHref: "/invoicemanagement-detail",
   },
 ];
 
