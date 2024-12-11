@@ -196,18 +196,17 @@ const serviceDetails = () => {
               <p className="flex gap-2 items-center">
                 Contact now
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 sm:inline hidden"
+                  width="28"
+                  height="21"
+                  viewBox="0 0 28 21"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
                   style={{ rotate: "-35deg" }}
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                    fill="#ffffff"
                   />
                 </svg>
               </p>
@@ -298,22 +297,37 @@ const serviceDetails = () => {
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
-        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-2 border-[#7A7878] mb-5">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-0.4 border-[#616161] mb-5">
           {/* Left Side Content */}
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
             <div className="relative">
-              <div className="w-12 h-12 rounded-full border-2 border-red-600 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full border-2 border-[#8B8B8B] flex items-center justify-center">
                 <Link href="/service">
-                  <span className="text-red-600 font-bold text-lg">&larr;</span>
+                  <span className="text-red-600 font-bold text-lg">
+                    <svg
+                      className="w-5 h-5 sm:inline hidden"
+                      width="28"
+                      height="21"
+                      viewBox="0 0 28 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{ rotate: "-180deg" }}
+                    >
+                      <path
+                        d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                        fill="#E63946"
+                      />
+                    </svg>
+                  </span>
                 </Link>
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left">
               Data Analytics Services
             </h1>
 
-            <p className="text-lg text-gray-300 text-center md:text-left">
+            <p className="text-lg text-[#909090] text-center md:text-left">
               Transform your data into actionable insights with our advanced
               Data Analytics solutions. At Zeplinix Technologies, we empower
               businesses to make informed decisions, optimize operations, and
@@ -326,18 +340,17 @@ const serviceDetails = () => {
             >
               Free Consultation
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 sm:inline hidden"
+                width="28"
+                height="21"
+                viewBox="0 0 28 21"
                 fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
                 style={{ rotate: "-35deg" }}
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                  fill="#E63946"
                 />
               </svg>
             </Link>
