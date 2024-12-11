@@ -48,7 +48,7 @@ const Banner: React.FC = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-          <button className="px-6 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition flex items-center gap-2">
+          <button className="px-6 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition sm:flex items-center gap-2">
             Contact Us
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Banner: React.FC = () => {
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="w-5 h-5"
+              className="w-5 h-5 hidden lg:block md:block"
               style={{ rotate: "-35deg" }}
             >
               <path
@@ -67,7 +67,7 @@ const Banner: React.FC = () => {
             </svg>
           </button>
 
-          <button className="px-6 py-3 bg-transparent text-white font-semibold rounded-full shadow-lg hover:bg-primary transition border border-light-gray flex items-center gap-2">
+          <button className="px-6 py-3 bg-transparent text-white font-semibold rounded-full shadow-lg hover:bg-primary transition border border-light-gray sm:flex items-center gap-2">
             Explore More
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const Banner: React.FC = () => {
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="w-5 h-5"
+              className="w-5 h-5 hidden lg:block md:block"
               style={{ rotate: "-35deg" }}
             >
               <path
