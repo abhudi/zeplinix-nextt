@@ -75,7 +75,7 @@ const HomeServiceCard: React.FC = () => {
             </div>
           </div>
           <div
-            className="absolute inset-0 z-[-1] w-[200px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[700px] lg:w-[357px] lg:h-[357px] left-[160px] sm:left-[300px] md:left-[720px] top-[-50px] sm:top-[-75px] lg:top-[-150px] opacity-50"
+            className="absolute inset-0 z-[-1] w-[200px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[700px] lg:w-[357px] lg:h-[357px] left-[160px] sm:left-[300px] md:left-[720px] top-[-50px] sm:top-[-75px] lg:top-[-150px] opacity-50 hidden lg:block"
             style={{
               background:
                 "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.63) 0%, rgba(128, 32, 39, 0) 100%)",
