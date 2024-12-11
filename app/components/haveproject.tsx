@@ -6,9 +6,16 @@ const HaveProject = () => {
       <div className="lg:mt-36 lg:mb-28 mb-10 mt-10 ">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-[370px] w-full p-10 lg:p-4 md:p-4  flex-row  lg:flex md:flex items-center justify-center gap-20">
-            <div>
-              <Image src="/have-project.png" alt="" width={300} height={300} />
+            <div className="w-[150px] h-[150px] sm:w-[300px] sm:h-[300px]">
+              <Image
+                src="/have-project.png"
+                alt=""
+                width={300}
+                height={300}
+                className="w-full h-full"
+              />
             </div>
+
             <div className=" justify-center items-center text-center">
               <h1 className="text-fs-24 md:text-fs-34 lg:text-fs-54 leading-tight text-[#2D2D2D]">
                 Lets grow together
