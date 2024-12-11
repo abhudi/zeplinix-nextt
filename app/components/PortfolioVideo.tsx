@@ -21,6 +21,7 @@ const PortfolioVideo: React.FC = () => {
           className="w-full h-full object-cover"
           autoPlay
           loop
+          playsInline
           muted={isMuted}
         >
           <source src="/portfolio.mp4" type="video/mp4" />
