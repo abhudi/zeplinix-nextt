@@ -6,7 +6,13 @@ const Banner: React.FC = () => {
     <div className="relative w-full h-auto sm:h-[100%] lg:h-[40rem] xl:h-[48rem] flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-gray-800 text-white mb-8 lg:px-10">
       {/* Video Background using ::before */}
       <div className="absolute inset-0 before:absolute before:inset-0 before:bg-black/40 before:z-10">
-        <video className="w-full h-full object-cover" autoPlay loop muted>
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src="/earth.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -93,7 +99,7 @@ const Banner: React.FC = () => {
           <div className="flex gap-5 w-full lg:justify-end justify-center  px-4">
             {/* Left Box */}
             <div className="w-1/3 flex justify-center items-center">
-              <div className="w-full max-w-[152px] h-[122px] bg-glass text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
+              <div className="w-full max-w-[152px] lg:h-[122px] md:h-[122px] h-[135px]  bg-glass text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Valued projects</h2>
                 <p className="font-semibold text-[30px] mt-10">60+</p>
               </div>
@@ -102,13 +108,13 @@ const Banner: React.FC = () => {
             {/* Right Box (Stacked) */}
             <div className="flex flex-col space-y-4 xl:space-y-12 w-1/3">
               {/* Box 1 */}
-              <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
+              <div className="bg-glass max-w-[152px] h-[122px] sm:h-auto text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Trusted clients</h2>
                 <p className="font-semibold text-[30px] mt-10">24+</p>
               </div>
 
               {/* Box 2 */}
-              <div className="bg-glass max-w-[152px] h-[122px] text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
+              <div className="bg-glass max-w-[152px] h-[122px] sm:h-auto text-white p-3 rounded-lg shadow-lg border-0.4 border-lighest-gray backdrop-blur-lg">
                 <h2 className="text-sm ">Team size</h2>
                 <p className="font-semibold text-[30px] mt-10">45+</p>
               </div>
