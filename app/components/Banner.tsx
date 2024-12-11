@@ -30,10 +30,7 @@ const Banner: React.FC = () => {
             Building your Dreams
           </button>
           {/* Main Heading */}
-          <h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-normal "
-            style={{ lineHeight: "67px" }}
-          >
+          <h1 className="text-[30px] sm:text-[36px] lg:text-[48px] font-normal sm:leading-20 lg:leading-67 ">
             Zeplinix where <span className="text-red-500">innovation</span>{" "}
             meets digital transformation
           </h1>

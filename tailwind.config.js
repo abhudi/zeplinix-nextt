@@ -55,6 +55,7 @@ module.exports = {
       lineHeight: {
         1.2: "5px",
         26: "26px",
+        67: "67px", // Custom line-height
       },
       animation: {
         "square-1":
