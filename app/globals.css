@@ -139,3 +139,96 @@ body {
   height: 50px; /* Smaller logo size */
   width: 50px; /* Smaller logo size */
 }
+
+/* marquess */
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+}
+
+.marquee-scroll {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+  line-height: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 6s linear infinite;
+}
+
+.marquee-scroll img {
+  height: 80px;
+  padding: 0 16px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.bordereffect span {
+  position: relative;
+}
+
+.bordereffect span::after {
+  position: absolute;
+  background: #fff;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -32px;
+  transform: scaleX(0);
+  transition: transform 0.6s ease, transform-origin 0s 0.6s;
+  transform-origin: left;
+  will-change: transform;
+}
+
+.bordereffect span:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.6s ease, transform-origin 0s;
+}
+
+.bordereffect span:not(:hover)::after {
+  transform: scaleX(0);
+  transition: transform 0.6s ease, transform-origin 0s;
+  transform-origin: right;
+}
+
+.images-container {
+  will-change: transform;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  transition: clip-path 0.6s ease;
+  clip-path: inset(100% 0 0 0);
+}
+
+.show-images.image {
+  clip-path: inset(0 0 0 0);
+}
+
+.centuria {
+  width: 100%;
+  text-align: center;
+  font-family: Monospace;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  color: #969696;
+  bottom: 8px;
+  right: 8px;
+}

@@ -20,62 +20,66 @@ const serviceDetails = () => {
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
-        <h2 className="text-2xl font-semibold mb-4">1. Predictive Analytics</h2>
-        <p className="text-lg mb-2">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Predictive Analytics
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
           Leverage data-driven predictions to forecast trends, customer
           behavior, and business outcomes. Optimize decision-making processes
           using statistical models and machine learning algorithms.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           2. Natural Language Processing (NLP)
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           Extract value from unstructured text data through sentiment analysis,
           text summarization, and semantic understanding. Build intelligent
           chatbots and virtual assistants for enhanced customer interaction.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">3. Computer Vision</h2>
-        <p className="text-lg mb-2">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Computer Vision
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
           Develop applications that interpret and analyze visual data such as
           images and videos. Enable facial recognition, object detection, and
           quality inspection for diverse industries.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           4. AI-Powered Automation
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           Streamline repetitive tasks using Robotic Process Automation (RPA)
           integrated with AI. Boost productivity by automating workflows across
           departments.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           5. Recommendation Systems
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           Personalize user experiences with advanced recommendation engines.
           Enhance product discovery and customer satisfaction with AI-driven
           suggestions.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           6. Custom Machine Learning Models
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           Design and deploy tailored machine learning models to solve specific
           business challenges. Improve efficiency, accuracy, and scalability
           with customized AI solutions.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           7. Data Engineering & Preprocessing
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           Ensure clean, structured, and usable datasets for effective AI model
           training. Handle data transformation, feature extraction, and
           real-time data pipelines.
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           8. AI Model Deployment & Monitoring
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           Seamlessly integrate AI models into your existing systems with
           scalable architecture. Monitor, evaluate, and optimize models in
           real-time to ensure peak performance.
@@ -89,26 +93,42 @@ const serviceDetails = () => {
     return (
       <div className="flex flex-col md:flex-row mt-10 md:mt-20">
         {/* Left Side: Tabs */}
-        <div className="md:w-1/4 w-full mb-6 md:mb-0">
+        <div className="md:w-2/5 w-full mb-6 md:mb-0">
           <div className="space-y-2">
             {tabs.map((tab, index) => (
               <div
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`p-3 cursor-pointer rounded-md ${
+                className={`p-3 pt-5 cursor-pointer rounded-md flex items-center gap-2 ${
                   activeTab === index
                     ? "border-t-0.4 border-[#454545] text-primary text-xl md:text-2xl"
                     : "border-t-0.4 border-[#454545] text-white text-xl md:text-2xl"
                 }`}
               >
                 {tab}
+                {/* Show SVG only if activeTab matches index and on small screens */}
+                {activeTab === index && (
+                  <svg
+                    className="w-5 h-5 sm:inline hidden"
+                    width="28"
+                    height="21"
+                    viewBox="0 0 28 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                      fill="#E63946"
+                    />
+                  </svg>
+                )}
               </div>
             ))}
           </div>
         </div>
 
         {/* Right Side: Tab content */}
-        <div className="md:w-3/4 w-full">{tabContent[activeTab]}</div>
+        <div className="md:w-3/5 w-full">{tabContent[activeTab]}</div>
       </div>
     );
   };

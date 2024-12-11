@@ -79,7 +79,7 @@ const ProductCard = () => {
   }, [cardData.length]);
 
   return (
-    <div className="carousel-container relative mb-24 overflow-hidden">
+    <div className="carousel-container relative mb-10 overflow-hidden">
       <div
         className="carousel flex transition-all duration-500 ease-in-out"
         style={{

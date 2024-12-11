@@ -22,20 +22,20 @@ const ProductsDetail = () => {
     // Define the content for each tab
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           1. Smart Recruitment & Talent Acquisition
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>AI-driven candidate screening and shortlisting.</li>
           <li>Automated job postings and candidate communication.</li>
           <li>
             Predictive hiring analytics to identify the best-fit candidates.
           </li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           2. Employee Lifecycle Management
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>
             Track and manage the entire employee journey, from onboarding
             tooffboarding.
@@ -44,36 +44,36 @@ const ProductsDetail = () => {
             Centralized employee records and streamlined document management.
           </li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           3. AI-Enabled Workforce Insights
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>
             Real-time analytics to monitor employee performance, engagement, and
             retention.
           </li>
           <li>Predictive modeling to forecast workforce trends and needs.</li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           4. Automated Payroll & Compliance
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>
             Hassle-free payroll processing with integrated tax compliance.
           </li>
           <li>Employee benefits administration and error-free calculations.</li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           5. Customizable Performance Management
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>AI-powered performance reviews and goal tracking.</li>
           <li>Tailored feedback mechanisms and 360-degree evaluation.</li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           6. Time & Attendance Tracking
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>
             Advanced scheduling and time tracking integrated with biometric
             systems.
@@ -83,10 +83,10 @@ const ProductsDetail = () => {
             efficiency.
           </li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           7. Employee Engagement Tools
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>
             Interactive employee portals for communication and collaboration.
           </li>
@@ -94,10 +94,10 @@ const ProductsDetail = () => {
             Gamified recognition programs and surveys to boost engagement.
           </li>
         </p>
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
           8. Leave & Expense Management
         </h2>
-        <p className="text-lg mb-2">
+        <p className="text-[18px] mb-4 text-[#909090]">
           <li>
             Simplified leave applications with automated approval workflows.
           </li>
@@ -113,26 +113,42 @@ const ProductsDetail = () => {
     return (
       <div className="flex flex-col md:flex-row mt-10 md:mt-20">
         {/* Left Side: Tabs */}
-        <div className="md:w-1/4 w-full mb-6 md:mb-0">
+        <div className="md:w-2/5 w-full mb-6 md:mb-0">
           <div className="space-y-2">
             {tabs.map((tab, index) => (
               <div
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`p-3 cursor-pointer rounded-md ${
+                className={`p-3 pt-5 cursor-pointer rounded-md flex items-center gap-2 ${
                   activeTab === index
                     ? "border-t-0.4 border-[#454545] text-primary text-xl md:text-2xl"
                     : "border-t-0.4 border-[#454545] text-white text-xl md:text-2xl"
                 }`}
               >
                 {tab}
+                {/* Show SVG only if activeTab matches index and on small screens */}
+                {activeTab === index && (
+                  <svg
+                    className="w-5 h-5 sm:inline hidden"
+                    width="28"
+                    height="21"
+                    viewBox="0 0 28 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                      fill="#E63946"
+                    />
+                  </svg>
+                )}
               </div>
             ))}
           </div>
         </div>
 
         {/* Right Side: Tab content */}
-        <div className="md:w-3/4 w-full">{tabContent[activeTab]}</div>
+        <div className="md:w-3/5 w-full">{tabContent[activeTab]}</div>
       </div>
     );
   };
@@ -150,8 +166,25 @@ const ProductsDetail = () => {
               intelligent, and scalable platform. Let us help you create a
               thriving workplace culture while simplifying your HR processes.
             </p>
-            <button className="px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-[white] font-semibold rounded-full shadow-lg transition border border-light-gray">
-              Contact us today
+            <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
+              <p className="flex gap-2 items-center">
+                Contact us today
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                  style={{ rotate: "-35deg" }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </p>
             </button>
           </div>
 
@@ -177,6 +210,38 @@ const ProductsDetail = () => {
     );
   };
 
+  const Marquee = () => {
+    return (
+      <div className="relative w-full overflow-hidden cursor-pointer pt-5">
+        {/* Marquee container */}
+        <div className="marquee-container">
+          <div className="marquee bordereffect">
+            {/* Marquee Scroll Section */}
+            {[1, 2, 3].map((_, index) => (
+              <div
+                key={index}
+                className="marquee-scroll flex items-center justify-center"
+              >
+                {/* First Boho HR text */}
+                <span className="bordereffect text-[96px]  lg:ml-20">
+                  Boho HR
+                </span>
+
+                {/* Single Image between Boho HR texts */}
+                <Image
+                  src="/product-details/star.png"
+                  alt="Star Image"
+                  width={100}
+                  height={100}
+                  className="object-contain mx-4" // Ensures the image fits and adds margin between text and image
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
@@ -227,7 +292,9 @@ const ProductsDetail = () => {
           </div>
         </div>
 
-        <div className="relative mt-52">
+        <Marquee />
+
+        <div className="relative ">
           <Image
             src="/product-details/bohohr.png"
             alt="map"

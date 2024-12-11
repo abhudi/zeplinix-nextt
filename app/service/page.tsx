@@ -60,27 +60,27 @@ export default function Service() {
   const ServicePage = () => {
     // Service data array
     const services = [
-      {
-        title: "Application Services",
-        icon: "/service/icons/flutter.png",
-        content:
-          "Covers the full lifecycle of software applications, from development and deployment to ongoing maintenance. Our focus is on ensuring optimal performance, security, and user experience, while continuously adapting to meet your needs.",
-        link: "/application", // Update link
-        image: "/service/flutter.png",
-      },
-      {
-        title: "Strategy and Consultancy",
-        icon: "/service/icons/strategy.png",
-        content:
-          "Expert insights to drive your business forward. We analyze your current operations...",
-        link: "/strategy", // Update link
-        image: "/service/strategy.png",
-      },
+      // {
+      //   title: "Application Services",
+      //   icon: "/service/icons/flutter.png",
+      //   content:
+      //     "Covers the full lifecycle of software applications, from development and deployment to ongoing maintenance. Our focus is on ensuring optimal performance, security, and user experience, while continuously adapting to meet your needs.",
+      //   link: "/application", // Update link
+      //   image: "/service/flutter.png",
+      // },
+      // {
+      //   title: "Strategy and Consultancy",
+      //   icon: "/service/icons/strategy.png",
+      //   content:
+      //     "Expert insights to drive your business forward. We analyze your current operations...",
+      //   link: "/strategy", // Update link
+      //   image: "/service/strategy.png",
+      // },
       {
         title: "Cloud Services",
         icon: "/service/icons/cloud.png",
         content:
-          "Cloud solutions, including storage, computing power, and applications. Our cloud services...",
+          "Empower your business with scalable, secure, and efficient cloud and infrastructure solutions. At Zeplinix Technologies, we help businesses modernize their IT operations, optimize performance, and enhance agility through cutting-edge cloud technologies . ",
         link: "/cloud", // Update link
         image: "/service/cloud.png",
       },
@@ -88,7 +88,7 @@ export default function Service() {
         title: "Data Analytics",
         icon: "/service/icons/data.png",
         content:
-          "You are always welcome to visit our little den. Professional in their craft!",
+          "Transform your data into actionable insights with our advanced Data Analytics solutions. At Zeplinix Technologies, we empower businesses to make informed decisions, optimize operations, and uncover new opportunities through data-driven strategies. ",
         link: "/data", // Update link
         image: "/service/data.png",
       },
@@ -96,7 +96,7 @@ export default function Service() {
         title: "Software Development",
         icon: "/service/icons/software.png",
         content:
-          "You are always welcome to visit our little den. Professional in their craft!",
+          "Drive innovation and achieve your business goals with tailor-made software solutions. At Zeplinix , we specialize in designing, developing, and delivering custom software that aligns perfectly with your  requirements, helping you stay ahead in a  market. ",
         link: "/software", // Update link
         image: "/service/software.png",
       },
@@ -104,9 +104,9 @@ export default function Service() {
         title: "Graphic Designing",
         icon: "/service/icons/design.png",
         content:
-          "Improve your website's ranking and visibility on search engines.",
+          "Elevate your brand presence and connect with your audience like never before. At Zeplinix Technologies, we combine creative design, strategic advertising, and impactful social media campaigns to help businesses stand out in the digital world . ",
         link: "/graphic", // Update link
-        image: "/service/design.png",
+        image: "/service/strategy.png",
       },
     ];
 
