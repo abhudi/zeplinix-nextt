@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const Banner: React.FC = () => {
@@ -51,41 +52,45 @@ const Banner: React.FC = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-center lg:justify-start gap-4">
-          <button className="px-4 py-2 bg-white text-primary font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition flex items-center gap-2 sm:px-6 sm:py-3">
-            Contact Us
-            <svg
-              className="w-4 h-4 sm:w-5 sm:h-5"
-              width="28"
-              height="21"
-              viewBox="0 0 28 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ rotate: "-35deg" }}
-            >
-              <path
-                d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
-                fill="#E63946"
-              />
-            </svg>
-          </button>
+          <Link href="/contact">
+            <button className="px-4 py-2 bg-white text-primary font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition flex items-center gap-2 sm:px-6 sm:py-3">
+              Contact Us
+              <svg
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                width="28"
+                height="21"
+                viewBox="0 0 28 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ rotate: "-35deg" }}
+              >
+                <path
+                  d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                  fill="#E63946"
+                />
+              </svg>
+            </button>
+          </Link>
 
-          <button className="px-4 py-2 bg-transparent text-white font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition border border-light-gray flex items-center gap-2 sm:px-6 sm:py-3">
-            Explore More
-            <svg
-              className="w-4 h-4 sm:w-5 sm:h-5"
-              width="28"
-              height="21"
-              viewBox="0 0 28 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ rotate: "-35deg" }}
-            >
-              <path
-                d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
-                fill="#ffffff"
-              />
-            </svg>
-          </button>
+          <Link href="/about">
+            <button className="px-4 py-2 bg-transparent text-white font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition border border-light-gray flex items-center gap-2 sm:px-6 sm:py-3">
+              Explore More
+              <svg
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                width="28"
+                height="21"
+                viewBox="0 0 28 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ rotate: "-35deg" }}
+              >
+                <path
+                  d="M17.2309 20.0182L15.3864 18.1655L22.0701 11.6409L0.875 11.6409L0.875 9.07841L22.0701 9.07841L15.3864 2.55386L17.2309 0.701172L27.125 10.3597L17.2309 20.0182Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
 

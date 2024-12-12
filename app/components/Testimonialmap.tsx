@@ -11,10 +11,11 @@ interface Popup {
 export default function TestimonialMap() {
   const popups: Popup[] = [
     { id: "1", x: 10, y: 15 },
-    { id: "2", x: 70, y: 15 },
-    { id: "3", x: 45, y: 45 },
+    { id: "2", x: 85, y: 10 },
+    { id: "3", x: 35, y: 30 },
     { id: "4", x: 16, y: 70 },
-    { id: "5", x: 75, y: 70 },
+    { id: "5", x: 62, y: 50 },
+    { id: "6", x: 94, y: 65 },
   ];
 
   const popupContent = [
@@ -27,6 +28,24 @@ export default function TestimonialMap() {
     {
       name: "Sara Smith",
       title: "Founder of GreenTech",
+      description:
+        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+    },
+    {
+      name: "Tom Harris",
+      title: "Co-Founder of Healthify",
+      description:
+        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+    },
+    {
+      name: "Tom Harris",
+      title: "Co-Founder of Healthify",
+      description:
+        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+    },
+    {
+      name: "Tom Harris",
+      title: "Co-Founder of Healthify",
       description:
         "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
     },

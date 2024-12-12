@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const AboutGrow = () => {
@@ -9,26 +10,28 @@ const AboutGrow = () => {
             <h1 className="text-fs-24 md:text-fs-34 lg:text-fs-54 leading-tight">
               Lets grow together
             </h1>
-            <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
-              <p className="flex gap-2 items-center">
-                Join our team
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                  style={{ rotate: "-35deg" }}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </p>
-            </button>
+            <Link href="/contact">
+              <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
+                <p className="flex gap-2 items-center">
+                  Contact us
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                    style={{ rotate: "-35deg" }}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </p>
+              </button>
+            </Link>
           </div>
         </div>
 

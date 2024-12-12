@@ -15,7 +15,7 @@ interface CardData {
 
 const cardsData: CardData[] = [
   {
-    imageSrc: "/homepage/renewal.png",
+    imageSrc: "/homepage/products/convertiq.png",
     title: "Convert IQ",
     description:
       "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
@@ -31,7 +31,7 @@ const cardsData: CardData[] = [
     linkHref: "/hr-detail",
   },
   {
-    imageSrc: "/homepage/renewal.png",
+    imageSrc: "/homepage/products/evalflow.png",
     title: "Evalflow",
     description:
       "Make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency.",
@@ -39,7 +39,7 @@ const cardsData: CardData[] = [
     linkHref: "/evalflow-detail",
   },
   {
-    imageSrc: "/homepage/renewal.png",
+    imageSrc: "/homepage/products/stockiq.png",
     title: "StockIQ",
     description:
       "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",

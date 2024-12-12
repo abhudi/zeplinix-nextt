@@ -21,7 +21,7 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
       style={{ borderWidth: "0.4px", borderRadius: "20px" }}
     >
       {/* Image wrapper with absolute positioning */}
-      <div className="absolute -top-28 left-1/2 transform -translate-x-[42%] w-[100%]">
+      <div className="absolute -top-24 left-1/2 transform -translate-x-[42%] w-[100%]">
         <Image
           src={imageSrc}
           alt={`${title} Screenshot`}
