@@ -19,7 +19,7 @@ const ProductCard = () => {
       title: "BohoHR",
       image: "/products/hrease.png",
       description:
-        "HRFusion is an all-in-one HR management platform designed to simplify and automate your workforce operations. From recruitment and onboarding to performance evaluations, payroll, and employee engagement, HRFusion streamlines every aspect of employee management. ",
+        "BohoHR is an all-in-one HR management platform designed to simplify and automate your workforce operations. From recruitment and onboarding to performance evaluations, payroll, and employee engagement, BohoHR streamlines every aspect of employee management. ",
       buttonLabel: "AI Tool",
       coreTech: "Core Technology",
       linkHref: "/hr-detail/",

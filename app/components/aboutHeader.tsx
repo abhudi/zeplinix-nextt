@@ -25,6 +25,9 @@ const Aboutheader = () => {
   } else if (pathname === "/portfolio") {
     mainText = "Our product development & design resources";
     subText = "product";
+  } else if (pathname === "/privacy-policy") {
+    mainText = "Privacy policy for Zeplinix Technologies";
+    subText = "Privacy";
   }
 
   // Clean the word (strip punctuation and convert to lowercase)

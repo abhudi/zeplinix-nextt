@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   const aboutUsData = [
     { text: "Mission & Vision", link: "/about-us" },
@@ -57,9 +58,11 @@ const Footer = () => {
         </div>
         <div className="flex flex-wrap gap-4 items-center text-white">
           <h6 className="text-lg">Ready To Get Started?</h6>
-          <button className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800">
-            Create an Account
-          </button>
+          <Link href="/contact">
+            <button className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800">
+              Contact us
+            </button>
+          </Link>
         </div>
       </div>
 

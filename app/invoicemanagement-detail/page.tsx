@@ -407,7 +407,7 @@ const ProductsDetail = () => {
 
         <div className="relative ">
           <Image
-            src="/product-details/bohohr.png"
+            src="/product-details/invoice.png"
             alt="map"
             layout="responsive"
             width={800}
