@@ -17,17 +17,17 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
 }) => {
   return (
     <div
-      className="relative w-[344px] h-[369px] p-6 bg-bg-card  text-white shadow-lg flex flex-col justify-between border border-[#8b8b8b]  mt-40 mb-40"
+      className="relative w-[344px] h-[369px] p-6 bg-bg-card text-white shadow-lg flex flex-col justify-between border border-[#8b8b8b] mt-40 mb-40"
       style={{ borderWidth: "0.4px", borderRadius: "20px" }}
     >
       {/* Image wrapper with absolute positioning */}
-      <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 w-[100%]">
+      <div className="absolute -top-28 left-1/2 transform -translate-x-[42%] w-[100%]">
         <Image
           src={imageSrc}
           alt={`${title} Screenshot`}
-          width={800}
+          width={500}
           height={500}
-          className="object-cover rounded-t-lg"
+          className="object-cover rounded-t-lg w-72"
           style={{ height: "auto" }}
         />
       </div>

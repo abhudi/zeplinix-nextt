@@ -23,7 +23,7 @@ const cardsData: CardData[] = [
     linkHref: "/convertiq-detail",
   },
   {
-    imageSrc: "/homepage/renewal.png",
+    imageSrc: "/homepage/products/bohohr.png",
     title: "Boho HR",
     description:
       "BohoHR is an all-in-one HR management platform designed to simplify and automate your workforce operations. From recruitment and onboarding to performance evaluations, payroll, and employee engagement, BohoHR streamlines every aspect of employee management.",
@@ -47,7 +47,7 @@ const cardsData: CardData[] = [
     linkHref: "/stockiq-detail",
   },
   {
-    imageSrc: "/homepage/renewal.png",
+    imageSrc: "/homepage/products/protectease.png",
     title: "PredictEase",
     description:
       "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike.",
@@ -55,7 +55,7 @@ const cardsData: CardData[] = [
     linkHref: "/predictease-detail",
   },
   {
-    imageSrc: "/homepage/renewal.png",
+    imageSrc: "/homepage/products/invoice.png",
     title: "Invoice Management",
     description:
       "Invoice Management is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",

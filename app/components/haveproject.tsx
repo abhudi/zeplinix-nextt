@@ -3,28 +3,28 @@ import Image from "next/image";
 const HaveProject = () => {
   return (
     <div>
-      <div className="lg:mt-36 lg:mb-28 mb-10 mt-10 ">
+      <div className="lg:mt-36 lg:mb-28 mb-10 mt-10">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
-          <div className="bg-white h-[370px] w-full p-10 lg:p-4 md:p-4  flex-row  lg:flex md:flex items-center justify-center gap-20">
+          <div className="bg-white h-auto w-full p-10 lg:p-4 md:p-4 flex flex-col lg:flex-row md:flex-row items-center lg:items-center md:items-start justify-center gap-10 lg:gap-20">
             <div className="w-[150px] h-[150px] sm:w-[300px] sm:h-[300px]">
               <Image
                 src="/have-project.png"
-                alt=""
+                alt="Have Project"
                 width={300}
                 height={300}
                 className="w-full h-full"
               />
             </div>
 
-            <div className=" justify-center items-center text-center">
+            <div className="text-center lg:text-left md:text-left flex flex-col justify-center lg:justify-center md:justify-start items-center lg:items-start md:items-start">
               <h1 className="text-fs-24 md:text-fs-34 lg:text-fs-54 leading-tight text-[#2D2D2D]">
                 Lets grow together
               </h1>
-              <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
+              <button className="px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
                 <p className="flex gap-2 items-center">
                   Join our team
                   <svg
-                    className="w-4 h-4  "
+                    className="w-4 h-4"
                     width="28"
                     height="21"
                     viewBox="0 0 28 21"

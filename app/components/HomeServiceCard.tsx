@@ -70,7 +70,10 @@ const HomeServiceCard: React.FC = () => {
                 loop
                 playsInline
               >
-                <source src="/strategy-card.mp4" type="video/mp4" />
+                <source
+                  src="/homepage/service-videos/software.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -134,7 +137,10 @@ const HomeServiceCard: React.FC = () => {
                 loop
                 playsInline
               >
-                <source src="/strategy-card.mp4" type="video/mp4" />
+                <source
+                  src="/homepage/service-videos/data-analytics.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -190,7 +196,10 @@ const HomeServiceCard: React.FC = () => {
                 loop
                 playsInline
               >
-                <source src="/strategy-card.mp4" type="video/mp4" />
+                <source
+                  src="/homepage/service-videos/cloud.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -246,7 +255,10 @@ const HomeServiceCard: React.FC = () => {
                 loop
                 playsInline
               >
-                <source src="/strategy-card.mp4" type="video/mp4" />
+                <source
+                  src="/homepage/service-videos/graphic.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </div>
