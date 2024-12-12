@@ -1,9 +1,31 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-black text-gray-800">
-      <h1 className="text-6xl font-bold text-white">404</h1>
+    <div
+      className="flex flex-col items-center justify-center h-screen text-gray-800 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/404.png')",
+      }}
+    >
+      <h1
+        className="text-6xl font-bold text-white"
+        style={{ textShadow: "4px 0px 2px rgba(201,49,49,1);" }}
+      >
+        <div className="flex gap-2 items-center">
+          <span className="text-[84px]">4</span>
+          <span>
+            <Image
+              src="/404errorzero.png"
+              alt={""}
+              width={60}
+              height={60}
+              className="object-cover rounded-t-lg"
+            />
+          </span>
+          <span className="text-[84px]">4</span>
+        </div>
+      </h1>
       <p className="text-xl mt-4 text-white">
         Oops! The page you are looking for does not exist.
       </p>
