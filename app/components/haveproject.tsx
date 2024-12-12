@@ -24,7 +24,7 @@ const HaveProject = () => {
                 <p className="flex gap-2 items-center">
                   Join our team
                   <svg
-                    className="w-4 h-4 sm:inline hidden"
+                    className="w-4 h-4  "
                     width="28"
                     height="21"
                     viewBox="0 0 28 21"

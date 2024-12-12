@@ -54,7 +54,7 @@ const Banner: React.FC = () => {
           <button className="px-6 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:bg-primary hover:text-white transition sm:flex items-center gap-2">
             Contact Us
             <svg
-              className="w-5 h-5 sm:inline hidden"
+              className="w-5 h-5  "
               width="28"
               height="21"
               viewBox="0 0 28 21"
@@ -72,7 +72,7 @@ const Banner: React.FC = () => {
           <button className="px-6 py-3 bg-transparent text-white font-semibold rounded-full shadow-lg hover:bg-primary transition border border-light-gray sm:flex items-center gap-2">
             Explore More
             <svg
-              className="w-5 h-5 sm:inline hidden"
+              className="w-5 h-5  "
               width="28"
               height="21"
               viewBox="0 0 28 21"

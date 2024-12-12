@@ -3,16 +3,15 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname(); // Get the current pathname
+  const pathname = usePathname();
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // Function to determine if the link is active
   const isActive = (path: string) =>
     pathname === path ? "text-primary" : "text-gray-400";
 
@@ -53,13 +52,15 @@ const Header = () => {
 
         {/* Contact Button and Hamburger Menu */}
         <div className="flex items-center space-x-4 z-10">
-          {/* Updated Contact Link to be fully clickable */}
-          <Link href="/contact">
-            <button className="bg-primary text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-primary-light w-full">
-              <FaPhoneAlt />
-              <p>Contact</p>
-            </button>
-          </Link>
+          {/* Contact Button (Visible on Large Devices) */}
+          <div className="hidden lg:block">
+            <Link href="/contact">
+              <button className="bg-primary text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-primary-light">
+                <FaPhoneAlt />
+                <p>Contact</p>
+              </button>
+            </Link>
+          </div>
 
           {/* Hamburger Button */}
           <button className="lg:hidden flex items-center" onClick={toggleMenu}>
@@ -112,6 +113,15 @@ const Header = () => {
           >
             Blog
           </Link>
+          {/* Contact Button Inside Side Panel (Visible on Small Devices) */}
+          <div className="lg:hidden mt-4">
+            <Link href="/contact" onClick={toggleMenu}>
+              <button className="bg-primary text-white px-3 py-1 rounded-md flex items-center space-x-2 hover:bg-primary-light text-sm">
+                <FaPhoneAlt className="text-fs-14" />
+                <p>Contact</p>
+              </button>
+            </Link>
+          </div>
         </nav>
       </div>
 

@@ -46,7 +46,7 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
         >
           {linkText}{" "}
           <svg
-            className="w-5 h-5 sm:inline hidden"
+            className="w-5 h-5  "
             width="28"
             height="21"
             viewBox="0 0 28 21"

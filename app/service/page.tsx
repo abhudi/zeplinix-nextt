@@ -118,7 +118,7 @@ export default function Service() {
 
         {/* First Absolute */}
         <div
-          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] left-[-200px] top-[50px] md:top-[75px] lg:top-[-100px]"
+          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] left-[-200px] top-[50px] md:top-[75px] lg:top-[-100px] hidden lg:block md:block"
           style={{
             background:
               "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
@@ -127,7 +127,7 @@ export default function Service() {
         ></div>
         {/* Second Absolute */}
         <div
-          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] left-[-200px] top-[50px] md:top-[475px] lg:top-[500px]"
+          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] left-[-200px] top-[50px] md:top-[475px] lg:top-[500px] hidden lg:block md:block"
           style={{
             background:
               "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
@@ -136,7 +136,7 @@ export default function Service() {
         ></div>
         {/* third Absolute */}
         <div
-          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] right-[0px] top-[50px] md:top-[1000px] lg:top-[1000px]"
+          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] right-[0px] top-[50px] md:top-[1000px] lg:top-[1000px] hidden lg:block md:block"
           style={{
             background:
               "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
@@ -145,7 +145,7 @@ export default function Service() {
         ></div>
         {/* fourth Absolute */}
         <div
-          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] left-[-200px] top-[50px] md:top-[1475px] lg:top-[1500px]"
+          className="absolute inset-0 z-[-2] w-[300px] h-[200px] md:w-[800px] md:h-[300px] lg:w-[1200px] lg:h-[400px] left-[-200px] top-[50px] md:top-[1475px] lg:top-[1500px] hidden lg:block md:block"
           style={{
             background:
               "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",

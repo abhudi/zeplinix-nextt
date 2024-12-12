@@ -63,7 +63,7 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
         <div key={rowIndex} className="relative">
           {/* Gradient background */}
           <div
-            className="absolute inset-0 md:w-[1000px] md:h-[300px] lg:w-[1200px] lg:h-[300px] w-[200px] h-[100px] -top-[-100px] left-[150px] sm:left-[-150px] z-[-1]"
+            className="absolute inset-0 md:w-[1000px] md:h-[300px] lg:w-[1200px] lg:h-[300px] w-[200px] h-[100px] -top-[-100px] left-[150px] sm:left-[-150px] z-[-1] hidden lg:block md:block"
             style={{
               background:
                 "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.5) 0%, rgba(128, 32, 39, 0) 100%)",
