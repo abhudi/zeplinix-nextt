@@ -382,7 +382,7 @@ const serviceDetails = () => {
           {/* Right Side Video */}
           <div className="relative lg:w-1/2 w-full flex justify-center md:justify-end mt-8 lg:mt-0">
             <Image
-              src={"/service/head.png"}
+              src={"/service/software-details.png"}
               alt={""}
               width={400}
               height={300}

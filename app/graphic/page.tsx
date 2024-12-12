@@ -185,7 +185,7 @@ const serviceDetails = () => {
                 {/* Show SVG only if activeTab matches index and on small screens */}
                 {activeTab === index && (
                   <svg
-                    className="w-5 h-5 sm:inline hidden"
+                    className="w-5 h-5  "
                     width="28"
                     height="21"
                     viewBox="0 0 28 21"
@@ -213,8 +213,8 @@ const serviceDetails = () => {
     return (
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
-          <div className="bg-white h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6">
+          <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
+            <h1 className="text-xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Amplify Your Brand’s Reach
             </h1>
             <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
@@ -226,7 +226,7 @@ const serviceDetails = () => {
               <p className="flex gap-2 items-center">
                 Contact now
                 <svg
-                  className="w-5 h-5 sm:inline hidden"
+                  className="w-5 h-5  "
                   width="28"
                   height="21"
                   viewBox="0 0 28 21"
@@ -335,7 +335,7 @@ const serviceDetails = () => {
                 <Link href="/service">
                   <span className="text-red-600 font-bold text-lg">
                     <svg
-                      className="w-5 h-5 sm:inline hidden"
+                      className="w-5 h-5  "
                       width="28"
                       height="21"
                       viewBox="0 0 28 21"
@@ -371,7 +371,7 @@ const serviceDetails = () => {
             >
               Free Consultation
               <svg
-                className="w-5 h-5 sm:inline hidden"
+                className="w-5 h-5  "
                 width="28"
                 height="21"
                 viewBox="0 0 28 21"
@@ -390,7 +390,7 @@ const serviceDetails = () => {
           {/* Right Side Video */}
           <div className="relative lg:w-1/2 w-full flex justify-center md:justify-end mt-8 lg:mt-0">
             <Image
-              src={"/service/head.png"}
+              src={"/service/graphic-detail.png"}
               alt={""}
               width={400}
               height={300}

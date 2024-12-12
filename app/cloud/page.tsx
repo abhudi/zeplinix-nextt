@@ -375,14 +375,14 @@ const serviceDetails = () => {
           {/* Right Side Video */}
           <div className="relative lg:w-1/2 w-full flex justify-center md:justify-end mt-8 lg:mt-0">
             <Image
-              src={"/service/head.png"}
+              src={"/service/cloud-details.png"}
               alt={""}
               width={400}
               height={300}
               className="object-cover rounded-t-lg"
             />
             <div
-              className="absolute inset-0 z-[1] w-[300px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[900px] lg:w-[900px] lg:h-[400px] left-[-150px] sm:left-[-200px] md:left-[-300px] top-[50px] sm:top-[75px] lg:top-[100px]"
+              className="absolute inset-0 z-[1] w-[300px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[900px] lg:w-[900px] lg:h-[400px] left-[-150px] sm:left-[-200px] md:left-[-300px] top-[50px] sm:top-[75px] lg:top-[-7px]"
               style={{
                 background:
                   "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
