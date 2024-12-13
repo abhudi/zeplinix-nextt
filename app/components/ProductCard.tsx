@@ -13,6 +13,11 @@ const ProductCard = () => {
       buttonLabel: "Web application",
       coreTech: "Core Technology",
       linkHref: "/convertiq-detail/",
+      technologyImages: [
+        "/core-technology/php.svg",
+        "/core-technology/ci.svg",
+        "/core-technology/bootstrap.svg",
+      ],
     },
     {
       id: 2,
@@ -23,6 +28,11 @@ const ProductCard = () => {
       buttonLabel: "AI Tool",
       coreTech: "Core Technology",
       linkHref: "/hr-detail/",
+      technologyImages: [
+        "/core-technology/php.svg",
+        "/core-technology/ci.svg",
+        "/core-technology/bootstrap.svg",
+      ],
     },
     {
       id: 3,
@@ -33,6 +43,11 @@ const ProductCard = () => {
       buttonLabel: "CRM Platform",
       coreTech: "Core Technology",
       linkHref: "/evalflow-detail/",
+      technologyImages: [
+        "/core-technology/js.webp",
+        "/core-technology/node.svg",
+        "/core-technology/react.svg",
+      ],
     },
     {
       id: 4,
@@ -43,6 +58,11 @@ const ProductCard = () => {
       buttonLabel: "Analytics Platform",
       coreTech: "Core Technology",
       linkHref: "/datasense-detail/",
+      technologyImages: [
+        "/core-technology/js.webp",
+        "/core-technology/node.svg",
+        "/core-technology/react.svg",
+      ],
     },
     {
       id: 5,
@@ -53,6 +73,11 @@ const ProductCard = () => {
       buttonLabel: "Marketing Tool",
       coreTech: "Core Technology",
       linkHref: "/predictease-detail/",
+      technologyImages: [
+        "/core-technology/php.svg",
+        "/core-technology/ci.svg",
+        "/core-technology/bootstrap.svg",
+      ],
     },
     {
       id: 6,
@@ -63,6 +88,11 @@ const ProductCard = () => {
       buttonLabel: "Dev Tool",
       coreTech: "Core Technology",
       linkHref: "/invoicemanagement-detail/",
+      technologyImages: [
+        "/core-technology/php.svg",
+        "/core-technology/ci.svg",
+        "/core-technology/bootstrap.svg",
+      ],
     },
   ];
 
@@ -90,7 +120,7 @@ const ProductCard = () => {
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="card w-full sm:w-[572px] h-[532px] p-6 rounded-lg shadow-lg mb-20"
+            className="card w-full sm:w-[572px] h-[532px] p-6 rounded-lg shadow-lg mb-20 bg-glass"
           >
             <div className="mb-4">
               <Link href={card.linkHref} passHref>
@@ -111,8 +141,20 @@ const ProductCard = () => {
                 </button>
               </div>
               <p className="text-gray-400 text-sm mb-4">{card.description}</p>
-              <div>
-                <h2 className="text-white font-semibold">{card.coreTech}</h2>
+              <div className="flex space-x-2 items-center">
+                <h2 className="text-white font-semibold">{card.coreTech}:</h2>
+                <div className="flex gap-2 items-center">
+                  {card.technologyImages.map((imageUrl, index) => (
+                    <Image
+                      key={index}
+                      src={imageUrl}
+                      alt={`Technology Image ${index + 1}`}
+                      width={22} // Adjust the width as needed
+                      height={22} // Adjust the height as needed
+                      className="rounded-md"
+                    />
+                  ))}
+                </div>
               </div>
             </Link>
           </div>
@@ -121,7 +163,7 @@ const ProductCard = () => {
         {cardData.map((card) => (
           <div
             key={`duplicate-${card.id}`}
-            className="card w-full sm:w-[572px] h-[532px] p-6 rounded-lg shadow-lg mb-20"
+            className="card w-full sm:w-[572px] h-[532px] p-6 rounded-lg shadow-lg bg-glass mb-20"
           >
             <div className="mb-4">
               <Link href={card.linkHref} passHref>
@@ -142,8 +184,20 @@ const ProductCard = () => {
                 </button>
               </div>
               <p className="text-gray-400 text-sm mb-4">{card.description}</p>
-              <div>
-                <h2 className="text-white font-semibold">{card.coreTech}</h2>
+              <div className="flex space-x-2 items-center">
+                <h2 className="text-white font-semibold">{card.coreTech}:</h2>
+                <div className="flex gap-2 items-center">
+                  {card.technologyImages.map((imageUrl, index) => (
+                    <Image
+                      key={index}
+                      src={imageUrl}
+                      alt={`Technology Image ${index + 1}`}
+                      width={22} // Adjust the width as needed
+                      height={22} // Adjust the height as needed
+                      className="rounded-md"
+                    />
+                  ))}
+                </div>
               </div>
             </Link>
           </div>
