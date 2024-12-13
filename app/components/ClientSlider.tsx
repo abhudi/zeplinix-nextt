@@ -78,8 +78,8 @@ const ClientSlider: React.FC = () => {
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={120} // Adjust width
-                height={80} // Fixed height for logos
+                width={130} // Adjust width
+                height={100} // Fixed height for logos
                 objectFit="contain" // Ensures logos retain aspect ratio
               />
             </div>

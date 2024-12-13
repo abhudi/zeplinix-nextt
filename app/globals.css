@@ -127,8 +127,8 @@ body {
 }
 
 .slide {
-  height: 70px; /* Adjust height of each logo */
-  width: 100px; /* Adjust width of each logo */
+  height: 80px; /* Adjust height of each logo */
+  width: 130px; /* Adjust width of each logo */
   display: flex;
   align-items: center;
   justify-content: center;
