@@ -12,6 +12,7 @@ type CardData = {
   buttonLabel: string;
   coreTech: string;
   linkHref: string;
+  technologyImages: string[];
 };
 
 const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
@@ -105,10 +106,22 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
                     <p className="text-gray-400 text-sm mb-4 leading-tight">
                       {card.description}
                     </p>
-                    <div>
+                    <div className="flex space-x-2 items-center">
                       <h2 className="text-white font-semibold">
-                        {card.coreTech}
+                        {card.coreTech}:
                       </h2>
+                      <div className="flex gap-2 items-center">
+                        {card.technologyImages.map((imageUrl, index) => (
+                          <Image
+                            key={index}
+                            src={imageUrl}
+                            alt={`Technology Image ${index + 1}`}
+                            width={22} // Adjust the width as needed
+                            height={22} // Adjust the height as needed
+                            className="rounded-md"
+                          />
+                        ))}
+                      </div>
                     </div>
                   </Link>
                 </div>
@@ -129,6 +142,11 @@ const cardData: CardData[] = [
     buttonLabel: "Web application",
     coreTech: "Core Technology",
     linkHref: "/convertiq-detail/",
+    technologyImages: [
+      "/core-technology/php.svg",
+      "/core-technology/ci.svg",
+      "/core-technology/bootstrap.svg",
+    ],
   },
   {
     id: 2,
@@ -139,6 +157,11 @@ const cardData: CardData[] = [
     buttonLabel: "AI Tool",
     coreTech: "Core Technology",
     linkHref: "/hr-detail/",
+    technologyImages: [
+      "/core-technology/php.svg",
+      "/core-technology/ci.svg",
+      "/core-technology/bootstrap.svg",
+    ],
   },
   {
     id: 3,
@@ -149,6 +172,11 @@ const cardData: CardData[] = [
     buttonLabel: "CRM Platform",
     coreTech: "Core Technology",
     linkHref: "/evalflow-detail/",
+    technologyImages: [
+      "/core-technology/js.webp",
+      "/core-technology/node.svg",
+      "/core-technology/react.svg",
+    ],
   },
   {
     id: 4,
@@ -159,6 +187,11 @@ const cardData: CardData[] = [
     buttonLabel: "Analytics Platform",
     coreTech: "Core Technology",
     linkHref: "/stockiq-detail/",
+    technologyImages: [
+      "/core-technology/js.webp",
+      "/core-technology/node.svg",
+      "/core-technology/react.svg",
+    ],
   },
   {
     id: 5,
@@ -169,6 +202,11 @@ const cardData: CardData[] = [
     buttonLabel: "Marketing Tool",
     coreTech: "Core Technology",
     linkHref: "/predictease-detail/",
+    technologyImages: [
+      "/core-technology/php.svg",
+      "/core-technology/ci.svg",
+      "/core-technology/bootstrap.svg",
+    ],
   },
   {
     id: 6,
@@ -179,6 +217,11 @@ const cardData: CardData[] = [
     buttonLabel: "Dev Tool",
     coreTech: "Core Technology",
     linkHref: "/invoicemanagement-detail/",
+    technologyImages: [
+      "/core-technology/php.svg",
+      "/core-technology/ci.svg",
+      "/core-technology/bootstrap.svg",
+    ],
   },
 ];
 

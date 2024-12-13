@@ -136,8 +136,8 @@ body {
 }
 
 .slide img {
-  height: 50px; /* Smaller logo size */
-  width: 50px; /* Smaller logo size */
+  height: auto; /* Smaller logo size */
+  width: auto; /* Smaller logo size */
 }
 
 /* marquess */

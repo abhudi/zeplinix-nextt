@@ -72,40 +72,41 @@ const CardCarousel = () => {
       </h1>
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={5}
         loop={true}
         autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
+          delay: 1000, // Auto-slide every 3 seconds
+          disableOnInteraction: false, // Keeps autoplay running after manual swipes
         }}
-        speed={6000}
-        allowTouchMove={true}
         breakpoints={{
-          // For mobile devices
           0: {
             slidesPerView: 1,
-            spaceBetween: 20,
-            autoplay: false, // Disable autoplay for mobile
-            allowTouchMove: true, // Enable swipe for mobile
+            spaceBetween: 16,
+            allowTouchMove: true,
           },
-          // For larger screens (tablets and desktops)
           768: {
             slidesPerView: 3,
-            spaceBetween: 30,
-            autoplay: {
-              delay: 0,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: false,
-            },
-            allowTouchMove: false,
+            spaceBetween: 24,
+            allowTouchMove: true,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+            allowTouchMove: true,
+          },
+          1440: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+            allowTouchMove: true,
           },
         }}
-        className="px-1 md:px-0" // Add padding for mobile, remove for larger screens
+        className="px-4"
       >
         {cardsData.map((card, index) => (
-          <SwiperSlide key={index} className="flex justify-center">
-            <div className="max-w-md transform -translate-x-2">
+          <SwiperSlide
+            key={index}
+            className="flex justify-center mx-auto ml-8 mr-8 lg:ml-16 lg:mr-ml-16 md:ml-16 md:mr-ml-16"
+          >
+            <div className="lg:w-full md:w-full w-[200px] max-w-md mx-auto text-center ">
               <RenewalCard
                 imageSrc={card.imageSrc}
                 title={card.title}

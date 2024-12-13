@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Import Autoplay module
 
 // Define the type for the logo object
 interface Logo {
@@ -10,28 +14,24 @@ interface Logo {
 const ClientSlider: React.FC = () => {
   const logosData: Logo[] = [
     {
-      src: "/clients/1st.png",
+      src: "/clients/centricity.png",
       alt: "Logo 1",
     },
     {
-      src: "/clients/1st.png",
+      src: "/clients/techmahindra.png",
       alt: "Logo 2",
     },
     {
-      src: "/clients/1st.png",
+      src: "/clients/jktyre.png",
       alt: "Logo 3",
     },
     {
-      src: "/clients/1st.png",
+      src: "/clients/reckitt.png",
       alt: "Logo 4",
     },
     {
-      src: "/clients/1st.png",
-      alt: "Logo 5",
-    },
-    {
-      src: "/clients/1st.png",
-      alt: "Logo 6",
+      src: "/clients/digitalzone.png",
+      alt: "Logo 4",
     },
   ];
 
@@ -39,19 +39,53 @@ const ClientSlider: React.FC = () => {
   const logos = [...logosData, ...logosData]; // Concatenate the logos array
 
   return (
-    <div className="slider ">
-      <div className="slide-track">
+    <div className="slider">
+      <Swiper
+        modules={[Autoplay]} // Add the Autoplay module
+        loop={true} // Enables infinite loop sliding
+        spaceBetween={20} // Space between slides
+        slidesPerView="auto" // Automatically adjusts number of slides visible
+        autoplay={{
+          delay: 3000, // Set delay between slides in milliseconds
+          disableOnInteraction: false, // Keeps autoplay running after manual swipes
+        }}
+        speed={1500} // Smooth and slower transition speed
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            allowTouchMove: true,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            allowTouchMove: true,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            allowTouchMove: true,
+          },
+        }}
+        className="px-4"
+      >
         {logos.map((logo, index) => (
-          <div className="slide " key={index}>
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={50} // Smaller width
-              height={50} // Smaller height
-            />
-          </div>
+          <SwiperSlide
+            key={index}
+            className="slide flex justify-center items-center"
+          >
+            <div className="w-[120px] h-[100px] flex justify-center items-center">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={120} // Adjust width
+                height={80} // Fixed height for logos
+                objectFit="contain" // Ensures logos retain aspect ratio
+              />
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };

@@ -204,7 +204,7 @@ const Footer = () => {
             className="object-contain"
           />
         </div>
-        <div className="flex flex-wrap gap-4 items-center text-white">
+        <div className="flex lg:flex-wrap md:flex-wrap flex-row  gap-4 items-center text-white">
           <h6 className="text-lg">Ready To Get Started?</h6>
           <Link href="/contact">
             <button className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800">
