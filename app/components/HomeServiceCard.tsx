@@ -25,7 +25,7 @@ const HomeServiceCard: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center gap-4 px-6 sm:px-12 overflow-hidden w-full p-10 ">
             <div className="w-full sm:w-[50%] px-4 sm:px-0">
               <Image
-                src={"/service/icons/strategy.png"}
+                src={"/service/icons/software.png"}
                 alt="service icon"
                 className="w-20 h-20 text-primary"
                 width={200}
@@ -93,7 +93,7 @@ const HomeServiceCard: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center sm:text-center lg:text-left gap-4 px-6 sm:px-12 w-full p-10 ">
             <div className="w-full sm:w-[50%]">
               <Image
-                src={"/service/icons/strategy.png"}
+                src={"/service/icons/data.png"}
                 alt="service icon"
                 className="w-20 h-20 text-primary"
                 width={200}
@@ -152,7 +152,7 @@ const HomeServiceCard: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center sm:text-center lg:text-left gap-4 px-6 sm:px-12 w-full p-10 ">
             <div className="w-full sm:w-[50%]">
               <Image
-                src={"/service/icons/strategy.png"}
+                src={"/service/icons/cloud.png"}
                 alt="service icon"
                 className="w-20 h-20 text-primary"
                 width={200}
@@ -211,7 +211,7 @@ const HomeServiceCard: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center sm:text-center lg:text-left gap-4 px-6 sm:px-12 w-full p-10 ">
             <div className="w-full sm:w-[50%]">
               <Image
-                src={"/service/icons/strategy.png"}
+                src={"/service/icons/design.png"}
                 alt="service icon"
                 className="w-20 h-20 text-primary"
                 width={200}

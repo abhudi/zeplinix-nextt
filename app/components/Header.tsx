@@ -45,9 +45,9 @@ const Header = () => {
           <Link href="/portfolio" className={`${isActive("/portfolio")}`}>
             Portfolio
           </Link>
-          <Link href="/blog" className={`${isActive("/blog")}`}>
+          {/* <Link href="/blog" className={`${isActive("/blog")}`}>
             Blog
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Contact Button and Hamburger Menu */}
@@ -106,13 +106,13 @@ const Header = () => {
           >
             Portfolio
           </Link>
-          <Link
+          {/* <Link
             href="/blog"
             className={`${isActive("/blog")}`}
             onClick={toggleMenu}
           >
             Blog
-          </Link>
+          </Link> */}
           {/* Contact Button Inside Side Panel (Visible on Small Devices) */}
           <div className="lg:hidden mt-4">
             <Link href="/contact" onClick={toggleMenu}>

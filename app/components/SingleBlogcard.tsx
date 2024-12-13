@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 type BlogCardProps = {
   image: string;
   title: string;
@@ -34,7 +33,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
         </p>
 
         <li className="text-sm text-white">{category}</li>
-        <a
+        {/* <Link
           href="#"
           className="text-red-400 text-sm mt-4 flex items-center gap-2"
         >
@@ -53,7 +52,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
               fill="#E63946"
             />
           </svg>
-        </a>
+        </Link> */}
       </div>
     </div>
   );

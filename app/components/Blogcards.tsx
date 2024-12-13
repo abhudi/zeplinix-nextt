@@ -90,7 +90,7 @@ export default function Blogcards() {
               <p className="text-sm text-white items-center gap-3">
                 <li>{blogs[0].category}</li>
               </p>
-              <a
+              {/* <Link
                 href="#"
                 className="text-[#E63946] text-sm mt-4 flex items-center gap-2"
               >
@@ -109,7 +109,7 @@ export default function Blogcards() {
                     fill="#E63946"
                   />
                 </svg>
-              </a>
+              </Link> */}
             </div>
           </div>
 
