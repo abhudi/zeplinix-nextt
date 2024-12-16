@@ -182,7 +182,7 @@ const Footer = () => {
     // { text: "FAQ", link: "/faq" },
     // { text: "Community", link: "/community" },
     // { text: "Live Chatting", link: "/live-chat" },
-    { text: "FAQ", link: "#" },
+    { text: "FAQ", link: "/faq" },
     { text: "Contact us", link: "/contact" },
     // { text: "", link: "#" },
     // { text: "Support Center", link: "/support-center" },
@@ -293,16 +293,17 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex gap-4 mt-4 md:mt-0 lg:mt-0">
-            <FaFacebook
-              href="https://www.facebook.com/people/ZeplinixDigital/61569439216331/"
-              size={20}
-            />
-            <Link href="https://www.instagram.com/zeplinix.digital/">
-              <FaInstagram size={20} />
+            <Link href="https://www.facebook.com/people/ZeplinixDigital/61569439216331/">
+              <FaFacebook size={20} style={{ cursor: "pointer" }} />
             </Link>
-            <FaTwitter href="#" size={20} />
+            <Link href="https://www.instagram.com/zeplinix.digital/">
+              <FaInstagram size={20} style={{ cursor: "pointer" }} />
+            </Link>
+            <Link href="https://x.com/zeplinixworld?s=21">
+              <FaTwitter size={20} style={{ cursor: "pointer" }} />
+            </Link>
             <Link href="https://www.linkedin.com/company/zeplinix-technologies-private-limited/">
-              <FaLinkedin size={20} />
+              <FaLinkedin size={20} style={{ cursor: "pointer" }} />
             </Link>
           </div>
         </div>
