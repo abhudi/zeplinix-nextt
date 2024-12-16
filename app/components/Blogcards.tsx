@@ -21,17 +21,18 @@ const blogs = [
   },
   {
     id: 3,
-    title: "Unlocking the Power of Digital Marketing: Strategies for Success",
+    title:
+      "The Transformative Power of AI and Machine Learning in Today’s World",
     author: "Max Keny",
-    date: "Explore the world of digital marketing and learn how to leverage online platforms to grow your brand, engage your audience, and drive sales. This guide covers essential strategies, tools, and tips to create a winning digital marketing plan for businesses of all sizes.",
+    date: "Discover how Artificial Intelligence (AI) and Machine Learning (ML) are reshaping industries and revolutionizing problem-solving. This blog explores key concepts, applications, and the future potential of these groundbreaking technologies.",
     category: "Real-World App",
     image: "/blog/third.png",
   },
   {
     id: 4,
-    title: "Cloud & Data: The Key to Business Growth",
+    title: "Empower Your Business with ERP: A Comprehensive Guide",
     author: "Max Keny",
-    date: "24 Oct, 2024",
+    date: "Learn how Enterprise Resource Planning (ERP) systems streamline operations, enhance productivity, and support data-driven decision-making. This blog explores the benefits, core functionalities, and implementation strategies of ERP for businesses of all sizes.",
     category: "Technology Focus",
     image: "/blog/second.png",
   },

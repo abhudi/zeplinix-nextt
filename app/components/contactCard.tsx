@@ -101,43 +101,43 @@ const GetInTouchForm: React.FC = () => {
         text: "+91 9270085057",
       },
     ],
-    [
-      {
-        icon: "/contact/icons/first.png",
-        alt: "Address Icon",
-        text: "99 St. Jomblo Park Pekanbaru, 28292, USA",
-      },
-      {
-        icon: "/contact/icons/second.png",
-        alt: "Email Icon",
-        text: "info@zeplinix.com",
-      },
-      {
-        icon: "/contact/icons/third.png",
-        alt: "Phone Icon",
-        text: "+91 9021348235",
-      },
-    ],
-    [
-      {
-        icon: "/contact/icons/first.png",
-        alt: "Address Icon",
+    // [
+    //   {
+    //     icon: "/contact/icons/first.png",
+    //     alt: "Address Icon",
+    //     text: "99 St. Jomblo Park Pekanbaru, 28292, USA",
+    //   },
+    //   {
+    //     icon: "/contact/icons/second.png",
+    //     alt: "Email Icon",
+    //     text: "info@zeplinix.com",
+    //   },
+    //   {
+    //     icon: "/contact/icons/third.png",
+    //     alt: "Phone Icon",
+    //     text: "+91 9021348235",
+    //   },
+    // ],
+    // [
+    //   {
+    //     icon: "/contact/icons/first.png",
+    //     alt: "Address Icon",
 
-        text: "Patwari Colony Janori Road , Shegaon - 444203",
-      },
-      {
-        icon: "/contact/icons/second.png",
-        alt: "Email Icon",
+    //     text: "Patwari Colony Janori Road , Shegaon - 444203",
+    //   },
+    //   {
+    //     icon: "/contact/icons/second.png",
+    //     alt: "Email Icon",
 
-        text: "info@zeplinix.com",
-      },
-      {
-        icon: "/contact/icons/third.png",
-        alt: "Phone Icon",
+    //     text: "info@zeplinix.com",
+    //   },
+    //   {
+    //     icon: "/contact/icons/third.png",
+    //     alt: "Phone Icon",
 
-        text: "+91 93227 22581",
-      },
-    ],
+    //     text: "+91 93227 22581",
+    //   },
+    // ],
   ];
 
   return (
