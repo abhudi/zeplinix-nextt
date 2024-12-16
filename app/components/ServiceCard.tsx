@@ -29,14 +29,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             width={200}
             height={200}
           />
-          <h3 className="text-fs-20 lg:text-fs-30 font-medium text-white text-center lg:text-left mb-2 pt-5 leading-tight">
+          <h3 className="text-fs-20 lg:text-fs-30 font-medium text-white text-center md:text-left lg:text-left mb-2 pt-5 leading-tight">
             {title}
           </h3>
         </div>
 
         {/* Middle Section (Content) */}
         <div className="w-full lg:w-[43%] p-6 lg:p-10 lg:pl-14">
-          <p className="text-[#909090] text-left md:text-center lg:text-center mb-6 text-fs-16 lg:text-fs-20 leading-tight">
+          <p className="text-[#909090] text-left md:text-left lg:text-left mb-6 text-fs-16 lg:text-fs-20 leading-tight">
             {content}
           </p>
           <Link href={link}>

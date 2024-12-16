@@ -58,7 +58,7 @@ const AboutBoxComp = () => {
             Delivering innovative, customized solutions to help businesses
             thrive in a dynamic digital world.
           </p>
-          <div className="space-y-6 mt-32">
+          <div className="space-y-6 mt-22">
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#686868] pb-7">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%]">
                 Custom Solutions

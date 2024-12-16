@@ -1,28 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
 const privacySections = [
-  { id: "objective", title: "Objective" },
-  { id: "scope", title: "Scope of this Privacy Statement" },
-  { id: "personal-info", title: "Personal Information Collected by Zeplinix" },
+  { id: "objective", title: "1. Objective" },
+  { id: "scope", title: "2. Scope of this Privacy Statement" },
+  {
+    id: "personal-info",
+    title: "3. Personal Information Collected by Zeplinix",
+  },
   {
     id: "auto-info",
     title:
-      "Personal information that is automatically collected by Zeplinix when you use Zeplinix websites",
+      "4. Personal information that is automatically collected by Zeplinix when you use Zeplinix websites",
   },
   {
     id: "third-party",
-    title: "Personal information that is collected from third-party sources",
+    title: "5. Personal information that is collected from third-party sources",
   },
-  { id: "use-data", title: "How We Use Your Data" },
+  { id: "use-data", title: "6. How We Use Your Data" },
   {
     id: "sharing-info",
-    title: "Sharing of Personal Information with Third Parties",
+    title: "7. Sharing of Personal Information with Third Parties",
   },
-  { id: "preferences", title: "Preferences" },
-  { id: "cookies", title: "Cookies and Other Technologies" },
-  { id: "data-protection", title: "Data Protection and Confidentiality" },
-  { id: "retention", title: "Retention of Personal Information" },
-  { id: "contact", title: "Contact Us" },
+  { id: "preferences", title: "8. Preferences" },
+  { id: "cookies", title: "9. Cookies and Other Technologies" },
+  { id: "data-protection", title: "10. Data Protection and Confidentiality" },
+  { id: "retention", title: "11. Retention of Personal Information" },
+  { id: "contact", title: "12. Contact Us" },
 ];
 
 export default function PrivacyPolicy() {
@@ -204,10 +207,10 @@ export default function PrivacyPolicy() {
           </main>
 
           {/* Right Table of Content */}
-          <aside className="lg:w-1/4 hidden lg:block md:block bg-glass p-6 rounded-lg shadow-lg h-fit  top-10 bg-blur-2xl border-0.4 border-lighest-gray backdrop-blur-lg">
+          <aside className="lg:w-1/4 hidden lg:block md:block bg-glass p-6 rounded-lg shadow-lg h-fit  top-10 bg-blur-2xl border-0.4 border-lighest-gray backdrop-blur-lg z-10">
             {/* <aside className="lg:w-1/4 bg-glass p-6 rounded-lg shadow-lg h-fit sticky top-10 bg-blur-2xl"> */}
             <h2 className="text-xl font-bold mb-4">Table of Content</h2>
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-2 text-gray-300">
               {privacySections.map((section) => (
                 <li key={section.id}>
                   <a href={`#${section.id}`} className="hover:text-white ">

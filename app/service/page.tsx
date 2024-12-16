@@ -6,17 +6,17 @@ export default function Service() {
     return (
       <div>
         <div className="w-full bg-[#303030] text-white p-6 sm:p-10 md:p-14 rounded-3xl shadow-lg mt-10 lg:mt-32 ">
-          <h2 className="text-fs-24 sm:text-fs-34 lg:text-fs-54 font-semibold mb-4 sm:mb-6 leading-tight pb-10 text-center md:text-left">
+          <h2 className="text-fs-24 sm:text-fs-34 lg:text-fs-54 font-semibold mb-4 sm:mb-6 leading-tight pb-10 text-center md:text-left lg:text-left">
             Benefit of Working with us
             <span className="inline-block bg-red-600 w-3 h-3 rounded-full mx-1"></span>
           </h2>
 
           <div className="space-y-6">
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#6d6d6d] pb-5">
-              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-center lg:text-center">
+              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-left lg:text-left">
                 Expertise and Innovation
               </h3>
-              <div className="md:w-[50%] text-left md:text-center lg:text-center">
+              <div className="md:w-[50%] text-left md:text-left lg:text-left">
                 <p className="text-sm sm:text-base text-[#909090] ">
                   <b>Skilled Team:</b> Work with a team of highly experienced
                   professionals proficient in cutting-edge technologies like
@@ -33,10 +33,10 @@ export default function Service() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#6d6d6d] pb-5">
-              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-center lg:text-center">
+              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-left lg:text-left">
                 Seamless Project Execution
               </h3>
-              <div className="md:w-[50%] text-left md:text-center lg:text-center">
+              <div className="md:w-[50%] text-left md:text-left lg:text-left">
                 <p className="text-sm sm:text-base text-[#909090] ">
                   <b>Agile Methodology :</b> Projects delivered with
                   flexibility, transparency, and efficiency to meet timelines
@@ -54,10 +54,10 @@ export default function Service() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#6d6d6d] pb-5">
-              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-center lg:text-center">
+              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-left lg:text-left">
                 Cutting-Edge Technology
               </h3>
-              <div className="md:w-[50%] text-left md:text-center lg:text-center">
+              <div className="md:w-[50%] text-left md:text-left lg:text-left">
                 <p className="text-sm sm:text-base text-[#909090] ">
                   <b>Future-Ready Solutions :</b> Implementation of the latest
                   technologies like AI, cloud computing, and big data analytics.
@@ -73,10 +73,10 @@ export default function Service() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-start gap-4">
-              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-center lg:text-center">
+              <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-left md:text-left lg:text-left">
                 Superior Quality and Reliability
               </h3>
-              <div className="md:w-[50%] text-left md:text-center lg:text-center">
+              <div className="md:w-[50%] text-left md:text-left lg:text-left">
                 <p className="text-sm sm:text-base text-[#909090] ">
                   <b>Robust Development Standards :</b> Quality assurance at
                   every step ensures reliable and efficient solutions.
