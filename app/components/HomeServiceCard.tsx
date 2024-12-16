@@ -7,7 +7,7 @@ const HomeServiceCard: React.FC = () => {
   return (
     <>
       <div className="relative text-fs-44 text-left mx-11 lg:mx-32 lg:mt-40 leading-tight">
-        Our services{" "}
+        Our services
         <Image
           className="absolute w-8 left-[150px] top-[90px] lg:left-[235px] lg:top-[40px] md:left-[235px] md:top-[40px] hidden lg:block md:block"
           src={"/icon.png"}

@@ -44,13 +44,13 @@ export default function TestimonialMap() {
         "Their approach improved productivity and customer experiences. We’ve been very pleased with the results.",
     },
     {
-      name: "Vikram Reddy",
+      name: "Paridhi D.",
       title: "Co-Founder of Healthify",
       description:
         "Reliable and innovative, their solutions perfectly aligned with our goals, leading to great improvements.",
     },
     {
-      name: "Sanya Mehta",
+      name: "Amit G.",
       title: "Co-Founder of Healthify",
       description:
         "Their digital solutions were a game-changer. We’ve seen significant improvements in efficiency and results.",

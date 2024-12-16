@@ -44,7 +44,7 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
           href={linkHref}
           className="flex items-center text-left text-[#E63946] hover:underline font-bold gap-1"
         >
-          {linkText}{" "}
+          {linkText}
           <svg
             className="w-5 h-5  "
             width="28"
