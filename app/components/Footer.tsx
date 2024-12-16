@@ -198,13 +198,15 @@ const Footer = () => {
       {/* Upper Section */}
       <div className="footer-upper-section flex flex-wrap justify-between items-center p-8 sm:p-8 md:p-8 border-b-2 border-white">
         <div>
-          <Image
-            src="/logo-white.png" // Replace with the path to your logo image
-            alt="Logo"
-            width={200} // Adjust the width as needed
-            height={100} // Adjust the height as needed
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src="/logo-white.png" // Replace with the path to your logo image
+              alt="Logo"
+              width={200} // Adjust the width as needed
+              height={100} // Adjust the height as needed
+              className="object-contain"
+            />
+          </Link>
         </div>
         <div className="flex lg:flex-wrap md:flex-wrap flex-row  gap-4 items-center text-white">
           <h6 className="text-lg">Ready To Get Started?</h6>
