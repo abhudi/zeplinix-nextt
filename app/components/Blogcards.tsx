@@ -34,7 +34,7 @@ const blogs = [
     author: "Max Keny",
     date: "Learn how Enterprise Resource Planning (ERP) systems streamline operations, enhance productivity, and support data-driven decision-making. This blog explores the benefits, core functionalities, and implementation strategies of ERP for businesses of all sizes.",
     // category: "Technology Focus",
-    image: "/blog/second.png",
+    image: "/blog/fourth.png",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const blogs = [
     author: "Max Keny",
     date: "Explore the world of digital marketing and learn how to leverage online platforms to grow your brand, engage your audience, and drive sales. This guide covers essential strategies, tools, and tips to create a winning digital marketing plan for businesses of all sizes.",
     // category: "Practical Guidance",
-    image: "/blog/third.png",
+    image: "/blog/fifth.png",
   },
 ];
 
