@@ -10,7 +10,7 @@ type BlogCardProps = {
 const BlogCard: React.FC<BlogCardProps> = ({
   image,
   title,
-  author,
+  // author,
   date,
   category,
 }) => {
@@ -29,7 +29,8 @@ const BlogCard: React.FC<BlogCardProps> = ({
       <div className="flex flex-col p-1 space-y-2 h-full mt-4">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm text-gray-400">
-          {author} <span className="mx-2">•</span> {date}
+          {/* {author} <span className="mx-2">•</span> */}
+          {date}
         </p>
 
         <li className="text-sm text-white">{category}</li>

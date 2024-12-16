@@ -5,42 +5,42 @@ const blogs = [
   {
     id: 1,
     title:
-      "Most popular design systems to learn from in 2022 Most popular design systems to learn from in 2022 Most popular design systems to learn from in 2022 Most popular design systems to learn from in 2022",
-    author: "Max Keny",
+      "Discover the game-changing trends in AI, automation, and cloud that are redefining businesses worldwide. Stay ahead of the curve with future-focused insights.",
+    author: "Abhishek Deshmukh",
     date: "24 Oct, 2024",
-    category: "Design Systems",
+    category: "Industry Insights",
     image: "/blog/first.png",
   },
   {
     id: 2,
-    title: "Most popular design systems to learn from in 2022",
-    author: "Max Keny",
+    title: "Why Design Systems Matter for Businesses",
+    author: "Abhijeet Patne",
     date: "24 Oct, 2024",
-    category: "Design Systems",
+    category: "Design Innovation",
     image: "/blog/second.png",
   },
   {
     id: 3,
-    title: "Most popular design systems to learn from in 2022",
+    title: "Success Stories of Digital Transformation",
     author: "Max Keny",
     date: "24 Oct, 2024",
-    category: "Design Systems",
+    category: "Real-World App",
     image: "/blog/third.png",
   },
   {
     id: 4,
-    title: "Most popular design systems to learn from in 2022",
+    title: "Cloud & Data: The Key to Business Growth",
     author: "Max Keny",
     date: "24 Oct, 2024",
-    category: "Design Systems",
+    category: "Technology Focus",
     image: "/blog/second.png",
   },
   {
     id: 5,
-    title: "Most popular design systems to learn from in 2022",
+    title: "Your Roadmap to Digital Transformation",
     author: "Max Keny",
     date: "24 Oct, 2024",
-    category: "Design Systems",
+    category: "Practical Guidance",
     image: "/blog/third.png",
   },
 ];
@@ -84,7 +84,7 @@ export default function Blogcards() {
                 {blogs[0].title}
               </h3>
               <p className="text-sm text-gray-400 mb-4">
-                {blogs[0].author} <span className="mx-2">•</span>{" "}
+                {/* {blogs[0].author} <span className="mx-2">•</span>{" "} */}
                 {blogs[0].date}
               </p>
               <p className="text-sm text-white items-center gap-3">
