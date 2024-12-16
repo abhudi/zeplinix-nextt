@@ -82,12 +82,13 @@ const CardCarousel = () => {
             0: {
               slidesPerView: 1,
               spaceBetween: 0,
-              autoplay: false,
+              autoplay: true,
               allowTouchMove: true,
             },
             768: {
               slidesPerView: 2,
               spaceBetween: 16,
+              autoplay: true,
               allowTouchMove: true,
             },
             1024: {
