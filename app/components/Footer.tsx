@@ -223,6 +223,8 @@ const Footer = () => {
               <li>310, Tower 1, World Trade Centre, Kharadi, Pune - 411014</li>
               <li>+91 9270085057</li>
               <li>info@zeplinix.com</li>
+              <li>hr@zeplinix.com</li>
+              <li>sales@zeplinix.com</li>
             </ul>
           </div>
           <div>
@@ -280,11 +282,14 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex gap-4 mt-4 md:mt-0 lg:mt-0">
-            <FaFacebook size={20} />
+            <FaFacebook
+              href="https://www.facebook.com/people/ZeplinixDigital/61569439216331/"
+              size={20}
+            />
             <Link href="https://www.instagram.com/zeplinix.digital/">
               <FaInstagram size={20} />
             </Link>
-            <FaTwitter size={20} />
+            <FaTwitter href="" size={20} />
             <Link href="https://www.linkedin.com/company/zeplinix-technologies-private-limited/">
               <FaLinkedin size={20} />
             </Link>
