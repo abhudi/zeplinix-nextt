@@ -89,56 +89,11 @@ export default function TestimonialMap() {
               popupContent[index % popupContent.length];
 
             return (
-              <div key={popup.id}>
-                {/* Original Popup Design */}
-                <div
-                  className="absolute flex flex-col items-center justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray hidden sm:flex"
-                  style={{
-                    left: `${popup.x}%`,
-                    top: `${popup.y}%`,
-                    transform: "translate(-50%, -50%)",
-                    backdropFilter: "blur(2px)",
-                    WebkitBackdropFilter: "blur(2px)",
-                    borderRadius: "10px",
-                    width: "200px",
-                    height: "160px",
-                  }}
-                >
-                  <p className="text-gray-300">{description}</p>
-                  <div className="flex mt-1 items-center gap-3 justify-start">
-                    <Image
-                      src="/map-client.png"
-                      alt=""
-                      width={30}
-                      height={30}
-                      className="rounded-full"
-                    />
-                    <div>
-                      <p className="font-semibold">{name}</p>
-                      <p className="text-[10px] sm:text-[12px]">{title}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Red Dots for Small Devices */}
-                <div
-                  className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
-                  style={{
-                    left: `${popup.x}%`,
-                    top: `${popup.y}%`,
-                    transform: "translate(-50%, -50%)",
-                    zIndex: "10",
-                  }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setActivePopup(popup.id);
-                  }}
-                ></div>
-
-                {/* Popup for Small Devices */}
-                {activePopup === popup.id && (
+              <>
+                <div key={popup.id} className="hidden md:block lg:block">
+                  {/* Original Popup Design */}
                   <div
-                    className="absolute flex w-[200px] h-[160px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs animate-pop border-0.4 border-light-gray sm:hidden"
+                    className="absolute flex flex-col items-center justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray hidden sm:flex"
                     style={{
                       left: `${popup.x}%`,
                       top: `${popup.y}%`,
@@ -146,8 +101,9 @@ export default function TestimonialMap() {
                       backdropFilter: "blur(2px)",
                       WebkitBackdropFilter: "blur(2px)",
                       borderRadius: "10px",
+                      width: "200px",
+                      height: "160px",
                     }}
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <p className="text-gray-300">{description}</p>
                     <div className="flex mt-1 items-center gap-3 justify-start">
@@ -164,8 +120,54 @@ export default function TestimonialMap() {
                       </div>
                     </div>
                   </div>
-                )}
-              </div>
+
+                  {/* Red Dots for Small Devices */}
+                  <div
+                    className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
+                    style={{
+                      left: `${popup.x}%`,
+                      top: `${popup.y}%`,
+                      transform: "translate(-50%, -50%)",
+                      zIndex: "10",
+                    }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActivePopup(popup.id);
+                    }}
+                  ></div>
+
+                  {/* Popup for Small Devices */}
+                  {activePopup === popup.id && (
+                    <div
+                      className="absolute flex w-[200px] h-[160px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs animate-pop border-0.4 border-light-gray sm:hidden"
+                      style={{
+                        left: `${popup.x}%`,
+                        top: `${popup.y}%`,
+                        transform: "translate(-50%, -50%)",
+                        backdropFilter: "blur(2px)",
+                        WebkitBackdropFilter: "blur(2px)",
+                        borderRadius: "10px",
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <p className="text-gray-300">{description}</p>
+                      <div className="flex mt-1 items-center gap-3 justify-start">
+                        <Image
+                          src="/map-client.png"
+                          alt=""
+                          width={30}
+                          height={30}
+                          className="rounded-full"
+                        />
+                        <div>
+                          <p className="font-semibold">{name}</p>
+                          <p className="text-[10px] sm:text-[12px]">{title}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </>
             );
           })}
         </div>

@@ -81,7 +81,7 @@ const CardCarousel = () => {
           breakpoints={{
             0: {
               slidesPerView: 1,
-              spaceBetween: 0,
+              spaceBetween: 120,
               autoplay: {
                 delay: 3000, // Adjust the delay in milliseconds for auto-scroll
                 disableOnInteraction: false, // Continue autoplay even after user interaction
@@ -102,10 +102,19 @@ const CardCarousel = () => {
               spaceBetween: 40,
               allowTouchMove: true,
             },
-            1440: {
-              slidesPerView: 5,
+            1400: {
+              slidesPerView: 3,
               spaceBetween: 180,
               allowTouchMove: true,
+            },
+            1500: {
+              slidesPerView: 4,
+              spaceBetween: 180,
+              allowTouchMove: true,
+            },
+            2000: {
+              slidesPerView: 5,
+              spaceBetween: 60, // Large spacing for ultra-wide screens
             },
           }}
           className="w-full max-w-[1200px] md:max-w-[1600px] lg:max-w-[2000px] px-4"
