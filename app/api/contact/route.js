@@ -40,7 +40,7 @@ export async function POST(req) {
   <!-- Header -->
   <div style="background-color: #f04d58; padding: 20px; text-align: center">
     <img
-      src="https://your-logo-url.com/logo.png"
+      src="https://zeplinix.co.in/zeplinix-images/second/z-logo.png"
       alt="Zeplinix Logo"
       style="width: 150px; margin: 0 auto"
     />
@@ -198,8 +198,10 @@ export async function POST(req) {
       to: email,
       subject: "Thank you for contacting us!",
       html: htmlTemplate,
-      cc: cc || "deshmukhabhishek7020@gmail.com",
-      bcc: bcc || "atmaramd@301io.com",
+      cc: cc || "vidhan@zeplinix.com, manasi@zeplinix.com,",
+      bcc:
+        bcc ||
+        "abhijitp@301io.com,atmaramd@301io.com,sagar@zeplinix.com,abhishek.deshmukh@zeplinix.com",
     };
 
     // Send the email

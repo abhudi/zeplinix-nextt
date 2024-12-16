@@ -70,54 +70,54 @@ const CardCarousel = () => {
       <h1 className="text-center text-white mt-10 pt-6 text-3xl sm:text-5xl">
         Our Standout Products
       </h1>
-      <Swiper
-        modules={[Autoplay]}
-        loop={true}
-        autoplay={{
-          delay: 1000, // Auto-slide every 3 seconds
-          disableOnInteraction: false, // Keeps autoplay running after manual swipes
-        }}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-            allowTouchMove: true,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-            allowTouchMove: true,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 32,
-            allowTouchMove: true,
-          },
-          1440: {
-            slidesPerView: 5,
-            spaceBetween: 40,
-            allowTouchMove: true,
-          },
-        }}
-        className="px-4"
-      >
-        {cardsData.map((card, index) => (
-          <SwiperSlide
-            key={index}
-            className="flex justify-center mx-auto ml-8 mr-8 lg:ml-16 lg:mr-ml-16 md:ml-16 md:mr-ml-16"
-          >
-            <div className="lg:w-full md:w-full w-[200px] max-w-md mx-auto text-center ">
-              <RenewalCard
-                imageSrc={card.imageSrc}
-                title={card.title}
-                description={card.description}
-                linkText={card.linkText}
-                linkHref={card.linkHref}
-              />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="w-full px-10 md:px-8 lg:px-12">
+        <Swiper
+          modules={[Autoplay]}
+          loop={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+              autoplay: false,
+              allowTouchMove: true,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+              allowTouchMove: true,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+              allowTouchMove: true,
+            },
+            1440: {
+              slidesPerView: 5,
+              spaceBetween: 180,
+              allowTouchMove: true,
+            },
+          }}
+          className="w-full max-w-[1200px] md:max-w-[1600px] lg:max-w-[2000px] px-4"
+        >
+          {cardsData.map((card, index) => (
+            <SwiperSlide key={index} className="flex justify-center gap-14">
+              <div className="w-full max-w-sm gap-14">
+                <RenewalCard
+                  imageSrc={card.imageSrc}
+                  title={card.title}
+                  description={card.description}
+                  linkText={card.linkText}
+                  linkHref={card.linkHref}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
