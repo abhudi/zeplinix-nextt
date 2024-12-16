@@ -103,8 +103,8 @@ const CardCarousel = () => {
               allowTouchMove: true,
             },
             1400: {
-              slidesPerView: 3,
-              spaceBetween: 180,
+              slidesPerView: 4,
+              spaceBetween: 40,
               allowTouchMove: true,
             },
             1500: {
