@@ -310,7 +310,7 @@ const serviceDetails = () => {
 
             <p className="text-lg text-[#909090] text-center md:text-left">
               Unlock the potential of your business with cutting-edge AI and
-              Machine Learning solutions. At Zeplinix technologies, we harness
+              Machine Learning solutions. At Zeplinix Technologies, we harness
               the power of artificial intelligence to transform data into
               actionable insights, automate workflows, and drive smarter
               decision-making.

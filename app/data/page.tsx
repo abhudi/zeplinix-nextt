@@ -331,7 +331,7 @@ const serviceDetails = () => {
 
             <p className="text-lg text-[#909090] text-center md:text-left">
               Transform your data into actionable insights with our advanced
-              Data Analytics solutions. At Zeplinix technologies, we empower
+              Data Analytics solutions. At Zeplinix Technologies, we empower
               businesses to make informed decisions, optimize operations, and
               uncover new opportunities through data-driven strategies.
             </p>

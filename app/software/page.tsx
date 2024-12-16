@@ -353,7 +353,7 @@ const serviceDetails = () => {
 
             <p className="text-lg text-[#909090] text-center md:text-left">
               Drive innovation and achieve your business goals with tailor-made
-              software solutions. At Zeplinix technologies, we specialize in
+              software solutions. At Zeplinix Technologies, we specialize in
               designing, developing, and delivering custom software that aligns
               perfectly with your unique requirements, helping you stay ahead in
               a competitive market.

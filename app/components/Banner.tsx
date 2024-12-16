@@ -38,9 +38,8 @@ const Banner: React.FC = () => {
           </button>
           {/* Main Heading */}
           <h1 className="text-[30px] sm:text-[36px] lg:text-[48px] font-normal sm:leading-20 lg:leading-67 ">
-            Zeplinix technologies where{" "}
-            <span className="text-red-500">innovation</span> meets digital
-            transformation
+            <span className="text-red-500">Zeplinix Technologies </span> where{" "}
+            innovation meets digital transformation
           </h1>
           <p
             className="text-sm sm:text-base lg:text-lg mt-4 leading-tight text-[#909090]"

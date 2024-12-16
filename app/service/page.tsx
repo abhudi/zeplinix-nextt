@@ -119,7 +119,7 @@ export default function Service() {
         title: "Cloud Services",
         icon: "/service/icons/cloud.png",
         content:
-          "Empower your business with scalable, secure, and efficient cloud and infrastructure solutions. At Zeplinix technologies, we help businesses modernize their IT operations, optimize performance, and enhance agility through cutting-edge cloud technologies . ",
+          "Empower your business with scalable, secure, and efficient cloud and infrastructure solutions. At Zeplinix Technologies, we help businesses modernize their IT operations, optimize performance, and enhance agility through cutting-edge cloud technologies . ",
         link: "/cloud", // Update link
         image: "/service/cloud.png",
       },
@@ -127,7 +127,7 @@ export default function Service() {
         title: "Data Analytics",
         icon: "/service/icons/data.png",
         content:
-          "Transform your data into actionable insights with our advanced Data Analytics solutions. At Zeplinix technologies, we empower businesses to make informed decisions, optimize operations, and uncover new opportunities through data-driven strategies. ",
+          "Transform your data into actionable insights with our advanced Data Analytics solutions. At Zeplinix Technologies, we empower businesses to make informed decisions, optimize operations, and uncover new opportunities through data-driven strategies. ",
         link: "/data", // Update link
         image: "/service/data.png",
       },
@@ -135,7 +135,7 @@ export default function Service() {
         title: "Software Development",
         icon: "/service/icons/software.png",
         content:
-          "Drive innovation and achieve your business goals with tailor-made software solutions. At Zeplinix technologies, we specialize in designing, developing, and delivering custom software that aligns perfectly with your  requirements, helping you stay ahead in a  market. ",
+          "Drive innovation and achieve your business goals with tailor-made software solutions. At Zeplinix Technologies, we specialize in designing, developing, and delivering custom software that aligns perfectly with your  requirements, helping you stay ahead in a  market. ",
         link: "/software", // Update link
         image: "/service/software.png",
       },
@@ -143,7 +143,7 @@ export default function Service() {
         title: "Graphic Designing",
         icon: "/service/icons/design.png",
         content:
-          "Elevate your brand presence and connect with your audience like never before. At Zeplinix technologies, we combine creative design, strategic advertising, and impactful social media campaigns to help businesses stand out in the digital world . ",
+          "Elevate your brand presence and connect with your audience like never before. At Zeplinix Technologies, we combine creative design, strategic advertising, and impactful social media campaigns to help businesses stand out in the digital world . ",
         link: "/graphic", // Update link
         image: "/service/strategy.png",
       },
