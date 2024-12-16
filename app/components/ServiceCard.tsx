@@ -36,7 +36,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
         {/* Middle Section (Content) */}
         <div className="w-full lg:w-[43%] p-6 lg:p-10 lg:pl-14">
-          <p className="text-[#909090] text-center lg:text-left mb-6 text-fs-16 lg:text-fs-20 leading-tight">
+          <p className="text-[#909090] text-left md:text-center lg:text-center mb-6 text-fs-16 lg:text-fs-20 leading-tight">
             {content}
           </p>
           <Link href={link}>

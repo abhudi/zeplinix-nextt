@@ -293,16 +293,25 @@ const Footer = () => {
             </a> */}
           </div>
           <div className="flex gap-4 mt-4 md:mt-0 lg:mt-0">
-            <Link href="https://www.facebook.com/people/ZeplinixDigital/61569439216331/">
+            <Link
+              href="https://www.facebook.com/people/ZeplinixDigital/61569439216331/"
+              target="blank"
+            >
               <FaFacebook size={20} style={{ cursor: "pointer" }} />
             </Link>
-            <Link href="https://www.instagram.com/zeplinix.digital/">
+            <Link
+              href="https://www.instagram.com/zeplinix.digital/"
+              target="blank"
+            >
               <FaInstagram size={20} style={{ cursor: "pointer" }} />
             </Link>
-            <Link href="https://x.com/zeplinixworld?s=21">
+            <Link href="https://x.com/zeplinixworld?s=21" target="blank">
               <FaTwitter size={20} style={{ cursor: "pointer" }} />
             </Link>
-            <Link href="https://www.linkedin.com/company/zeplinix-technologies-private-limited/">
+            <Link
+              href="https://www.linkedin.com/company/zeplinix-technologies-private-limited/"
+              target="blank"
+            >
               <FaLinkedin size={20} style={{ cursor: "pointer" }} />
             </Link>
           </div>

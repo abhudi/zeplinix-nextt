@@ -199,10 +199,10 @@ const serviceDetails = () => {
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
+            <h1 className="text-xl md:text-3xl lg:text-5xl  text-left md: font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Embrace the Power of the Cloud
             </h1>
-            <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-left md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
               Modernize your IT ecosystem and unlock new possibilities. Contact
               us today to explore how our Cloud and Infrastructure Services can
               drive your business forward.
@@ -340,11 +340,11 @@ const serviceDetails = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left lg:text-left">
               Cloud Services
             </h1>
 
-            <p className="text-lg text-[#909090] text-center md:text-left">
+            <p className="text-lg text-[#909090] text-left ">
               Empower your business with scalable, secure, and efficient cloud
               and infrastructure solutions. At Zeplinix Technologies, we help
               businesses modernize their IT operations, optimize performance,
