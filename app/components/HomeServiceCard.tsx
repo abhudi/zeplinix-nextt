@@ -100,7 +100,7 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Data Analytics
+                Data <br className="hidden lg:block" /> Analytics
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Transform your data into actionable insights with our advanced
@@ -159,7 +159,7 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Cloud Services
+                Cloud <br className="hidden lg:block" /> Services
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Empower your business with scalable, secure, and efficient cloud
@@ -218,7 +218,7 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Graphic Designing
+                Graphic <br className="hidden lg:block" /> Designing
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Elevate your brand presence and connect with your audience like
