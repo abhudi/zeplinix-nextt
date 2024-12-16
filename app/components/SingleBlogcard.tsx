@@ -4,7 +4,7 @@ type BlogCardProps = {
   title: string;
   author: string;
   date: string;
-  category: string;
+  // category: string;
 };
 
 const BlogCard: React.FC<BlogCardProps> = ({
