@@ -20,40 +20,40 @@ export default function TestimonialMap() {
 
   const popupContent = [
     {
-      name: "John Doe",
+      name: "Deepak W.",
       title: "CEO of InnovateX",
       description:
-        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "The team at Zeplinix is professional, passionate, and easy to work with. They understood our needs and provided valuable guidance to improve our website. We look forward to collaborating again in the future.",
     },
     {
-      name: "Sara Smith",
+      name: "Urwan O.",
       title: "Founder of GreenTech",
       description:
-        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "We had worked with this company. They are very professional and hard-working. Owners are very enthusiastic and focused. I wish them best luck for their future.",
     },
     {
-      name: "Tom Harris",
+      name: "Mayur S.",
       title: "Co-Founder of Healthify",
       description:
-        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "Good service provider in Pune, the field of cloud based software and mobile app is extra ordinary with lowest cost",
     },
     {
-      name: "Tom Harris",
+      name: "Ganesh P.",
       title: "Co-Founder of Healthify",
       description:
-        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "Their approach improved productivity and customer experiences. We’ve been very pleased with the results.",
     },
     {
-      name: "Tom Harris",
+      name: "Vikram Reddy",
       title: "Co-Founder of Healthify",
       description:
-        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "Reliable and innovative, their solutions perfectly aligned with our goals, leading to great improvements.",
     },
     {
-      name: "Tom Harris",
+      name: "Sanya Mehta",
       title: "Co-Founder of Healthify",
       description:
-        "The Convert IQ is a software solution designed to automate the generation of warranty renewal notifications and processes.",
+        "Their digital solutions were a game-changer. We’ve seen significant improvements in efficiency and results.",
     },
   ];
 
@@ -83,17 +83,51 @@ export default function TestimonialMap() {
             height={100}
           />
 
-          {/* Popups for Large and Medium Devices */}
           {popups.map((popup, index) => {
-            const { name, title, description } =
+            const { name, description } =
               popupContent[index % popupContent.length];
 
             return (
-              <>
-                <div key={popup.id} className="hidden md:block lg:block">
-                  {/* Original Popup Design */}
+              <div key={popup.id} className="hidden md:block lg:block">
+                {/* Popup for Larger Devices */}
+                <div
+                  className="absolute flex flex-col items-start justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray"
+                  style={{
+                    left: `${popup.x}%`,
+                    top: `${popup.y}%`,
+                    transform: "translate(-50%, -50%)",
+                    backdropFilter: "blur(2px)",
+                    WebkitBackdropFilter: "blur(2px)",
+                    borderRadius: "10px",
+                    width: "200px",
+                    height: "auto",
+                  }}
+                >
+                  <p className="text-gray-300">{description}</p>
+                  <div className="flex mt-2">
+                    <p className="font-semibold">- {name}</p>
+                  </div>
+                </div>
+
+                {/* Red Dots for Small Devices */}
+                <div
+                  className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
+                  style={{
+                    left: `${popup.x}%`,
+                    top: `${popup.y}%`,
+                    transform: "translate(-50%, -50%)",
+                    zIndex: "10",
+                  }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActivePopup(popup.id);
+                  }}
+                ></div>
+
+                {/* Popup for Small Devices */}
+                {activePopup === popup.id && (
                   <div
-                    className="absolute flex flex-col items-center justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray hidden sm:flex"
+                    className="absolute flex flex-col items-start bg-glass text-white p-3 shadow-lg text-xs border-0.4 border-light-gray sm:hidden"
                     style={{
                       left: `${popup.x}%`,
                       top: `${popup.y}%`,
@@ -104,70 +138,15 @@ export default function TestimonialMap() {
                       width: "200px",
                       height: "160px",
                     }}
+                    onClick={(e) => e.stopPropagation()}
                   >
                     <p className="text-gray-300">{description}</p>
-                    <div className="flex mt-1 items-center gap-3 justify-start">
-                      <Image
-                        src="/map-client.png"
-                        alt=""
-                        width={30}
-                        height={30}
-                        className="rounded-full"
-                      />
-                      <div>
-                        <p className="font-semibold">{name}</p>
-                        <p className="text-[10px] sm:text-[12px]">{title}</p>
-                      </div>
+                    <div className="flex mt-2">
+                      <p className="font-semibold">- {name}</p>
                     </div>
                   </div>
-
-                  {/* Red Dots for Small Devices */}
-                  <div
-                    className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
-                    style={{
-                      left: `${popup.x}%`,
-                      top: `${popup.y}%`,
-                      transform: "translate(-50%, -50%)",
-                      zIndex: "10",
-                    }}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setActivePopup(popup.id);
-                    }}
-                  ></div>
-
-                  {/* Popup for Small Devices */}
-                  {activePopup === popup.id && (
-                    <div
-                      className="absolute flex w-[200px] h-[160px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs animate-pop border-0.4 border-light-gray sm:hidden"
-                      style={{
-                        left: `${popup.x}%`,
-                        top: `${popup.y}%`,
-                        transform: "translate(-50%, -50%)",
-                        backdropFilter: "blur(2px)",
-                        WebkitBackdropFilter: "blur(2px)",
-                        borderRadius: "10px",
-                      }}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <p className="text-gray-300">{description}</p>
-                      <div className="flex mt-1 items-center gap-3 justify-start">
-                        <Image
-                          src="/map-client.png"
-                          alt=""
-                          width={30}
-                          height={30}
-                          className="rounded-full"
-                        />
-                        <div>
-                          <p className="font-semibold">{name}</p>
-                          <p className="text-[10px] sm:text-[12px]">{title}</p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </>
+                )}
+              </div>
             );
           })}
         </div>

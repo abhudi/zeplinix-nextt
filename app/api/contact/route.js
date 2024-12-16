@@ -3,16 +3,16 @@ import nodemailer from "nodemailer";
 export async function POST(req) {
   try {
     // Parse the incoming request body
-    const { name, email, message, cc, bcc } = await req.json();
+    const { name, email, subject, message, cc, bcc } = await req.json();
 
-    if (!name || !email || !message) {
+    if (!name || !email || !subject || !message) {
       return new Response(
         JSON.stringify({ error: "All fields are required" }),
         { status: 400 }
       );
     }
 
-    console.log("Parsed data:", { name, email, message, cc, bcc }); // Log data for debugging
+    console.log("Parsed data:", { name, email, subject, message, cc, bcc }); // Log data for debugging
 
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
@@ -52,6 +52,7 @@ export async function POST(req) {
       Thank You for Your Inquiry – We’re Here to Assist
     </h1>
     <p>Hi <strong>${name}</strong>,</p>
+    
     <p>
       ${message}
     </p>
@@ -84,7 +85,7 @@ export async function POST(req) {
         </li>
       </ul>
       <img
-        src="https://your-image-url.com/image.png"
+        src="https://zeplinix.co.in/zeplinix-images/second/desk.png"
         alt="Illustration"
         style="width: 100%; margin-top: 15px; border-radius: 8px"
       />
@@ -93,7 +94,7 @@ export async function POST(req) {
     <!-- Call-to-Action -->
     <div style="text-align: center; margin: 20px 0">
       <a
-        href="https://your-cta-link.com"
+        href="https://www.zeplinix.com/contact"
         style="
           display: inline-block;
           padding: 12px 25px;
@@ -151,13 +152,7 @@ export async function POST(req) {
           style="width: 24px"
         />
       </a>
-      <a href="#" style="margin: 0 5px">
-        <img
-          src="https://your-icon-url.com/youtube.png"
-          alt="YouTube"
-          style="width: 24px"
-        />
-      </a>
+      
       <a href="#" style="margin: 0 5px">
         <img
           src="https://your-icon-url.com/linkedin.png"
@@ -196,7 +191,7 @@ export async function POST(req) {
     const mailOptions = {
       from: '"Zeplinix Support" <info@zeplinix.com>',
       to: email,
-      subject: "Thank you for contacting us!",
+      subject: subject,
       html: htmlTemplate,
       cc: cc || "vidhan@zeplinix.com, manasi@zeplinix.com,",
       bcc:

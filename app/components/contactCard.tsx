@@ -7,6 +7,7 @@ import { IoLocationOutline } from "react-icons/io5";
 interface FormData {
   name: string;
   email: string;
+  subject: string;
   phone: string;
   message: string;
 }
@@ -15,6 +16,7 @@ const GetInTouchForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
+    subject: "",
     phone: "",
     message: "",
   });
@@ -42,7 +44,7 @@ const GetInTouchForm: React.FC = () => {
 
     setIsSubmitting(true); // Lock the button immediately
 
-    const { name, email, phone, message } = formData;
+    const { name, email, subject, phone, message } = formData;
 
     try {
       const response = await fetch("/api/contact", {
@@ -50,7 +52,7 @@ const GetInTouchForm: React.FC = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, phone, message }),
+        body: JSON.stringify({ name, email, subject, phone, message }),
       });
 
       if (response.ok) {
@@ -58,7 +60,13 @@ const GetInTouchForm: React.FC = () => {
         setResponseMessage(
           "Thank you for contacting us! We'll get back to you soon."
         );
-        setFormData({ name: "", email: "", phone: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          phone: "",
+          message: "",
+        });
       } else {
         setIsSuccess(false);
         setResponseMessage("Something went wrong, please try again.");
@@ -154,7 +162,6 @@ const GetInTouchForm: React.FC = () => {
             <p className="text-gray-300 mt-3 mb-6 md:mb-10 mx-1 text-center lg:text-left">
               We are here for you! How can we help you?
             </p>
-            3
             {responseMessage && (
               <p
                 className={`text-center mb-6 ${
@@ -174,11 +181,21 @@ const GetInTouchForm: React.FC = () => {
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
                 required
               />
+
               <input
                 type="email"
                 placeholder="Enter your email"
                 name="email"
                 value={formData.email}
+                onChange={handleChange}
+                className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
+                required
+              />
+              <input
+                type="subject"
+                placeholder="Enter your subject"
+                name="subject"
+                value={formData.subject}
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
                 required
