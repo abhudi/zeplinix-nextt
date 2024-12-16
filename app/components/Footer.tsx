@@ -220,11 +220,20 @@ const Footer = () => {
           <div>
             <h6 className="font-bold text-lg mb-3">Contact</h6>
             <ul className="space-y-2">
-              <li>310, Tower 1, World Trade Centre, Kharadi, Pune - 411014</li>
-              <li>+91 9270085057</li>
-              <li>info@zeplinix.com</li>
-              <li>hr@zeplinix.com</li>
-              <li>sales@zeplinix.com</li>
+              <div>
+                <li>
+                  310, Tower 1, World Trade Centre, Kharadi, Pune - 411014
+                </li>
+              </div>
+              <div>
+                <li>+91 9021348235</li>
+                <li>+91 9270085057</li>
+              </div>
+              <div>
+                <li>info@zeplinix.com</li>
+                <li>hr@zeplinix.com</li>
+                <li>sales@zeplinix.com</li>
+              </div>
             </ul>
           </div>
           <div>
