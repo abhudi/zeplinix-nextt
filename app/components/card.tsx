@@ -17,7 +17,7 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
 }) => {
   return (
     <div
-      className="relative w-[290px] h-auto lg:w-[344px] lg:h-[369px] md-[344px] md-[369px] p-6 bg-bg-card text-white shadow-lg flex flex-col justify-between border border-[#8b8b8b] mt-40 mb-40"
+      className="relative w-[290px] h-auto lg:w-[344px] lg:h-[369px] md-[344px] md-[369px] p-6 bg-bg-card text-white shadow-lg flex flex-col justify-between border border-[#8b8b8b] lg:mt-40 lg:mb-30 md:mt-40 md:mb-30 mt-40 mb-10"
       style={{ borderWidth: "0.4px", borderRadius: "20px" }}
     >
       {/* Image wrapper with absolute positioning */}

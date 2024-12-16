@@ -9,7 +9,7 @@ const HomeServiceCard: React.FC = () => {
       <div className="relative text-fs-44 text-left mx-11 lg:mx-32 lg:mt-40 leading-tight">
         Our services{" "}
         <Image
-          className="absolute w-8 left-[150px] top-[90px] lg:left-[235px] lg:top-[40px] md:left-[235px] md:top-[40px]"
+          className="absolute w-8 left-[150px] top-[90px] lg:left-[235px] lg:top-[40px] md:left-[235px] md:top-[40px] hidden lg:block md:block"
           src={"/icon.png"}
           alt=""
           width={100}
@@ -32,7 +32,7 @@ const HomeServiceCard: React.FC = () => {
                 height={200}
               />
               <h3 className="text-fs-20 lg:text-fs-44 font-semibold text-white text-center lg:text-left mb-2 pt-5 leading-tight">
-                Software Development
+                Software <br className="hidden lg:block" /> Development
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Drive innovation and achieve your business goals with
