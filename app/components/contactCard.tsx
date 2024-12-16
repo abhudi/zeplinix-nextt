@@ -93,12 +93,12 @@ const GetInTouchForm: React.FC = () => {
       {
         icon: "/contact/icons/second.png",
         alt: "Email Icon",
-        text: "info@Zeplinix.com",
+        text: "info@zeplinix.com",
       },
       {
         icon: "/contact/icons/third.png",
         alt: "Phone Icon",
-        text: "(0761) 654-123987",
+        text: "+91 9270085057",
       },
     ],
     [
@@ -110,12 +110,12 @@ const GetInTouchForm: React.FC = () => {
       {
         icon: "/contact/icons/second.png",
         alt: "Email Icon",
-        text: "info@Zeplinix.com",
+        text: "info@zeplinix.com",
       },
       {
         icon: "/contact/icons/third.png",
         alt: "Phone Icon",
-        text: "(0761) 654-123987",
+        text: "+91 9021348235",
       },
     ],
     [
@@ -123,19 +123,19 @@ const GetInTouchForm: React.FC = () => {
         icon: "/contact/icons/first.png",
         alt: "Address Icon",
 
-        text: "Patwari colony janori road , Shegaon - 444203",
+        text: "Patwari Colony Janori Road , Shegaon - 444203",
       },
       {
         icon: "/contact/icons/second.png",
         alt: "Email Icon",
 
-        text: "info@Zeplinix.com",
+        text: "info@zeplinix.com",
       },
       {
         icon: "/contact/icons/third.png",
         alt: "Phone Icon",
 
-        text: "(0761) 654-123987",
+        text: "+91 93227 22581",
       },
     ],
   ];
