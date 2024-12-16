@@ -25,8 +25,8 @@ export async function POST(req) {
       },
     });
 
-    // Define the HTML email template (same as before)
-    const htmlTemplate = ` <div
+    // HTML email template for the sender
+    const htmlTemplate = `<div
   style="
     font-family: Arial, sans-serif;
     max-width: 600px;
@@ -185,37 +185,62 @@ export async function POST(req) {
       <a href="#" style="color: #f04d58; text-decoration: none">click here</a>.
     </p>
   </div>
-</div>`; // Your existing HTML template
+</div>`; // (Keep your original HTML template for the sender)
 
-    // Define the email options
-    const mailOptions = {
+    // Notification email template for your team (admin)
+    const adminEmailTemplate = `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+      <div style="background-color: #f04d58; padding: 20px; text-align: center; color: #fff;">
+        <h1>New Inquiry Received</h1>
+      </div>
+      <div style="padding: 20px; color: #333">
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong> ${message}</p>
+        <p style="font-size: 14px; color: #666">Please follow up with this inquiry promptly.</p>
+      </div>
+    </div>
+    `;
+
+    // Email options for the sender
+    const senderMailOptions = {
       from: '"Zeplinix Support" <info@zeplinix.com>',
       to: email,
       subject: subject,
       html: htmlTemplate,
-      cc: cc || "vidhan@zeplinix.com, manasi@zeplinix.com,",
+      cc: cc || "vidhan@zeplinix.com, manasi@zeplinix.com",
       bcc:
         bcc ||
         "abhijitp@301io.com,atmaramd@301io.com,sagar@zeplinix.com,abhishek.deshmukh@zeplinix.com",
     };
 
-    // Send the email
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Email sent:", info); // Log the response from the email server
+    // Email options for your team (admin)
+    const adminMailOptions = {
+      from: '"Zeplinix Support" <info@zeplinix.com>',
+      to: "info@zeplinix.com",
+      subject: `New Inquiry from ${name} for ${subject}`,
+      html: adminEmailTemplate, // Ensure this is the correct template for admin
+    };
+
+    // Send both emails
+    const [senderInfo, adminInfo] = await Promise.all([
+      transporter.sendMail(senderMailOptions),
+      transporter.sendMail(adminMailOptions),
+    ]);
+
+    console.log("Email sent to sender:", senderInfo);
+    console.log("Notification email sent to admin:", adminInfo);
 
     return new Response(
-      JSON.stringify({ success: true, message: "Email sent successfully" }),
-      {
-        status: 200,
-      }
+      JSON.stringify({ success: true, message: "Emails sent successfully" }),
+      { status: 200 }
     );
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("Error sending emails:", error);
     return new Response(
-      JSON.stringify({ error: error.message || "Failed to send email" }),
-      {
-        status: 500,
-      }
+      JSON.stringify({ error: error.message || "Failed to send emails" }),
+      { status: 500 }
     );
   }
 }

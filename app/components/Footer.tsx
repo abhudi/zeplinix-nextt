@@ -300,7 +300,7 @@ const Footer = () => {
             <Link href="https://www.instagram.com/zeplinix.digital/">
               <FaInstagram size={20} />
             </Link>
-            <FaTwitter href="" size={20} />
+            <FaTwitter href="#" size={20} />
             <Link href="https://www.linkedin.com/company/zeplinix-technologies-private-limited/">
               <FaLinkedin size={20} />
             </Link>
