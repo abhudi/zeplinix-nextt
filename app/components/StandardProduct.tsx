@@ -82,13 +82,19 @@ const CardCarousel = () => {
             0: {
               slidesPerView: 1,
               spaceBetween: 0,
-              autoplay: true,
+              autoplay: {
+                delay: 3000, // Adjust the delay in milliseconds for auto-scroll
+                disableOnInteraction: false, // Continue autoplay even after user interaction
+              },
               allowTouchMove: true,
             },
             768: {
               slidesPerView: 2,
               spaceBetween: 16,
-              autoplay: true,
+              autoplay: {
+                delay: 3000, // Adjust the delay in milliseconds for auto-scroll
+                disableOnInteraction: false,
+              },
               allowTouchMove: true,
             },
             1024: {
