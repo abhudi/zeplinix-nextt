@@ -182,9 +182,9 @@ const Footer = () => {
     // { text: "FAQ", link: "/faq" },
     // { text: "Community", link: "/community" },
     // { text: "Live Chatting", link: "/live-chat" },
-    { text: "Contact us", link: "/contact-us" },
-    { text: "Privacy policy", link: "/contact-us" },
-    { text: "Terms and conditions", link: "/contact-us" },
+    { text: "FAQ", link: "#" },
+    { text: "Contact us", link: "/contact" },
+    // { text: "", link: "#" },
     // { text: "Support Center", link: "/support-center" },
   ];
 
@@ -282,9 +282,9 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="flex flex-wrap gap-4">
             <p>© Zeplinix Technologies Pvt Ltd</p>
-            <a href="#" className="hover:underline">
+            <Link href="/privacy-policy" className="hover:underline">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="hover:underline">
               Cookies
             </a>
