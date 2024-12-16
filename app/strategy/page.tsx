@@ -137,10 +137,10 @@ const serviceDetails = () => {
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
+            <h1 className="text-xl md:text-3xl lg:text-5xl text-left md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Transform Your Business with AI/ML
             </h1>
-            <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-left md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
               Empower your organization with smarter, faster, and more efficient
               processes. Let us help you lead in the era of AI. Contact us today
               to discuss your AI/ML needs and take the first step towards
@@ -193,32 +193,32 @@ const serviceDetails = () => {
     {
       imageSrc: "/service/icons/strategy.png",
       title: "Strategy and consultancy",
-      linkHref: "/service-1",
+      linkHref: "/strategy",
     },
     {
       imageSrc: "/service/icons/flutter.png",
       title: "Application services",
-      linkHref: "/service-2",
+      linkHref: "/application",
     },
     {
       imageSrc: "/service/icons/cloud.png",
       title: "Cloud services",
-      linkHref: "/service-3",
+      linkHref: "/cloud",
     },
     {
       imageSrc: "/service/icons/data.png",
       title: "Data analytics",
-      linkHref: "/service-1",
+      linkHref: "/data",
     },
     {
       imageSrc: "/service/icons/software.png",
       title: "Software development",
-      linkHref: "/service-2",
+      linkHref: "/software",
     },
     {
       imageSrc: "/service/icons/design.png",
       title: "Graphic designing",
-      linkHref: "/service-3",
+      linkHref: "/graphic",
     },
   ];
 
@@ -304,11 +304,11 @@ const serviceDetails = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-left md:text-center lg:text-center">
               AI/ML Services
             </h1>
 
-            <p className="text-lg text-[#909090] text-center md:text-left">
+            <p className="text-lg text-[#909090] text-left md:text-center lg:text-center">
               Unlock the potential of your business with cutting-edge AI and
               Machine Learning solutions. At Zeplinix Technologies, we harness
               the power of artificial intelligence to transform data into

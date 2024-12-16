@@ -27,7 +27,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
         className="object-cover w-full h-1/2 rounded-[12px]"
       />
       <div className="flex flex-col p-1 space-y-2 h-full mt-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h3 className="text-lg font-semibold ">{title}</h3>
         <p className="text-sm text-gray-400">
           {/* {author} <span className="mx-2">•</span> */}
           {date}

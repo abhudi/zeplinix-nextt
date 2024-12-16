@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 
 interface Popup {
   id: string;
@@ -73,8 +76,34 @@ export default function TestimonialMap() {
           page, or admin panel for your SaaS.
         </p>
       </div>
-      <div className="flex items-center justify-center bg-black">
-        <div className="relative w-[90%] max-w-5xl aspect-video mt-20">
+
+      {/* For Small Devices: Show Testimonials Slider */}
+      <div className="sm:block lg:hidden mt-10 px-4">
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{
+            delay: 1000, // Delay between slides in milliseconds
+            disableOnInteraction: false, // Allows autoplay to continue after user interaction
+          }}
+          loop={true}
+        >
+          {popupContent.map((popup, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-glass text-white p-5 shadow-lg rounded-lg">
+                <p className="text-gray-300">{popup.description}</p>
+                <div className="flex mt-2">
+                  <p className="font-semibold">- {popup.name}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* For Larger Devices: Show Map with Popups */}
+      <div className="flex items-center justify-center bg-black lg:block hidden">
+        <div className="relative w-full max-w-[1200px] aspect-video mt-20 mx-auto">
           <Image
             src="/homepage/map.svg"
             alt="World Map"
@@ -88,46 +117,11 @@ export default function TestimonialMap() {
               popupContent[index % popupContent.length];
 
             return (
-              <div key={popup.id} className="hidden md:block lg:block">
-                {/* Popup for Larger Devices */}
-                <div
-                  className="absolute flex flex-col items-start justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray"
-                  style={{
-                    left: `${popup.x}%`,
-                    top: `${popup.y}%`,
-                    transform: "translate(-50%, -50%)",
-                    backdropFilter: "blur(2px)",
-                    WebkitBackdropFilter: "blur(2px)",
-                    borderRadius: "10px",
-                    width: "200px",
-                    height: "auto",
-                  }}
-                >
-                  <p className="text-gray-300">{description}</p>
-                  <div className="flex mt-2">
-                    <p className="font-semibold">- {name}</p>
-                  </div>
-                </div>
-
-                {/* Red Dots for Small Devices */}
-                <div
-                  className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
-                  style={{
-                    left: `${popup.x}%`,
-                    top: `${popup.y}%`,
-                    transform: "translate(-50%, -50%)",
-                    zIndex: "10",
-                  }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setActivePopup(popup.id);
-                  }}
-                ></div>
-
-                {/* Popup for Small Devices */}
-                {activePopup === popup.id && (
+              <React.Fragment key={popup.id}>
+                <div className="hidden md:block lg:block">
+                  {/* Popup for Larger Devices */}
                   <div
-                    className="absolute flex flex-col items-start bg-glass text-white p-3 shadow-lg text-xs border-0.4 border-light-gray sm:hidden"
+                    className="absolute flex flex-col items-start justify-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm border-0.4 border-light-gray"
                     style={{
                       left: `${popup.x}%`,
                       top: `${popup.y}%`,
@@ -136,17 +130,54 @@ export default function TestimonialMap() {
                       WebkitBackdropFilter: "blur(2px)",
                       borderRadius: "10px",
                       width: "200px",
-                      height: "160px",
+                      height: "auto",
                     }}
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <p className="text-gray-300">{description}</p>
                     <div className="flex mt-2">
                       <p className="font-semibold">- {name}</p>
                     </div>
                   </div>
-                )}
-              </div>
+
+                  {/* Red Dots for Small Devices */}
+                  <div
+                    className="absolute w-4 h-4 bg-[#E63946] rounded-full cursor-pointer sm:hidden"
+                    style={{
+                      left: `${popup.x}%`,
+                      top: `${popup.y}%`,
+                      transform: "translate(-50%, -50%)",
+                      zIndex: "10",
+                    }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActivePopup(popup.id);
+                    }}
+                  ></div>
+
+                  {/* Popup for Small Devices */}
+                  {activePopup === popup.id && (
+                    <div
+                      className="absolute flex flex-col items-start bg-glass text-white p-3 shadow-lg text-xs border-0.4 border-light-gray sm:hidden"
+                      style={{
+                        left: `${popup.x}%`,
+                        top: `${popup.y}%`,
+                        transform: "translate(-50%, -50%)",
+                        backdropFilter: "blur(2px)",
+                        WebkitBackdropFilter: "blur(2px)",
+                        borderRadius: "10px",
+                        width: "200px",
+                        height: "160px",
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <p className="text-gray-300">{description}</p>
+                      <div className="flex mt-2">
+                        <p className="font-semibold">- {name}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </React.Fragment>
             );
           })}
         </div>

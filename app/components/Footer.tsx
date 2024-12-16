@@ -284,10 +284,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="flex flex-wrap gap-4">
             <p>© Zeplinix Technologies Pvt Ltd</p>
-            {/* <Link href="/privacy-policy" className="hover:underline">
+            <Link href="/privacy-policy" className="hover:underline">
               Privacy Policy
             </Link>
-            <a href="#" className="hover:underline">
+            {/* <a href="#" className="hover:underline">
               Cookies
             </a>
             <a href="#" className="hover:underline">

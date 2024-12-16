@@ -241,10 +241,10 @@ const ProductsDetail = () => {
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
+            <h1 className="text-xl md:text-3xl lg:text-5xl text-left md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Evaluate Better, Perform Smarter
             </h1>
-            <p className="text-lg text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-left md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
               Transform how you assess and engage with clients using our
               Scorecard Management Tool. Contact us today to learn how our
               solution can drive growth and build stronger partnerships.
@@ -354,12 +354,12 @@ const ProductsDetail = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-left md:text-center lg:text-center">
               <span className="text-primary">Evalflow </span>- Evaluate and
               Empower with Precision
             </h1>
 
-            <p className="text-lg text-[#909090] text-center md:text-left">
+            <p className="text-lg text-[#909090] text-left md:text-center lg:text-center">
               Make informed decisions and foster better client relationships
               with our Scorecard Management Tool, a powerful solution designed
               to evaluate and rate clients based on multiple factors. With

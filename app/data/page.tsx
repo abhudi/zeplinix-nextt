@@ -184,7 +184,7 @@ const serviceDetails = () => {
     return (
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
-          <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
+          <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center text-left md:text-center lg:text-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-left md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Unlock the Power of Data
             </h1>

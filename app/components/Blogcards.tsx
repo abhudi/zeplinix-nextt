@@ -48,7 +48,7 @@ const blogs = [
 
 export default function Blogcards() {
   return (
-    <section className="relative text-white py-16 px-4 sm:px-8 lg:px-10 mt-20 lg:mb-20">
+    <section className="relative text-white lg:py-16 md:py-16 py-10 px-4 sm:px-8 lg:px-10 mt-20 lg:mb-20">
       <div className="text-center mb-16">
         <h1 className="text-fs-54">Read our blog</h1>
         <p className="text-fs-18 text-[#909090] ">Learn new technology</p>
@@ -81,7 +81,7 @@ export default function Blogcards() {
               className="object-cover w-full lg:w-[55%] h-[200px] lg:h-full rounded-[12px]"
             />
             <div className="flex flex-col pl-4 w-full lg:w-[45%]">
-              <h3 className="text-base lg:text-lg font-semibold mb-2">
+              <h3 className="text-base lg:text-lg font-semibold mb-2 mt-4 lg:mt-0 md:mt-0">
                 {blogs[0].title}
               </h3>
               <p className="text-sm text-gray-400 mb-4">

@@ -213,7 +213,7 @@ const serviceDetails = () => {
     return (
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
-          <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
+          <div className="bg-white h-auto md:h-[370px] lg:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-left md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Amplify Your Brand’s Reach
             </h1>
@@ -223,11 +223,11 @@ const serviceDetails = () => {
               making waves in the digital space.
             </p>
             <Link href="/contact">
-              <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
+              <button className="px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
                 <p className="flex gap-2 items-center">
                   Contact now
                   <svg
-                    className="w-5 h-5  "
+                    className="w-5 h-5"
                     width="28"
                     height="21"
                     viewBox="0 0 28 21"
