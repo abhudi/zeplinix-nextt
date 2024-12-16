@@ -359,7 +359,7 @@ const serviceDetails = () => {
 
             <p className="text-lg text-[#909090] text-center md:text-left">
               Elevate your brand presence and connect with your audience like
-              never before. At Zeplinix Technologies, we combine creative
+              never before. At Zeplinix technologies, we combine creative
               design, strategic advertising, and impactful social media
               campaigns to help businesses stand out in the digital world and
               achieve measurable results.

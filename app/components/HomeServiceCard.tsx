@@ -36,10 +36,10 @@ const HomeServiceCard: React.FC = () => {
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Drive innovation and achieve your business goals with
-                tailor-made software solutions. At Zeplinix , we specialize in
-                designing, developing, and delivering custom software that
-                aligns perfectly with your requirements, helping you stay ahead
-                in a market.
+                tailor-made software solutions. At Zeplinix technologies, we
+                specialize in designing, developing, and delivering custom
+                software that aligns perfectly with your requirements, helping
+                you stay ahead in a market.
               </p>
               <Link
                 href="/software"
@@ -104,7 +104,7 @@ const HomeServiceCard: React.FC = () => {
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Transform your data into actionable insights with our advanced
-                Data Analytics solutions. At Zeplinix Technologies, we empower
+                Data Analytics solutions. At Zeplinix technologies, we empower
                 businesses to make informed decisions, optimize operations, and
                 uncover new opportunities through data-driven strategies.
               </p>
@@ -163,7 +163,7 @@ const HomeServiceCard: React.FC = () => {
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Empower your business with scalable, secure, and efficient cloud
-                and infrastructure solutions. At Zeplinix Technologies, we help
+                and infrastructure solutions. At Zeplinix technologies, we help
                 businesses modernize their IT operations, optimize performance,
                 and enhance agility through cutting-edge cloud technologies .
               </p>
@@ -222,7 +222,7 @@ const HomeServiceCard: React.FC = () => {
               </h3>
               <p className="text-[#909090] mb-10 text-center sm:text-left">
                 Elevate your brand presence and connect with your audience like
-                never before. At Zeplinix Technologies, we combine creative
+                never before. At Zeplinix technologies, we combine creative
                 design, strategic advertising, and impactful social media
                 campaigns to help businesses stand out in the digital world .
               </p>

@@ -21,8 +21,9 @@ const AboutUsCard: React.FC = () => {
           About Us<span className="text-primary">.</span>
         </h2>
         <p className="mt-3 sm:mt-5 pb-2 lg:pb-2 text-base sm:text-lg text-[#CDCDCD] text-fs-16">
-          Zeplinix deliver innovative, technology-driven solutions to simplify
-          operations, boost efficiency, and drive success across industries.
+          Zeplinix Technologies deliver innovative, technology-driven solutions
+          to simplify operations, boost efficiency, and drive success across
+          industries.
         </p>
 
         <Link href={"/about"}>
