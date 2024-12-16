@@ -179,11 +179,13 @@ const Footer = () => {
   ];
 
   const usefulLinksData = [
-    { text: "FAQ", link: "/faq" },
-    { text: "Community", link: "/community" },
-    { text: "Live Chatting", link: "/live-chat" },
-    { text: "Contact Us", link: "/contact-us" },
-    { text: "Support Center", link: "/support-center" },
+    // { text: "FAQ", link: "/faq" },
+    // { text: "Community", link: "/community" },
+    // { text: "Live Chatting", link: "/live-chat" },
+    { text: "Contact us", link: "/contact-us" },
+    { text: "Privacy policy", link: "/contact-us" },
+    { text: "Terms and conditions", link: "/contact-us" },
+    // { text: "Support Center", link: "/support-center" },
   ];
 
   return (

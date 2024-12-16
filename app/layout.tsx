@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css"; // Ensure this imports your global styles
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Loader from "./components/Loader";
+// import Loader from "./components/Loader";
 
 export const metadata: Metadata = {
   title: "Zeplinix Technologies Pvt Ltd",
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-black flex flex-col min-h-screen">
-        <Loader />
+        {/* <Loader /> */}
         {/* Header */}
         <Header />
 

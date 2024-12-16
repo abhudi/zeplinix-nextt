@@ -14,43 +14,82 @@ export default function Service() {
           <div className="space-y-6">
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#6d6d6d] pb-5">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-center md:text-left">
-                Time zones ain’t no thing
+                Expertise and Innovation
               </h3>
-              <p className="text-sm sm:text-base text-[#909090] md:w-[50%] text-center md:text-left">
-                Wherever you are in the world, you’ll feel like we’re right
-                around the corner. With 12 years of experience, our business
-                processes are seamless and time differences don’t matter.
-              </p>
+              <div className="md:w-[50%] text-center md:text-left">
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Skilled Team:</b> Work with a team of highly experienced
+                  professionals proficient in cutting-edge technologies like
+                  Flutter, PHP, and AI-driven solutions.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Customized Solutions:</b> Tailored software and digital
+                  transformation strategies to meet your unique business needs.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Continuous Innovation:</b> Access to innovative ideas and
+                  modern solutions that keep your business ahead of the curve.
+                </p>
+              </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#6d6d6d] pb-5">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-center md:text-left">
-                Impossible? We’re on it
+                Seamless Project Execution
               </h3>
-              <p className="text-sm sm:text-base text-[#909090] md:w-[50%] text-center md:text-left">
-                Wherever you are in the world, you’ll feel like we’re right
-                around the corner. With 12 years of experience, our business
-                processes are seamless and time differences don’t matter.
-              </p>
+              <div className="md:w-[50%] text-center md:text-left">
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Agile Methodology :</b> Projects delivered with
+                  flexibility, transparency, and efficiency to meet timelines
+                  and goals.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>End-to-End Services:</b> From planning to deployment, we
+                  handle every stage of your project to ensure a smooth
+                  experience.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Dedicated Support:</b> A customer-first approach with
+                  prompt responses and solutions to all your queries.
+                </p>
+              </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-start gap-4 border-b border-[#6d6d6d] pb-5">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-center md:text-left">
-                Flexible work terms
+                Cutting-Edge Technology
               </h3>
-              <p className="text-sm sm:text-base text-[#909090] md:w-[50%] text-center md:text-left">
-                Wherever you are in the world, you’ll feel like we’re right
-                around the corner. With 12 years of experience, our business
-                processes are seamless and time differences don’t matter.
-              </p>
+              <div className="md:w-[50%] text-center md:text-left">
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Future-Ready Solutions :</b> Implementation of the latest
+                  technologies like AI, cloud computing, and big data analytics.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Scalability :</b> Applications and software designed to
+                  grow with your business.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Cross-Platform Expertise :</b> Develop solutions that work
+                  seamlessly across mobile, web, and desktop platforms.
+                </p>
+              </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-start gap-4">
               <h3 className="text-base sm:text-lg font-normal md:w-[50%] text-center md:text-left">
-                Full spectrum of services
+                Superior Quality and Reliability
               </h3>
-              <p className="text-sm sm:text-base text-[#909090] md:w-[50%] text-center md:text-left">
-                Wherever you are in the world, you’ll feel like we’re right
-                around the corner. With 12 years of experience, our business
-                processes are seamless and time differences don’t matter.
-              </p>
+              <div className="md:w-[50%] text-center md:text-left">
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Robust Development Standards :</b> Quality assurance at
+                  every step ensures reliable and efficient solutions.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Consistent Performance :</b> Systems built for scalability,
+                  security, and high performance.
+                </p>
+                <p className="text-sm sm:text-base text-[#909090] ">
+                  <b>Thorough Testing :</b>Rigorous testing processes ensure
+                  bug-free and user-friendly software.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -284,7 +284,7 @@ const ProductsDetail = () => {
             </p>
 
             <Link
-              href="#"
+              href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
               Free Consultation
