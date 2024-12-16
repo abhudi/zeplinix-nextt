@@ -12,7 +12,8 @@ export async function POST(req) {
       );
     }
 
-    console.log("Parsed data:", { name, email, subject, message, cc, bcc }); // Log data for debugging
+    // Debugging: Log the parsed data
+    console.log("Parsed data:", { name, email, subject, message, cc, bcc });
 
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
@@ -21,12 +22,13 @@ export async function POST(req) {
       secure: false,
       auth: {
         user: "info@zeplinix.com",
-        pass: "admin@3Tyt887",
+        pass: "admin@3Tyt887", // Ensure this is a valid password
       },
     });
 
     // HTML email template for the sender
-    const htmlTemplate = `<div
+    const htmlTemplate = `
+    <div
   style="
     font-family: Arial, sans-serif;
     max-width: 600px;
@@ -185,9 +187,10 @@ export async function POST(req) {
       <a href="#" style="color: #f04d58; text-decoration: none">click here</a>.
     </p>
   </div>
-</div>`; // (Keep your original HTML template for the sender)
+</div>
+    `;
 
-    // Notification email template for your team (admin)
+    // Admin email template
     const adminEmailTemplate = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
       <div style="background-color: #f04d58; padding: 20px; text-align: center; color: #fff;">
@@ -198,7 +201,6 @@ export async function POST(req) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong> ${message}</p>
-        <p style="font-size: 14px; color: #666">Please follow up with this inquiry promptly.</p>
       </div>
     </div>
     `;
@@ -220,23 +222,25 @@ export async function POST(req) {
       from: '"Zeplinix Support" <info@zeplinix.com>',
       to: "info@zeplinix.com",
       subject: `New Inquiry from ${name} for ${subject}`,
-      html: adminEmailTemplate, // Ensure this is the correct template for admin
+      html: adminEmailTemplate,
     };
 
     // Send both emails
-    const [senderInfo, adminInfo] = await Promise.all([
-      transporter.sendMail(senderMailOptions),
-      transporter.sendMail(adminMailOptions),
-    ]);
-
+    console.log("Sending email to sender...");
+    const senderInfo = await transporter.sendMail(senderMailOptions);
     console.log("Email sent to sender:", senderInfo);
+
+    console.log("Sending notification email to admin...");
+    const adminInfo = await transporter.sendMail(adminMailOptions);
     console.log("Notification email sent to admin:", adminInfo);
 
+    // Return a successful response
     return new Response(
       JSON.stringify({ success: true, message: "Emails sent successfully" }),
       { status: 200 }
     );
   } catch (error) {
+    // Log the error for debugging
     console.error("Error sending emails:", error);
     return new Response(
       JSON.stringify({ error: error.message || "Failed to send emails" }),

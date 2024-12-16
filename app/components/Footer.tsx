@@ -233,8 +233,8 @@ const Footer = () => {
               </div>
               <div>
                 <li>info@zeplinix.com</li>
-                <li>hr@zeplinix.com</li>
-                <li>sales@zeplinix.com</li>
+                {/* <li>hr@zeplinix.com</li>
+                <li>sales@zeplinix.com</li> */}
               </div>
             </ul>
           </div>
