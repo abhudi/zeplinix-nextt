@@ -5,7 +5,7 @@ const blogs = [
   {
     id: 1,
     title:
-      "Discover the game-changing trends in AI, automation, and cloud that are redefining businesses worldwide. Stay ahead of the curve with future-focused insights.",
+      "The Ultimate Guide to Site Security: Protecting Your Digital Presence In today’s interconnected world, where the internet plays a central role in personal, professional, and business interactions, site security has become more critical than ever. Whether you are running a personal blog, an e-commerce store, or a corporate website, ensuring your site’s security is paramount to protect sensitive data, maintain user trust, and comply with legal standards.",
     author: "Abhishek Deshmukh",
     date: "24 Oct, 2024",
     category: "Industry Insights",
