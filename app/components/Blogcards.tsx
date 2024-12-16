@@ -8,7 +8,7 @@ const blogs = [
       "The Ultimate Guide to Site Security: Protecting Your Digital Presence",
     author: "Abhishek Deshmukh",
     date: "In today’s interconnected world, where the internet plays a central role in personal, professional, and business interactions, site security has become more critical than ever. Whether you are running a personal blog, an e-commerce store, or a corporate website, ensuring your site’s security is paramount to protect sensitive data, maintain user trust, and comply with legal standards.",
-    category: "Industry Insights",
+    // category: "Industry Insights",
     image: "/blog/first.png",
   },
   {
@@ -16,7 +16,7 @@ const blogs = [
     title: "The Ultimate Guide to SEO: Boost Your Website's Visibility",
     author: "Abhijeet Patne",
     date: "Learn how Search Engine Optimization (SEO) can transform your online presence by increasing visibility, driving organic traffic, and improving search engine rankings.",
-    category: "Design Innovation",
+    // category: "Design Innovation",
     image: "/blog/second.png",
   },
   {
@@ -25,7 +25,7 @@ const blogs = [
       "The Transformative Power of AI and Machine Learning in Today’s World",
     author: "Max Keny",
     date: "Discover how Artificial Intelligence (AI) and Machine Learning (ML) are reshaping industries and revolutionizing problem-solving. This blog explores key concepts, applications, and the future potential of these groundbreaking technologies.",
-    category: "Real-World App",
+    // category: "Real-World App",
     image: "/blog/third.png",
   },
   {
@@ -33,15 +33,15 @@ const blogs = [
     title: "Empower Your Business with ERP: A Comprehensive Guide",
     author: "Max Keny",
     date: "Learn how Enterprise Resource Planning (ERP) systems streamline operations, enhance productivity, and support data-driven decision-making. This blog explores the benefits, core functionalities, and implementation strategies of ERP for businesses of all sizes.",
-    category: "Technology Focus",
+    // category: "Technology Focus",
     image: "/blog/second.png",
   },
   {
     id: 5,
-    title: "Your Roadmap to Digital Transformation",
+    title: "Unlocking the Power of Digital Marketing: Strategies for Success",
     author: "Max Keny",
-    date: "24 Oct, 2024",
-    category: "Practical Guidance",
+    date: "Explore the world of digital marketing and learn how to leverage online platforms to grow your brand, engage your audience, and drive sales. This guide covers essential strategies, tools, and tips to create a winning digital marketing plan for businesses of all sizes.",
+    // category: "Practical Guidance",
     image: "/blog/third.png",
   },
 ];
@@ -88,9 +88,9 @@ export default function Blogcards() {
                 {/* {blogs[0].author} <span className="mx-2">•</span>{" "} */}
                 {blogs[0].date}
               </p>
-              <p className="text-sm text-white items-center gap-3">
+              {/* <p className="text-sm text-white items-center gap-3">
                 <li>{blogs[0].category}</li>
-              </p>
+              </p> */}
               {/* <Link
                 href="#"
                 className="text-[#E63946] text-sm mt-4 flex items-center gap-2"
@@ -120,7 +120,7 @@ export default function Blogcards() {
             title={blogs[1].title}
             author={blogs[1].author}
             date={blogs[1].date}
-            category={blogs[1].category}
+            // category={blogs[1].category}
           />
         </div>
 
@@ -133,7 +133,7 @@ export default function Blogcards() {
               title={blog.title}
               author={blog.author}
               date={blog.date}
-              category={blog.category}
+              // category={blog.category}
             />
           ))}
         </div>

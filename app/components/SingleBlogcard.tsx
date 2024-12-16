@@ -12,7 +12,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   title,
   // author,
   date,
-  category,
+  // category,
 }) => {
   return (
     <div
@@ -33,7 +33,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           {date}
         </p>
 
-        <li className="text-sm text-white">{category}</li>
+        {/* <li className="text-sm text-white">{category}</li> */}
         {/* <Link
           href="#"
           className="text-red-400 text-sm mt-4 flex items-center gap-2"
