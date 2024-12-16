@@ -46,7 +46,7 @@ const ClientSlider: React.FC = () => {
         spaceBetween={20} // Space between slides
         slidesPerView="auto" // Automatically adjusts number of slides visible
         autoplay={{
-          delay: 3000, // Set delay between slides in milliseconds
+          delay: 1000, // Set delay between slides in milliseconds
           disableOnInteraction: false, // Keeps autoplay running after manual swipes
         }}
         speed={1500} // Smooth and slower transition speed
