@@ -64,7 +64,7 @@ const Header = () => {
 
           {/* Hamburger Button */}
           <button className="lg:hidden flex items-center" onClick={toggleMenu}>
-            <span className="text-xl">☰</span>
+            <span className="text-3xl">☰</span>
           </button>
         </div>
       </div>
