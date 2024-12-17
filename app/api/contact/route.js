@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 import fetch from "node-fetch"; // To verify CAPTCHA response
-import sanitizeHtml from "sanitize-html"; // For sanitizing the message content
+import sanitize from "sanitize-html"; // For sanitizing the message content
 
 export async function POST(req) {
   try {
@@ -45,7 +45,7 @@ export async function POST(req) {
     console.log("Parsed data:", { name, email, subject, message, cc, bcc });
 
     // Sanitize the message content
-    const sanitizedMessage = sanitizeHtml(message);
+    const sanitizedMessage = sanitize(message);
 
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
