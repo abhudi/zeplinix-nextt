@@ -289,10 +289,10 @@ const Footer = () => {
             </Link>
             {/* <a href="#" className="hover:underline">
               Cookies
-            </a>
-            <a href="#" className="hover:underline">
-              Terms of Service
             </a> */}
+            <Link href="/terms-service" className="hover:underline">
+              Terms of Service
+            </Link>
           </div>
           <div className="flex gap-4 mt-4 md:mt-0 lg:mt-0">
             <Link

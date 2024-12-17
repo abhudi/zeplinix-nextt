@@ -258,7 +258,7 @@ const ProductsDetail = () => {
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Revolutionize Your Invoice Management
             </h1>
-            <p className="text-lg text-center md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-center  md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
               Take the hassle out of invoicing with our smart, efficient, and
               reliable solution. Contact us today to explore how our Invoice
               Management Solution can simplify your business operations.
@@ -266,7 +266,7 @@ const ProductsDetail = () => {
             <Link href="/contact">
               <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
                 <p className="flex gap-2 items-center">
-                  Contact us today
+                  Contact us
                   <svg
                     className="w-5 h-5  "
                     width="28"
