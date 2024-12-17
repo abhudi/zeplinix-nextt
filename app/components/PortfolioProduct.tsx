@@ -168,7 +168,7 @@ const cardData: CardData[] = [
     title: "Evalflow",
     image: "/products/evalflow.png",
     description:
-      "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
+      "Evalflow make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency, efficiency, and data-driven decision-making.",
     buttonLabel: "CRM Platform",
     coreTech: "Core Technology",
     linkHref: "/evalflow-detail/",

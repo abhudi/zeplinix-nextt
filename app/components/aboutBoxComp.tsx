@@ -3,7 +3,7 @@ import AboutBox from "./aboutBox";
 const AboutBoxComp = () => {
   const data = [
     { title: "Years in business", value: "3+" },
-    { title: "Projects complete", value: "42+" },
+    { title: "Projects completed", value: "42+" },
     { title: "Constant clients", value: "24+" },
     { title: "Countries/offices", value: "3+" },
   ];

@@ -165,7 +165,7 @@ const Footer = () => {
   const aboutUsData = [
     { text: "Cloud Services", link: "/cloud" },
     { text: "Data Analytics", link: "/data" },
-    { text: "Software Developement", link: "/software" },
+    { text: "Software Development", link: "/software" },
     { text: "Graphic Designing", link: "/graphic" },
   ];
 
@@ -226,7 +226,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <div>
                 <li>
-                  310, Tower 1, World Trade Centre, Kharadi, Pune - 411014
+                  310, Tower 1, World Trade Center, Kharadi, Pune - 411014
                 </li>
               </div>
               <div>

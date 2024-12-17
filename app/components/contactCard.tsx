@@ -250,7 +250,7 @@ const GetInTouchForm: React.FC = () => {
         <div className="p-6 md:px-12 lg:pb-16">
           <h1 className="text-fs-26 flex gap-2 items-center text-white mb-6 text-center lg:text-left">
             <IoLocationOutline />
-            Our office locations
+            Our office location
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {contactSections.map((section, index) => (

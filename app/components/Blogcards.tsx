@@ -51,7 +51,9 @@ export default function Blogcards() {
     <section className="relative text-white lg:py-16 md:py-16 py-10 px-4 sm:px-8 lg:px-10 mt-20 lg:mb-20">
       <div className="text-center mb-16">
         <h1 className="text-fs-54">Read our blog</h1>
-        <p className="text-fs-18 text-[#909090] ">Learn new technology</p>
+        <p className="text-fs-18 text-[#909090] ">
+          Fuel Your Innovation with Expert Blogs
+        </p>
       </div>
       {/* Background Gradient */}
       <div
