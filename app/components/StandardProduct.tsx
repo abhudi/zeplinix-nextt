@@ -75,26 +75,19 @@ const CardCarousel = () => {
           modules={[Autoplay]}
           loop={true}
           autoplay={{
-            delay: 1000,
+            delay: 3000, // Adjust delay in milliseconds
             disableOnInteraction: false,
+            pauseOnMouseEnter: true, // Stop autoplay on hover
           }}
           breakpoints={{
             0: {
               slidesPerView: 1,
               spaceBetween: 120,
-              autoplay: {
-                delay: 3000, // Adjust the delay in milliseconds for auto-scroll
-                disableOnInteraction: false, // Continue autoplay even after user interaction
-              },
               allowTouchMove: true,
             },
             768: {
               slidesPerView: 2,
               spaceBetween: 16,
-              autoplay: {
-                delay: 3000, // Adjust the delay in milliseconds for auto-scroll
-                disableOnInteraction: false,
-              },
               allowTouchMove: true,
             },
             1024: {
