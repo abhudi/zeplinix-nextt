@@ -16,7 +16,7 @@ const ProductsDetail = () => {
       "AI/ML Features in BohoHR",
       "Benefits of BohoHR",
       "Industries We Cater To",
-      "Integrated Modules",
+      // "Integrated Modules",
     ];
 
     // Define the content for each tab
@@ -104,10 +104,158 @@ const ProductsDetail = () => {
           <li>Integrated expense reporting and reimbursement systems.</li>
         </p>
       </div>,
-      <div className="text-white">Content for Tab 2</div>,
-      <div className="text-white">Content for Tab 3</div>,
-      <div className="text-white">Content for Tab 4</div>,
-      <div className="text-white">Content for Tab 5</div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Recruitment is very smart
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR uses AI-powered algorithms to streamline recruitment by
+            analyzing resumes, skills, and experiences, matching the best
+            candidates to your job requirements quickly and efficiently.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Predictive Analytics
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Our platform leverages machine learning to predict employee
+            performance, retention, and potential, allowing HR teams to make
+            data-driven decisions for optimal workforce management.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Employee Engagement Insights
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR uses AI to analyze employee feedback and engagement levels,
+            providing insights on how to improve workplace culture and
+            satisfaction.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Automated HR Tasks
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            AI-driven automation helps HR teams save time by automating routine
+            tasks like employee onboarding, performance reviews, and leave
+            management.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          5. Smart Learning and Development
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            With AI, Boho HR identifies skills gaps and recommends personalized
+            learning paths for employees, helping them develop and grow their
+            careers within your organization.
+          </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Improved Efficiency
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR reduces manual processes and administrative burdens, freeing
+            up time for HR professionals to focus on strategic initiatives.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Data-Driven Decision Making
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            By utilizing AI and advanced analytics, Boho HR provides valuable
+            insights that help HR teams make informed decisions, improving
+            employee satisfaction and retention.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          3. Enhanced Employee Experience
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR enhances the employee experience through seamless
+            onboarding, continuous performance feedback, and personalized
+            learning opportunities.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Compliance Management
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR helps businesses stay compliant with local labor laws and
+            regulations by keeping track of employee data, contracts, and
+            records in a secure and organized manner.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          5. Scalable Solutions
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            As your company grows, Boho HR scales with you, offering
+            customizable features that fit the evolving needs of your workforce.
+          </li>
+        </p>
+      </div>,
+      <div className="bg-[#303030] text-white p-6">
+        {" "}
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          1. Technology
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR helps tech companies manage talent, foster innovation, and
+            retain skilled professionals in a competitive market.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          2. Healthcare
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            In the healthcare industry, Boho HR supports efficient recruitment,
+            compliance management, and employee engagement, ensuring better care
+            for patients and a thriving workforce.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">3. Retail</h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR assists retail businesses in managing a diverse, hourly
+            workforce, optimizing scheduling, performance tracking, and employee
+            retention strategies.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          4. Education
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            From teachers to administrative staff, Boho HR helps educational
+            institutions streamline HR processes, improving staff satisfaction
+            and reducing turnover.
+          </li>
+        </p>
+        <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
+          5. Manufacturing
+        </h2>
+        <p className="text-[18px] mb-4 text-[#909090]">
+          <li>
+            Boho HR supports manufacturing companies in workforce management,
+            compliance, and employee training, ensuring a safe and productive
+            work environment.
+          </li>
+        </p>
+      </div>,
     ];
 
     return (
