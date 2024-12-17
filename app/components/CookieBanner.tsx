@@ -23,10 +23,10 @@ const CookieBanner = () => {
   return (
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-glass backdrop-blur-md text-white p-4 rounded-lg shadow-lg w-[98%]  flex flex-col items-center text-center z-50">
       <p className="mb-4">
-        This website uses cookies and similar technologies to enhance your
-        browsing experience, provide personalized content, analyze website
-        traffic, and improve overall functionality to ensure a seamless and
-        user-friendly interaction.
+        At Zeplinix Technologies, we respect your privacy. We do not use cookies
+        to track, store, or collect any personal data or browsing behavior. Your
+        experience on our site remains secure, private, and free from any
+        tracking mechanisms.
       </p>
       <button
         onClick={handleDismiss}
