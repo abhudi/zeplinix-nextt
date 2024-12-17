@@ -84,10 +84,10 @@ export default function PrivacyPolicy() {
               <p className="text-[#909090]">
                 This Privacy Statement articulates the privacy and data
                 protection principles followed by{" "}
-                <strong>Zeplinix Technologies Private Limited</strong>{" "}
-                ("Zeplinix") for customers, partners, employees, and other data
-                subjects. It explains the collection, use, and protection of
-                personal information.
+                <strong>Zeplinix Technologies Private Limited</strong> Zeplinix
+                for customers, partners, employees, and other data subjects. It
+                explains the collection, use, and protection of personal
+                information.
               </p>
             </section>
 

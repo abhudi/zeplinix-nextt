@@ -70,11 +70,12 @@ export default function TermsOfService() {
             <section id="introduction" className="space-y-4">
               <h2 className="text-2xl font-bold text-white">Introduction</h2>
               <p className="text-[#909090]">
-                Welcome to Zeplinix Technologies Private Limited ("Zeplinix,"
-                "we," "our," or "us"). By accessing or using our website
-                (www.zeplinix.com) and services, you agree to be bound by these
-                Terms of Service ("Terms"). If you do not agree to these Terms,
-                please do not use our website or services.
+                Welcome to Zeplinix Technologies Private Limited &quot;Zeplinix
+                &quot;,&quot;we&quot;,&quot;our&quot;,or &quot;us&quot;. By
+                accessing or using our website www.zeplinix.com and services,
+                you agree to be bound by these Terms of Service
+                &quot;Terms&quot;. If you do not agree to these Terms, please do
+                not use our website or services.
               </p>
             </section>
 
