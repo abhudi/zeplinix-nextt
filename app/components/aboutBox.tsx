@@ -3,7 +3,7 @@ const AboutBox = ({ title, value }: { title: string; value: string }) => {
   const [mainTitle, subTitle] = title.split("/");
 
   return (
-    <div className="bg-black bg-opacity-40 text-white max-w-[200px] p-4 rounded-xl shadow-lg border-0.4 border-[#D2D2D2]">
+    <div className="bg-black bg-opacity-40 text-white lg:max-w-[200px] md:max-w-[200px] max-w-[150px]  p-4 rounded-xl shadow-lg border-0.4 border-[#D2D2D2]">
       <p className="font-medium text-fs-54">{value}</p>
       <h2 className="font-normal text-fs-24 text-[#909090]">
         {mainTitle}

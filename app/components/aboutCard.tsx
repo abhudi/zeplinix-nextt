@@ -27,10 +27,10 @@ const AboutUsCard: React.FC = () => {
         </p>
 
         <Link href={"/about"}>
-          <button className="text-primary font-semibold rounded-full transition mt-4 flex items-center gap-2">
+          <button className="text-primary font-semibold rounded-full transition mt-4 flex items-center gap-2 justify-center mx-auto lg:mx-0">
             Read more
             <svg
-              className="w-5 h-5  "
+              className="w-5 h-5"
               width="28"
               height="21"
               viewBox="0 0 28 21"

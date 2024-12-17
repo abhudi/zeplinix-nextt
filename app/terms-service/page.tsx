@@ -57,7 +57,7 @@ export default function TermsOfService() {
           />
         </div>
         <div
-          className="absolute inset-0 z-[1] w-[300px] h-[200px] md:w-[1600px] md:h-[600px] lg:w-[1600px] lg:h-[600px] left-0 top-[-50px] md:top-[100px] lg:top-[150px] lg:left-[-100px] md:left-[-100px] opacity-60"
+          className="absolute inset-0 z-[1] w-[300px] h-[200px] md:w-[1600px] md:h-[600px] lg:w-[1600px] lg:h-[600px] left-0 top-[-50px] md:top-[100px] lg:top-[150px] lg:left-[-100px] md:left-[-100px] opacity-60 hidden md:block lg:block"
           style={{
             background:
               "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",

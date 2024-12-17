@@ -66,8 +66,8 @@ const cardsData: CardData[] = [
 
 const CardCarousel = () => {
   return (
-    <div className="w-full py-10">
-      <h1 className="text-center text-white mt-10 pt-6 text-3xl sm:text-5xl">
+    <div className="w-full lg:py-10 md:py-10 py-3">
+      <h1 className="text-center text-white lg:mt-10 md:mt-10 mt-3 md:pt-6 lg:pt-6 pt-1 text-3xl sm:text-5xl">
         Our Standout Products
       </h1>
       <div className="w-full px-10 md:px-8 lg:px-12">

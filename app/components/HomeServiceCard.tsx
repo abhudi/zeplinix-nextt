@@ -43,7 +43,7 @@ const HomeServiceCard: React.FC = () => {
               </p>
               <Link
                 href="/software"
-                className="text-primary text-fs-16 font-bold flex items-center gap-1"
+                className="text-primary text-fs-16 font-bold flex items-center gap-1 justify-center md:justify-start lg:justify-start"
               >
                 Learn more
                 <svg
@@ -110,7 +110,7 @@ const HomeServiceCard: React.FC = () => {
               </p>
               <Link
                 href="/data"
-                className="text-primary text-fs-16 font-bold flex items-center gap-1"
+                className="text-primary text-fs-16 font-bold flex items-center gap-1 justify-center md:justify-start lg:justify-start"
               >
                 Learn more
                 <svg
@@ -169,7 +169,7 @@ const HomeServiceCard: React.FC = () => {
               </p>
               <Link
                 href="/cloud"
-                className="text-primary text-fs-16 font-bold flex items-center gap-1"
+                className="text-primary text-fs-16 font-bold flex items-center gap-1 justify-center md:justify-start lg:justify-start"
               >
                 Learn more
                 <svg
@@ -228,7 +228,7 @@ const HomeServiceCard: React.FC = () => {
               </p>
               <Link
                 href="/graphic"
-                className="text-primary text-fs-16 font-bold flex items-center gap-1"
+                className="text-primary text-fs-16 font-bold flex items-center gap-1 justify-center md:justify-start lg:justify-start"
               >
                 Learn more
                 <svg

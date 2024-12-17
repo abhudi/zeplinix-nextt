@@ -90,7 +90,7 @@ export default function TestimonialMap() {
         >
           {popupContent.map((popup, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-glass text-white p-5 shadow-lg rounded-lg">
+              <div className="bg-[#303030] text-white p-5 shadow-lg rounded-lg">
                 <p className="text-gray-300">{popup.description}</p>
                 <div className="flex mt-2">
                   <p className="font-semibold">- {popup.name}</p>
