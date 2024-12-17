@@ -17,7 +17,6 @@ const termsSections = [
   { id: "payment-terms", title: "10. Payment Terms" },
   { id: "refund-policy", title: "11. Refund Policy" },
   { id: "changes-terms", title: "12. Changes to Terms" },
-  { id: "contact-us", title: "13. Contact Us" },
 ];
 
 export default function TermsOfService() {
@@ -249,13 +248,16 @@ export default function TermsOfService() {
             </section>
 
             {/* Contact Us */}
-            <section id="contact-us" className="space-y-4">
-              <h2 className="text-2xl font-bold text-white">13. Contact Us</h2>
-              <p className="text-[#909090]">
+            <section className="space-y-4">
+              <h2 className="text-2xl font-bold text-white underline">
+                {" "}
+                Contact Us
+              </h2>
+              <p className="text-white">
                 If you have any questions or concerns regarding these Terms,
                 please contact us at:
               </p>
-              <p className="text-[#909090]">
+              <p className="text-white">
                 Email:{" "}
                 <Link href="mailto:support@zeplinix.com">
                   support@zeplinix.com

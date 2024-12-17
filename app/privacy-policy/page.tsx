@@ -18,7 +18,6 @@ const privacySections = [
   { id: "cookies", title: "7. Cookies and Other Technologies" },
   { id: "data-protection", title: "8. Data Protection and Confidentiality" },
   { id: "retention", title: "9. Retention of Personal Information" },
-  { id: "contact", title: "10. Contact Us" },
 ];
 
 export default function PrivacyPolicy() {
@@ -195,14 +194,14 @@ export default function PrivacyPolicy() {
             </section>
 
             {/* Contact Us */}
-            <section id="contact" className="space-y-4 ">
-              <h2 className="text-2xl font-bold text-white z-50">
-                10. Contact Us
+            <section className="space-y-4 ">
+              <h2 className="text-2xl font-bold text-white z-50 underline">
+                Contact Us
               </h2>
-              <p className="text-[#909090] z-50">
+              <p className="text-white z-50">
                 For any questions regarding this Privacy Statement, contact us:
               </p>
-              <p className="text-[#909090] z-50">
+              <p className="text-white z-50">
                 Zeplinix Technologies Private Limited
                 <br />
                 Tower 1, Third Floor, 310, World Trade Center, Kharadi, Pune

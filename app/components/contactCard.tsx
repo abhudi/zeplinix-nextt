@@ -116,15 +116,29 @@ const GetInTouchForm: React.FC = () => {
         alt: "Address Icon",
         text: "310, Tower 1, World Trade Centre, Kharadi, Pune - 411014",
       },
+    ],
+    [
       {
         icon: "/contact/icons/second.png",
         alt: "Email Icon",
-        text: "info@zeplinix.com",
+        text: "sales@zeplinix.com",
       },
+      {
+        icon: "/contact/icons/second.png",
+        alt: "Email Icon",
+        text: "hr@zeplinix.com",
+      },
+    ],
+    [
       {
         icon: "/contact/icons/third.png",
         alt: "Phone Icon",
         text: "+91 9270085057",
+      },
+      {
+        icon: "/contact/icons/third.png",
+        alt: "Phone Icon",
+        text: "+91 9021348235",
       },
     ],
     // Other sections can go here
