@@ -154,26 +154,29 @@ const GetInTouchForm: React.FC = () => {
               </p>
             )}
             <div className="space-y-4 sm:space-y-5 md:space-y-7">
-              <input
-                type="text"
-                placeholder="Enter your name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
-                required
-                maxLength={50}
-              />
-              <input
-                type="email"
-                placeholder="Enter your email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
-                required
-                maxLength={50}
-              />
+              <div className="flex flex-col md:flex-row gap-4 w-full">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full md:w-1/2 p-3 rounded bg-[#303030] text-white placeholder-gray-400"
+                  required
+                  maxLength={50}
+                />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full md:w-1/2 p-3 rounded bg-[#303030] text-white placeholder-gray-400"
+                  required
+                  maxLength={50}
+                />
+              </div>
+
               <input
                 type="subject"
                 placeholder="Enter your subject"
