@@ -7,7 +7,7 @@ const blogs = [
     title:
       "The Ultimate Guide to Site Security: Protecting Your Digital Presence",
     author: "Abhishek Deshmukh",
-    date: "In today’s interconnected digital world, where the internet powers personal, professional, and business interactions, site security is more critical than ever. Whether managing a personal blog, an e-commerce platform, or a corporate website, securing your site is essential to safeguard sensitive data, build user trust, and meet legal compliance standards. From protecting against cyber threats to maintaining your online reputation, robust security measures are no longer optional—they’re a necessity for ensuring a safe and reliable digital presence.",
+    date: "In today’s interconnected world, where the internet drives personal, professional, and business interactions, site security is more important than ever. Whether you run a blog, an e-commerce store, or a corporate website, securing your site is essential to protect sensitive data, maintain user trust, and comply with legal standards. Cyber threats like hacking, malware, and phishing attacks are constantly evolving, making it crucial to adopt robust security measures. From SSL certificates to regular updates, site security demands a proactive approach to safeguard your digital presence and ensure a seamless, trustworthy experience for users.",
     // category: "Industry Insights",
     image: "/blog/first.png",
   },
