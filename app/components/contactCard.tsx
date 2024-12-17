@@ -180,6 +180,7 @@ const GetInTouchForm: React.FC = () => {
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
                 required
+                maxLength={50}
               />
 
               <input
@@ -190,6 +191,7 @@ const GetInTouchForm: React.FC = () => {
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
                 required
+                maxLength={50}
               />
               <input
                 type="subject"
@@ -199,6 +201,7 @@ const GetInTouchForm: React.FC = () => {
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
                 required
+                maxLength={80}
               />
               <input
                 type="tel"
@@ -208,6 +211,7 @@ const GetInTouchForm: React.FC = () => {
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400"
                 required
+                maxLength={15}
               />
               <textarea
                 placeholder="Go ahead, we are listening"
@@ -216,6 +220,7 @@ const GetInTouchForm: React.FC = () => {
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400 h-32"
                 required
+                maxLength={25574}
               ></textarea>
               <button
                 className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700"

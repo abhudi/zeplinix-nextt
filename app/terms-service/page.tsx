@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const termsSections = [
   { id: "introduction", title: "1. Introduction" },
@@ -19,6 +21,17 @@ const termsSections = [
 ];
 
 export default function TermsOfService() {
+  useEffect(() => {
+    // Smooth scroll fallback for older browsers
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+
+  const scrollToSection = (id: string): void => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <div className="relative min-h-screen bg-black text-white font-sans">
       <div className="container mx-auto px-4 lg:px-10 text-fs-64">
@@ -256,9 +269,12 @@ export default function TermsOfService() {
             <ul className="space-y-2 text-gray-300">
               {termsSections.map((section) => (
                 <li key={section.id}>
-                  <a href={`#${section.id}`} className="hover:text-white">
+                  <button
+                    onClick={() => scrollToSection(section.id)}
+                    className="hover:text-white text-left w-full"
+                  >
                     {section.title}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>

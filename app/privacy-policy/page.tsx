@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
 const privacySections = [
   { id: "objective", title: "1. Objective" },
   { id: "scope", title: "2. Scope of this Privacy Statement" },
@@ -29,6 +31,18 @@ const privacySections = [
 ];
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    // Smooth scroll fallback for older browsers
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+
+  const scrollToSection = (id: string): void => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className="relative min-h-screen bg-black text-white font-sans">
       <div className="container mx-auto px-4 lg:px-10 text-fs-64">
@@ -77,7 +91,7 @@ export default function PrivacyPolicy() {
         {/* Main Content */}
         <div className="container mx-auto flex flex-col lg:flex-row gap-10 px-4 lg:px-10">
           {/* Left Content */}
-          <main className="lg:w-3/4 p-6 space-y-10">
+          <main className="lg:w-3/4 p-6 space-y-10 relative z-50">
             {/* Objective */}
             <section id="objective" className="space-y-4">
               <h2 className="text-2xl font-bold text-white">1. Objective</h2>
@@ -179,7 +193,7 @@ export default function PrivacyPolicy() {
             </section>
 
             {/* Retention */}
-            <section id="retention" className="space-y-4">
+            <section id="retention" className="space-y-4 z-10">
               <h2 className="text-2xl font-bold text-white">
                 9. Retention of Personal Information
               </h2>
@@ -190,12 +204,14 @@ export default function PrivacyPolicy() {
             </section>
 
             {/* Contact Us */}
-            <section id="contact" className="space-y-4">
-              <h2 className="text-2xl font-bold text-white">10. Contact Us</h2>
-              <p className="text-[#909090]">
+            <section id="contact" className="space-y-4 ">
+              <h2 className="text-2xl font-bold text-white z-50">
+                10. Contact Us
+              </h2>
+              <p className="text-[#909090] z-50">
                 For any questions regarding this Privacy Statement, contact us:
               </p>
-              <p className="text-[#909090]">
+              <p className="text-[#909090] z-50">
                 Zeplinix Technologies Private Limited
                 <br />
                 Tower 1, Third Floor, 310, World Trade Center, Kharadi, Pune
@@ -213,9 +229,12 @@ export default function PrivacyPolicy() {
             <ul className="space-y-2 text-gray-300">
               {privacySections.map((section) => (
                 <li key={section.id}>
-                  <a href={`#${section.id}`} className="hover:text-white ">
+                  <button
+                    onClick={() => scrollToSection(section.id)}
+                    className="hover:text-white text-left w-full"
+                  >
                     {section.title}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
