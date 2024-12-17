@@ -16,7 +16,7 @@ export async function POST(req) {
     }
 
     // Step 1: Verify CAPTCHA
-    const captchaSecret = "6LdgWJ4qAAAAALDIqFWZod1m2JMTzNxPl1Is1CzF"; // Replace with your Google reCAPTCHA secret key
+    const captchaSecret = "6LdVWp4qAAAAABSGVBIe6KHjET8T5zrdahBCMxnt"; // Replace with your Google reCAPTCHA secret key
     const captchaVerificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${captchaSecret}&response=${recaptchaToken}`;
 
     // Verify CAPTCHA token with Google reCAPTCHA API

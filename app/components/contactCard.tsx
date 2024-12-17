@@ -207,7 +207,7 @@ const GetInTouchForm: React.FC = () => {
               {/* CAPTCHA */}
               <div className="my-4">
                 <ReCAPTCHA
-                  sitekey="6LdgWJ4qAAAAABqk1WwFESs0NFgD9mZCzHENTtzK" // Add your reCAPTCHA site key here
+                  sitekey="6LdVWp4qAAAAAEwz1FgGOz5JpOsRH7n93QeX1ooe" // Add your reCAPTCHA site key here
                   onChange={handleCaptchaChange}
                 />
               </div>
