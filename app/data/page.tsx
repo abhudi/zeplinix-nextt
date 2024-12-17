@@ -272,7 +272,7 @@ const serviceDetails = () => {
 
   const ServiceSlider = () => {
     return (
-      <div className="carousel-container overflow-hidden">
+      <div className="carousel-container overflow-hidden mb-10">
         <div className="carousel flex">
           {serviceSliderData.map((card, index) => (
             <ServiceSliderBox
