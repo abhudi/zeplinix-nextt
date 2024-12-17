@@ -4,20 +4,20 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 const termsSections = [
-  { id: "introduction", title: "1. Introduction" },
-  { id: "acceptance", title: "2. Acceptance of Terms" },
-  { id: "services", title: "3. Services" },
-  { id: "user-responsibilities", title: "4. User Responsibilities" },
-  { id: "intellectual-property", title: "5. Intellectual Property" },
-  { id: "privacy-policy", title: "6. Privacy Policy" },
-  { id: "limitation-liability", title: "7. Limitation of Liability" },
-  { id: "indemnification", title: "8. Indemnification" },
-  { id: "termination", title: "9. Termination" },
-  { id: "governing-law", title: "10. Governing Law" },
-  { id: "payment-terms", title: "11. Payment Terms" },
-  { id: "refund-policy", title: "12. Refund Policy" },
-  { id: "changes-terms", title: "13. Changes to Terms" },
-  { id: "contact-us", title: "14. Contact Us" },
+  { id: "introduction", title: "Introduction" },
+  { id: "acceptance", title: "1. Acceptance of Terms" },
+  { id: "services", title: "2. Services" },
+  { id: "user-responsibilities", title: "3. User Responsibilities" },
+  { id: "intellectual-property", title: "4. Intellectual Property" },
+  { id: "privacy-policy", title: "5. Privacy Policy" },
+  { id: "limitation-liability", title: "6. Limitation of Liability" },
+  { id: "indemnification", title: "7. Indemnification" },
+  { id: "termination", title: "8. Termination" },
+  { id: "governing-law", title: "9. Governing Law" },
+  { id: "payment-terms", title: "10. Payment Terms" },
+  { id: "refund-policy", title: "11. Refund Policy" },
+  { id: "changes-terms", title: "12. Changes to Terms" },
+  { id: "contact-us", title: "13. Contact Us" },
 ];
 
 export default function TermsOfService() {

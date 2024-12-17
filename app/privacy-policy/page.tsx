@@ -9,25 +9,16 @@ const privacySections = [
     id: "personal-info",
     title: "3. Personal Information Collected by Zeplinix",
   },
-  {
-    id: "auto-info",
-    title:
-      "4. Personal information that is automatically collected by Zeplinix when you use Zeplinix websites",
-  },
-  {
-    id: "third-party",
-    title: "5. Personal information that is collected from third-party sources",
-  },
-  { id: "use-data", title: "6. How We Use Your Data" },
+  { id: "how-we-use", title: "4. How We Use Your Data" },
   {
     id: "sharing-info",
-    title: "7. Sharing of Personal Information with Third Parties",
+    title: "5. Sharing of Personal Information with Third Parties",
   },
-  { id: "preferences", title: "8. Preferences" },
-  { id: "cookies", title: "9. Cookies and Other Technologies" },
-  { id: "data-protection", title: "10. Data Protection and Confidentiality" },
-  { id: "retention", title: "11. Retention of Personal Information" },
-  { id: "contact", title: "12. Contact Us" },
+  { id: "preferences", title: "6. Preferences" },
+  { id: "cookies", title: "7. Cookies and Other Technologies" },
+  { id: "data-protection", title: "8. Data Protection and Confidentiality" },
+  { id: "retention", title: "9. Retention of Personal Information" },
+  { id: "contact", title: "10. Contact Us" },
 ];
 
 export default function PrivacyPolicy() {
@@ -149,7 +140,7 @@ export default function PrivacyPolicy() {
             </section>
 
             {/* Sharing of Personal Information */}
-            <section id="sharing" className="space-y-4">
+            <section id="sharing-info" className="space-y-4">
               <h2 className="text-2xl font-bold text-white">
                 5. Sharing of Personal Information
               </h2>
