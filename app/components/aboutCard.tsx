@@ -14,7 +14,7 @@ const AboutUsCard: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 lg:mx-10 2xl:mx-24 h-auto lg:h-80   max-w-full bg-white shadow-lg overflow-hidden mb-10 mt-10 lg:mt-24 ">
+    <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 lg:mx-10 2xl:mx-24 h-auto lg:h-96   max-w-full bg-white shadow-lg overflow-hidden mb-10 mt-10 lg:mt-24 ">
       {/* Left Section */}
       <div className="w-full lg:w-4/12 bg-secondary p-8 flex flex-col justify-center text-center lg:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold mb-5 lg:mb-16 pt-5 lg:pt-1">
