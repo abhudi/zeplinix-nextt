@@ -214,10 +214,10 @@ const serviceDetails = () => {
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] lg:h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-left md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
+            <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Amplify Your Brand’s Reach
             </h1>
-            <p className="text-lg text-left md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Let us craft impactful designs, engaging content, and winning
               strategies to elevate your business. Contact us today to start
               making waves in the digital space.
@@ -329,7 +329,7 @@ const serviceDetails = () => {
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
-        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-0.4 border-[#616161] mb-5">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-0.4 border-[#616161] mb-5 overflow-hidden">
           {/* Left Side Content */}
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
             <div className="relative">
@@ -355,11 +355,11 @@ const serviceDetails = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-center md:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-left ">
               Graphic Services
             </h1>
 
-            <p className="text-lg text-[#909090] text-left md:text-center lg:text-center">
+            <p className="text-lg text-[#909090] text-left ">
               Elevate your brand presence and connect with your audience like
               never before. At Zeplinix Technologies, we combine creative
               design, strategic advertising, and impactful social media
@@ -392,14 +392,14 @@ const serviceDetails = () => {
           {/* Right Side Video */}
           <div className="relative lg:w-1/2 w-full flex justify-center md:justify-end mt-8 lg:mt-0">
             <Image
-              src={"/service/graphic-detail.png"}
+              src={"/service/graphic-details.svg"}
               alt={""}
               width={400}
               height={300}
               className="object-cover rounded-t-lg"
             />
             <div
-              className="absolute inset-0 z-[1] w-[300px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[900px] lg:w-[900px] lg:h-[400px] left-[-150px] sm:left-[-200px] md:left-[-300px] top-[50px] sm:top-[75px] lg:top-[100px]"
+              className="absolute inset-0 z-[1] w-[300px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[900px] lg:w-[900px] lg:h-[400px] left-[-150px] sm:left-[-200px] md:left-[-200px] top-[50px] sm:top-[75px] lg:top-[0px]"
               style={{
                 background:
                   "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",

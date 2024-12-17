@@ -278,7 +278,7 @@ const serviceDetails = () => {
   return (
     <>
       <div className="mx-4 sm:mx-8 lg:mx-10 2xl:mx-24">
-        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-0.4 border-[#616161] mb-5">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white py-10 px-6 border-b-0.4 border-[#616161] mb-5 overflow-hidden">
           {/* Left Side Content */}
           <div className="md:w-1/2 w-full flex flex-col items-start space-y-6 ">
             <div className="relative">
@@ -304,11 +304,11 @@ const serviceDetails = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-left md:text-center lg:text-center">
+            <h1 className="text-2xl md:text-4xl font-normal text-left ">
               AI/ML Services
             </h1>
 
-            <p className="text-lg text-[#909090] text-left md:text-center lg:text-center">
+            <p className="text-lg text-[#909090] text-left ">
               Unlock the potential of your business with cutting-edge AI and
               Machine Learning solutions. At Zeplinix Technologies, we harness
               the power of artificial intelligence to transform data into
@@ -341,14 +341,14 @@ const serviceDetails = () => {
           {/* Right Side Video */}
           <div className="relative lg:w-1/2 w-full flex justify-center md:justify-end mt-8 lg:mt-0">
             <Image
-              src={"/service/head.png"}
+              src={"/service/head.svg"}
               alt={""}
               width={400}
               height={300}
               className="object-cover rounded-t-lg"
             />
             <div
-              className="absolute inset-0 z-[1] w-[300px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[900px] lg:w-[900px] lg:h-[400px] left-[-150px] sm:left-[-200px] md:left-[-300px] top-[50px] sm:top-[75px] lg:top-[100px]"
+              className="absolute inset-0 z-[1] w-[300px] h-[200px] sm:w-[600px] sm:h-[300px] md:w-[900px] lg:w-[900px] lg:h-[400px] left-[-150px] sm:left-[-200px] md:left-[-200px] top-[50px] sm:top-[75px] lg:top-[0px]"
               style={{
                 background:
                   "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",

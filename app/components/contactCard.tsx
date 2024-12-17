@@ -235,7 +235,7 @@ const GetInTouchForm: React.FC = () => {
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:ml-12 text-white flex items-center">
             <div className="relative w-full">
               <Image
-                src="/contact/map.png"
+                src="/contact/map.svg"
                 alt="map"
                 layout="responsive"
                 width={800}

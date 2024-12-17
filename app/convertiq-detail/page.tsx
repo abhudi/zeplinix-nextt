@@ -299,10 +299,10 @@ const ProductsDetail = () => {
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-center md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
+            <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Transform Your Lead Generation Strategy
             </h1>
-            <p className="text-lg text-center md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Boost your lead generation and conversion efforts with ConvertIQ.
               Contact us today to learn how our solution can revolutionize your
               lead generation process.
@@ -310,7 +310,7 @@ const ProductsDetail = () => {
             <Link href="/contact">
               <button className="   px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-7 bg-primary text-white font-semibold rounded-full shadow-lg transition border border-light-gray">
                 <p className="flex gap-2 items-center">
-                  Contact us today
+                  Contact us
                   <svg
                     className="w-5 h-5  "
                     width="28"
@@ -413,12 +413,12 @@ const ProductsDetail = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-left md:text-left lg:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-left ">
               <span className="text-primary">ConvertIQ - </span> Optimize Your
               Lead Generation Process
             </h1>
 
-            <p className="text-lg text-[#909090] text-left md:text-left lg:text-left">
+            <p className="text-lg text-[#909090] text-left ">
               Transform your lead generation strategy with ConvertIQ, an
               intelligent platform designed to maximize your lead capture,
               nurturing, and conversion efforts. From personalized lead tracking

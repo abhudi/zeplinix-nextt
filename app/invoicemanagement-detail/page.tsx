@@ -255,10 +255,10 @@ const ProductsDetail = () => {
       <div className="mt-10 mb-10 md:mt-28 md:mb-28">
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
-            <h1 className="text-xl md:text-3xl lg:text-5xl text-center md:text-center lg:text-center font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
+            <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
               Revolutionize Your Invoice Management
             </h1>
-            <p className="text-lg text-center  md:text-center lg:text-center text-[#595959] mb-6 lg:mx-40 mx-4">
+            <p className="text-lg text-center   text-[#595959] mb-6 lg:mx-40 mx-4">
               Take the hassle out of invoicing with our smart, efficient, and
               reliable solution. Contact us today to explore how our Invoice
               Management Solution can simplify your business operations.
@@ -369,11 +369,11 @@ const ProductsDetail = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-normal text-left md:text-left lg:text-left">
+            <h1 className="text-2xl md:text-4xl font-normal text-left ">
               <span className="text-primary">Invoice</span> Management Solution
             </h1>
 
-            <p className="text-lg text-[#909090] text-left md:text-left lg:text-left">
+            <p className="text-lg text-[#909090] text-left ">
               Simplify billing and improve cash flow with our Invoice Management
               Solution, designed to automate your invoicing process, enhance
               accuracy, and provide real-time insights into your financial

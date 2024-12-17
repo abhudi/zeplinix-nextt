@@ -377,7 +377,7 @@ const serviceDetails = () => {
           {/* Right Side Video */}
           <div className="relative lg:w-1/2 w-full flex justify-center md:justify-end mt-8 lg:mt-0">
             <Image
-              src={"/service/cloud-details.png"}
+              src={"/service/cloud-details.svg"}
               alt={""}
               width={400}
               height={300}
