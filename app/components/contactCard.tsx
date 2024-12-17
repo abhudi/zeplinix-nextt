@@ -4,12 +4,15 @@
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
+import ReCAPTCHA from "react-google-recaptcha";
+
 interface FormData {
   name: string;
   email: string;
   subject: string;
   phone: string;
   message: string;
+  captcha: string; // New field for storing captcha response
 }
 
 const GetInTouchForm: React.FC = () => {
@@ -19,12 +22,14 @@ const GetInTouchForm: React.FC = () => {
     subject: "",
     phone: "",
     message: "",
+    captcha: "", // Initialize captcha
   });
 
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
   const [cooldown, setCooldown] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -35,6 +40,13 @@ const GetInTouchForm: React.FC = () => {
     });
   };
 
+  const handleCaptchaChange = (value: string | null) => {
+    setFormData({
+      ...formData,
+      captcha: value || "", // Set captcha response
+    });
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
@@ -42,9 +54,14 @@ const GetInTouchForm: React.FC = () => {
       return; // Exit early if it's already submitting or in cooldown
     }
 
+    if (!formData.captcha) {
+      setResponseMessage("Please complete the CAPTCHA.");
+      return;
+    }
+
     setIsSubmitting(true); // Lock the button immediately
 
-    const { name, email, subject, phone, message } = formData;
+    const { name, email, subject, phone, message, captcha } = formData;
 
     try {
       const response = await fetch("/api/contact", {
@@ -52,7 +69,7 @@ const GetInTouchForm: React.FC = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, subject, phone, message }),
+        body: JSON.stringify({ name, email, subject, phone, message, captcha }), // Send captcha data
       });
 
       if (response.ok) {
@@ -66,6 +83,7 @@ const GetInTouchForm: React.FC = () => {
           subject: "",
           phone: "",
           message: "",
+          captcha: "", // Reset captcha response after submission
         });
       } else {
         setIsSuccess(false);
@@ -109,43 +127,7 @@ const GetInTouchForm: React.FC = () => {
         text: "+91 9270085057",
       },
     ],
-    // [
-    //   {
-    //     icon: "/contact/icons/first.png",
-    //     alt: "Address Icon",
-    //     text: "99 St. Jomblo Park Pekanbaru, 28292, USA",
-    //   },
-    //   {
-    //     icon: "/contact/icons/second.png",
-    //     alt: "Email Icon",
-    //     text: "info@zeplinix.com",
-    //   },
-    //   {
-    //     icon: "/contact/icons/third.png",
-    //     alt: "Phone Icon",
-    //     text: "+91 9021348235",
-    //   },
-    // ],
-    // [
-    //   {
-    //     icon: "/contact/icons/first.png",
-    //     alt: "Address Icon",
-
-    //     text: "Patwari Colony Janori Road , Shegaon - 444203",
-    //   },
-    //   {
-    //     icon: "/contact/icons/second.png",
-    //     alt: "Email Icon",
-
-    //     text: "info@zeplinix.com",
-    //   },
-    //   {
-    //     icon: "/contact/icons/third.png",
-    //     alt: "Phone Icon",
-
-    //     text: "+91 93227 22581",
-    //   },
-    // ],
+    // Other sections can go here
   ];
 
   return (
@@ -182,7 +164,6 @@ const GetInTouchForm: React.FC = () => {
                 required
                 maxLength={50}
               />
-
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -222,6 +203,15 @@ const GetInTouchForm: React.FC = () => {
                 required
                 maxLength={25574}
               ></textarea>
+
+              {/* CAPTCHA */}
+              <div className="my-4">
+                <ReCAPTCHA
+                  sitekey="6LdgWJ4qAAAAABqk1WwFESs0NFgD9mZCzHENTtzK" // Add your reCAPTCHA site key here
+                  onChange={handleCaptchaChange}
+                />
+              </div>
+
               <button
                 className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700"
                 type="submit"
