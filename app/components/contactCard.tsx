@@ -61,16 +61,26 @@ const GetInTouchForm: React.FC = () => {
 
     setIsSubmitting(true); // Lock the button immediately
 
-    const { name, email, subject, phone, message, captcha } = formData;
+    const { name, email, subject, phone, message } = formData;
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, subject, phone, message, captcha }), // Send captcha data
-      });
+      const response = await fetch(
+        "https://zeplinix.in/zeplinix-api/send-email-api",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": "6Lf3o4kqAAAAAOBO5t19TZH345346pxtrjaVUWGw7L5otr", // Add the API key to the headers
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            subject,
+            phone,
+            message,
+          }), // Send the form data to the API
+        }
+      );
 
       if (response.ok) {
         setIsSuccess(true);
@@ -191,7 +201,7 @@ const GetInTouchForm: React.FC = () => {
               </div>
 
               <input
-                type="subject"
+                type="text"
                 placeholder="Enter your subject"
                 name="subject"
                 value={formData.subject}
@@ -260,8 +270,7 @@ const GetInTouchForm: React.FC = () => {
         {/* Office Locations */}
         <div className="p-6 md:px-12 lg:pb-16">
           <h1 className="text-fs-26 flex gap-2 items-center text-white mb-6 text-center lg:text-left">
-            <IoLocationOutline />
-            Our office location
+            <IoLocationOutline /> Our office location
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {contactSections.map((section, index) => (

@@ -76,7 +76,7 @@ export async function POST(req) {
           Thank You for Your Inquiry – We’re Here to Assist
         </h1>
         <p>Hi <strong>${name}</strong>,</p>
-        
+
         <p>${sanitizedMessage}</p>
 
         <div
@@ -143,7 +143,7 @@ export async function POST(req) {
               style="width: 24px"
             />
           </a>
-          
+
           <a href="#" style="margin: 0 5px">
             <img
               src="https://your-icon-url.com/linkedin.png"
