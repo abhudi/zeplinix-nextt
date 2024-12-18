@@ -48,7 +48,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Lead Nurturing Campaigns
+          3. Lead nurturing campaigns
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -59,11 +59,11 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. CRM Integration
+          4. CRM integration
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Integrate seamlessly with your existing CRM to streamline data
+            Integrate seamlessly with your existing crm to streamline data
             synchronization.
           </li>
           <li>
@@ -72,7 +72,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          5. Landing Page Creation and A/B Testing
+          5. Landing page creation and A/B testing
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Create optimized landing pages to capture leads.</li>
@@ -81,7 +81,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          6. Lead Analytics and Reporting
+          6. Lead analytics and reporting
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -94,7 +94,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          7. Team Collaboration Tools
+          7. Team collaboration tools
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -104,7 +104,7 @@ const ProductsDetail = () => {
           <li>Assign leads to team members and track follow-ups.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          8. Customizable Workflows
+          8. Customizable workflows
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -114,11 +114,11 @@ const ProductsDetail = () => {
           <li>Set triggers for actions based on lead actions and behavior.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          9. Integration with Marketing Tools
+          9. Integration with marketing tools
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
-            Integrate with popular marketing tools like Mailchimp, HubSpot, and
+            Integrate with popular marketing tools like mailchimp, hubspot, and
             more to streamline lead generation efforts.
           </li>
           <li>
@@ -126,7 +126,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          10. Secure Data Management
+          10. Secure data management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -137,7 +137,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Lead Capture and Management
+          1. Lead capture and management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -152,7 +152,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Increased Lead Conversion
+          1. Increased lead conversion
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -161,13 +161,13 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Enhanced Efficiency
+          2. Enhanced efficiency
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Reduce manual tasks with automated workflows and scoring.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Real-Time Access
+          3. Real-Time access
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -175,7 +175,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. Scalable and Customizable
+          4. Scalable and customizable
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -186,7 +186,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Marketing Agencies
+          1. Marketing agencies
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Manage leads for multiple clients with ease.</li>
@@ -198,13 +198,13 @@ const ProductsDetail = () => {
           <li>Capture and nurture leads from site visitors.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. SaaS Providers
+          3. SaaS providers
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Automate lead follow-ups and onboarding for trial users.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. B2B Services
+          4. B2B services
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -215,7 +215,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. User-Centric Design
+          1. User-Centric design
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -223,7 +223,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Comprehensive Functionality
+          2. Comprehensive functionality
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -231,7 +231,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Compliance and Security
+          3. Compliance and security
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -240,7 +240,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. 24/7 Support
+          4. 24/7 support
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -300,7 +300,7 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
-              Transform Your Lead Generation Strategy
+              Transform your lead generation strategy
             </h1>
             <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Boost your lead generation and conversion efforts with ConvertIQ.
@@ -430,7 +430,7 @@ const ProductsDetail = () => {
               href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation
+              Free consultation
               <svg
                 className="w-5 h-5  "
                 width="28"

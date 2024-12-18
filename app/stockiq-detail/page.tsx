@@ -17,7 +17,7 @@ const ProductsDetail = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Integrated Point of Sale (POS)
+          1. Integrated point of sale (POS)
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Simplify transactions with fast, user-friendly POS systems. </li>
@@ -30,7 +30,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Advanced Inventory Management
+          2. Advanced inventory management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -45,7 +45,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. Order and Procurement Management
+          3. Order and procurement management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -55,7 +55,7 @@ const ProductsDetail = () => {
           <li>Maintain complete visibility into supply chain operations. </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Comprehensive Financial Management
+          4. Comprehensive financial management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -67,7 +67,7 @@ const ProductsDetail = () => {
           <li>Generate real-time insights into financial performance.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Customizable Reporting and Analytics
+          5. Customizable reporting and analytics
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -80,7 +80,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Employee and Workforce Management
+          6. Employee and workforce management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Track employee shifts, attendance, and payroll.</li>
@@ -89,7 +89,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Customer Relationship Management (CRM)
+          7. Customer relationship management (CRM)
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -102,7 +102,7 @@ const ProductsDetail = () => {
           <li>Drive repeat business with targeted promotions.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. Cloud-Based and Scalable
+          8. Cloud-Based and scalable
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -147,7 +147,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. All-in-One Platform
+          1. All-in-One platform
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -155,13 +155,13 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Customizable and Scalable
+          2. Customizable and scalable
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Tailored solutions to fit your business needs.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. AI-Driven Efficiency
+          3. AI-Driven efficiency
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -169,7 +169,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Secure and Reliable
+          4. Secure and reliable
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Built with the latest security protocols for peace of mind.</li>
@@ -226,7 +226,7 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
-              Empower Your Business with Our ERP Solution
+              Empower your business with our ERP solution
             </h1>
             <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Simplify operations, enhance productivity, and scale effortlessly
@@ -339,8 +339,8 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-normal text-left ">
-              <span className="text-primary">StockIQ </span>- Inventory
-              Management (ERP)
+              <span className="text-primary">StockIQ </span>- inventory
+              management (ERP)
             </h1>
 
             <p className="text-lg text-[#909090] text-left ">
@@ -355,7 +355,7 @@ const ProductsDetail = () => {
               href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation
+              Free consultation
               <svg
                 className="w-5 h-5  "
                 width="28"

@@ -14,7 +14,7 @@ const ProductsDetail = () => {
     const tabs = [
       "Core features",
       "Benefits of Evalflow",
-      "Industries We Cater To",
+      "Industries we cater to",
       "Why choose us",
     ];
 
@@ -22,7 +22,7 @@ const ProductsDetail = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Customizable Scoring Criteria
+          1. Customizable scoring criteria
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -35,7 +35,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Automated Rating System
+          2. Automated rating system
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -45,7 +45,7 @@ const ProductsDetail = () => {
           <li>Reduce human errors and ensure unbiased evaluations.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Dynamic Reporting and Dashboards
+          3. Dynamic reporting and dashboards
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -56,7 +56,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. Client Comparison and Benchmarking
+          4. Client comparison and benchmarking
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -69,7 +69,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          5. Multi-Factor Integration
+          5. Multi-Factor integration
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -79,7 +79,7 @@ const ProductsDetail = () => {
           <li>Synchronize with existing systems for a seamless data flow.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          6. Alerts and Notifications
+          6. Alerts and notifications
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -90,7 +90,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          7. Access Control and User Management
+          7. Access control and user management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -100,7 +100,7 @@ const ProductsDetail = () => {
           <li>Maintain data confidentiality and compliance.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          8. AI-Driven Insights
+          8. AI-Driven insights
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -113,19 +113,19 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Enhanced Decision-Making
+          1. Enhanced decision-making
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Rely on data-backed insights for better client evaluations.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Improved Client Relationships
+          2. Improved client relationships
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Use ratings to address gaps and improve collaboration.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. Efficiency and Accuracy
+          3. Efficiency and accuracy
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Automate evaluations and reduce manual efforts.</li>
@@ -159,7 +159,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. IT Services
+          4. IT services
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Measure client engagement and project success rates.</li>
@@ -167,25 +167,25 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Customizable and Scalable
+          1. Customizable and scalable
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Tailored to fit businesses of any size or industry.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. User-Friendly Interface
+          2. User-Friendly interface
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Easy to adopt with minimal learning curve. </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. Actionable Insights
+          3. Actionable insights
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Gain deeper understanding with intuitive analytics.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Secure and Reliable
+          4. Secure and reliable
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Built on robust security standards to protect your data. </li>
@@ -242,11 +242,11 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
-              Evaluate Better, Perform Smarter
+              Evaluate better, perform smarter
             </h1>
             <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Transform how you assess and engage with clients using our
-              Scorecard Management Tool. Contact us today to learn how our
+              scorecard management tool. Contact us today to learn how our
               solution can drive growth and build stronger partnerships.
             </p>
             <Link href="/contact">
@@ -355,13 +355,13 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-normal text-left ">
-              <span className="text-primary">Evalflow </span>- Evaluate and
-              Empower with Precision
+              <span className="text-primary">Evalflow </span>- evaluate and
+              empower with precision
             </h1>
 
             <p className="text-lg text-[#909090] text-left ">
               Make informed decisions and foster better client relationships
-              with our Scorecard Management Tool, a powerful solution designed
+              with our scorecard management tool, a powerful solution designed
               to evaluate and rate clients based on multiple factors. With
               real-time insights and automated scoring, our tool ensures
               transparency, efficiency, and data-driven decision-making.
@@ -371,7 +371,7 @@ const ProductsDetail = () => {
               href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation
+              Free consultation
               <svg
                 className="w-5 h-5  "
                 width="28"

@@ -13,9 +13,9 @@ const ProductsDetail = () => {
     // Define the tab titles
     const tabs = [
       "Core features",
-      "AI/ML Features in BohoHR",
+      "AI/ML features in BohoHR",
       "Benefits of BohoHR",
-      "Industries We Cater To",
+      "Industries we cater to",
       // "Integrated Modules",
     ];
 
@@ -23,7 +23,7 @@ const ProductsDetail = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Smart Recruitment & Talent Acquisition
+          1. Smart recruitment & talent acquisition
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>AI-driven candidate screening and shortlisting.</li>
@@ -33,7 +33,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Employee Lifecycle Management
+          2. Employee lifecycle management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -45,7 +45,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. AI-Enabled Workforce Insights
+          3. AI-Enabled workforce insights
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -55,7 +55,7 @@ const ProductsDetail = () => {
           <li>Predictive modeling to forecast workforce trends and needs.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Automated Payroll & Compliance
+          4. Automated payroll & compliance
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -64,14 +64,14 @@ const ProductsDetail = () => {
           <li>Employee benefits administration and error-free calculations.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Customizable Performance Management
+          5. Customizable performance management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>AI-powered performance reviews and goal tracking.</li>
           <li>Tailored feedback mechanisms and 360-degree evaluation.</li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          6. Time & Attendance Tracking
+          6. Time & attendance tracking
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -84,7 +84,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          7. Employee Engagement Tools
+          7. Employee engagement tools
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -95,7 +95,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          8. Leave & Expense Management
+          8. Leave & expense management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -116,7 +116,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Predictive Analytics
+          2. Predictive analytics
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -126,7 +126,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. Employee Engagement Insights
+          3. Employee engagement insights
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -136,7 +136,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Automated HR Tasks
+          4. Automated HR tasks
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -146,7 +146,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Smart Learning and Development
+          5. Smart learning and development
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -158,7 +158,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          1. Improved Efficiency
+          1. Improved efficiency
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -167,7 +167,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          2. Data-Driven Decision Making
+          2. Data-Driven decision making
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -177,7 +177,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          3. Enhanced Employee Experience
+          3. Enhanced employee experience
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -187,7 +187,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          4. Compliance Management
+          4. Compliance management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -197,7 +197,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold  text-[#E1E1E1]">
-          5. Scalable Solutions
+          5. Scalable solutions
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -307,7 +307,7 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
-              Transform Your HR with BohoHR
+              Transform your HR with BohoHR
             </h1>
             <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Experience the future of HR management with BohoHR’s seamless,
@@ -421,8 +421,8 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-normal text-left">
-              <span className="text-primary">BohoHr </span>- Redefining HR
-              Management
+              <span className="text-primary">BohoHr </span>- redefining HR
+              management
             </h1>
 
             <p className="text-lg text-[#909090] text-left">
@@ -437,7 +437,7 @@ const ProductsDetail = () => {
               href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation
+              Free consultation
               <svg
                 className="w-5 h-5  "
                 width="28"
