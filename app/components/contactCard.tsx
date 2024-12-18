@@ -141,7 +141,6 @@ const GetInTouchForm: React.FC = () => {
         text: "+91 9021348235",
       },
     ],
-    // Other sections can go here
   ];
 
   return (

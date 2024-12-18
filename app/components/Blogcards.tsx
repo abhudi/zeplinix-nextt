@@ -52,7 +52,7 @@ export default function Blogcards() {
       <div className="text-center mb-16">
         <h1 className="text-fs-54">Read our blog</h1>
         <p className="text-fs-18 text-[#909090]">
-          Fuel Your Innovation with Expert Blogs
+          Fuel your innovation with expert blogs
         </p>
       </div>
       {/* Background Gradient */}
