@@ -51,7 +51,7 @@ const AboutBoxComp = () => {
         {/* Right Side - Content */}
         <div className="w-full lg:max-w-[671px] bg-[#303030] text-white p-6 sm:p-8  shadow-lg">
           <h2 className="text-fs-24 sm:text-fs-34 lg:text-fs-54 font-medium mb-4 sm:mb-6 leading-tight">
-            Crafting Solutions For Every Challenge
+            Crafting slutions for every challenge
             <span className="inline-block bg-red-600 w-3 h-3 rounded-full mx-1"></span>
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-[#B7B7B7] mb-6 sm:mb-8">
