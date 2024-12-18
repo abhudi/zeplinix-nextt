@@ -13,9 +13,9 @@ const ProductsDetail = () => {
     // Define the tab titles
     const tabs = [
       "Core features",
-      "AI/ML Features in ConvertIQ",
+      "AI/ML features in ConvertIQ",
       "Benefits of ConvertIQ",
-      "Industries We Cater To",
+      "Industries we cater to",
       "Why choose ConvertIQ?",
     ];
 
@@ -23,7 +23,7 @@ const ProductsDetail = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Lead Capture and Management
+          1. Lead capture and management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -36,7 +36,7 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Automated Lead Scoring
+          2. Automated lead scoring
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -414,8 +414,8 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-normal text-left ">
-              <span className="text-primary">ConvertIQ - </span> Optimize Your
-              Lead Generation Process
+              <span className="text-primary">ConvertIQ - </span> optimize your
+              lead generation process
             </h1>
 
             <p className="text-lg text-[#909090] text-left ">

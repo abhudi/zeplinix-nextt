@@ -7,7 +7,7 @@ export default function Service() {
       <div>
         <div className="w-full bg-[#303030] text-white p-6 sm:p-10 md:p-14 rounded-3xl shadow-lg mt-10 lg:mt-32 ">
           <h2 className="text-fs-24 sm:text-fs-34 lg:text-fs-54 font-semibold mb-4 sm:mb-6 leading-tight pb-10 text-center md:text-left lg:text-left">
-            Benefit of Working with us
+            Benefit of working with us
             <span className="inline-block bg-red-600 w-3 h-3 rounded-full mx-1"></span>
           </h2>
 

@@ -46,7 +46,7 @@ const FAQ: React.FC = () => {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-8 mb-28 ">
       <h2 className="text-3xl font-semibold text-center mb-2 text-white">
-        FAQs – Your Questions Answered
+        Faq&#39;s – your questions answered
       </h2>
       <p className="text-[#909090] mb-14 text-center ">
         Find quick answers to common queries about our services, solutions, and

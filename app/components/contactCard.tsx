@@ -151,7 +151,7 @@ const GetInTouchForm: React.FC = () => {
           {/* Left Side Form */}
           <form className="w-full lg:w-1/2" onSubmit={handleSubmit}>
             <h2 className="text-white text-3xl md:text-5xl font-bold text-center lg:text-left">
-              Get In Touch
+              Get in touch
               <span className="inline-block bg-red-600 w-3 h-3 rounded-full mx-1"></span>
             </h2>
             <p className="text-gray-300 mt-3 mb-6 md:mb-10 mx-1 text-center lg:text-left">
