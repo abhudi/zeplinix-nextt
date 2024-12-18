@@ -13,8 +13,8 @@ const ProductsDetail = () => {
     // Define the tab titles
     const tabs = [
       "Core features",
-      "Benefits of PredictEase",
-      "Industries We Cater To",
+      // "Benefits of PredictEase",
+      "Industries we cater to",
       "Why choose PredictEase",
     ];
 
@@ -22,7 +22,7 @@ const ProductsDetail = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Warranty Purchase Made Easy
+          1. Warranty purchase made easy
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Browse and compare warranty plans tailored to your products.</li>
@@ -32,7 +32,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Intelligent Claims Management
+          2. Intelligent claims management
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>File claims effortlessly with step-by-step guided workflows.</li>
@@ -40,7 +40,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Custom Protection Plans
+          3. Custom protection plans
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -53,7 +53,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. User-Friendly Interface (UI)
+          4. User-Friendly interface (UI)
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -66,7 +66,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          5. AI-Driven Recommendations
+          5. AI-Driven recommendations
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -77,7 +77,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          6. Seamless Integrations
+          6. Seamless integrations
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -91,7 +91,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          7. Paperless Documentation
+          7. Paperless documentation
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Upload, store, and access warranty documents digitally.</li>
@@ -99,7 +99,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          8. Secure & Compliant
+          8. Secure & compliant
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Safeguard sensitive customer data with advanced encryption.</li>
@@ -108,7 +108,7 @@ const ProductsDetail = () => {
           </li>
         </p>
       </div>,
-      <div className="bg-[#303030] text-white p-6">Content for Tab 2</div>,
+      // <div className="bg-[#303030] text-white p-6">Content for Tab 2</div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
           1. Convenience
@@ -137,7 +137,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Electronics & Appliances
+          1. Electronics & appliances
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -165,7 +165,7 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. End-to-End Solution
+          1. End-to-End solution
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -173,19 +173,19 @@ const ProductsDetail = () => {
           </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. User-Centric Design
+          2. User-Centric design
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Built for seamless navigation and effortless management.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. AI-Enabled Insights
+          3. AI-Enabled insights
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Optimize offerings with data-driven recommendations. </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. Trusted Platform
+          4. Trusted platform
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Reliable, secure, and designed to exceed expectations. </li>
@@ -242,7 +242,7 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
-              Transform Warranty Management with PredictEase
+              Transform warranty management with PredictEase
             </h1>
             <p className="text-lg text-center  text-[#595959] mb-6 lg:mx-40 mx-4">
               Whether you’re an individual protecting your purchases or a
@@ -358,8 +358,8 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-normal text-left ">
-              <span className="text-primary">Predictease </span>- Your
-              End-to-End Warranty Solution
+              <span className="text-primary">Predictease </span>- your
+              end-to-end warranty solution
             </h1>
 
             <p className="text-lg text-[#909090] text-left ">
@@ -374,7 +374,7 @@ const ProductsDetail = () => {
               href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation
+              Free consultation
               <svg
                 className="w-5 h-5  "
                 width="28"

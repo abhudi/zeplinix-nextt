@@ -15,7 +15,7 @@ const ProductsDetail = () => {
       "Core features",
       "AI/ML features in invoice management",
       "Benefits of invoice management",
-      "Industries We Cater To",
+      "Industries we cater to",
       "Why choose invoice management?",
     ];
 
@@ -23,7 +23,7 @@ const ProductsDetail = () => {
     const tabContent = [
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Automated Invoice Generation
+          1. Automated invoice generation
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -35,7 +35,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Multi-Currency Support
+          2. Multi-currency support
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -48,7 +48,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Real-Time Payment Tracking
+          3. Real-time payment tracking
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Monitor payment status with automated updates.</li>
@@ -56,7 +56,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          4. Customizable Invoice Templates
+          4. Customizable invoice templates
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Tailor invoice designs to reflect your brand identity.</li>
@@ -66,7 +66,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          5. Integration with Financial Tools
+          5. Integration with financial tools
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -79,7 +79,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          6. Tax Calculation & Compliance
+          6. Tax calculation & compliance
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -90,7 +90,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          7. Comprehensive Reporting & Insights
+          7. Comprehensive reporting & insights
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -102,7 +102,7 @@ const ProductsDetail = () => {
         </p>
 
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          8. Secure Data Storage
+          8. Secure data storage
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Store and access invoices securely with advanced encryption.</li>
@@ -113,19 +113,19 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Fraud Detection
+          1. Fraud detection
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Identify anomalies in transactions to prevent fraud.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Smart Payment Predictions
+          2. Smart payment predictions
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Forecast payment cycles based on client behavior. </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. OCR Integration
+          3. OCR integration
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Automatically extract details from scanned documents. </li>
@@ -156,13 +156,13 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Retail & E-Commerce
+          1. Retail & e-commerce
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Automated billing for high-volume transactions. </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. Professional Services
+          2. Professional services
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>
@@ -187,19 +187,19 @@ const ProductsDetail = () => {
       </div>,
       <div className="bg-[#303030] text-white p-6">
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          1. Custom Solutions
+          1. Custom solutions
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Tailored to meet your industry-specific needs.</li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          2. User-Friendly Design
+          2. User-Friendly design
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Easy to adopt with minimal learning curve. </li>
         </p>
         <h2 className="text-[18px] font-semibold text-[#E1E1E1]">
-          3. Secure and Compliant
+          3. Secure and compliant
         </h2>
         <p className="text-[18px] mb-4 text-[#909090]">
           <li>Built with security and regulatory standards in mind. </li>
@@ -256,7 +256,7 @@ const ProductsDetail = () => {
         <div className="relative mx-4 md:mx-8 lg:mx-12">
           <div className="bg-white h-auto md:h-[370px] ld:h-[370px] w-full p-4 flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-3xl lg:text-5xl text-center  font-bold leading-tight mb-6 mt-2 lg:mt-0 md:mt-0">
-              Revolutionize Your Invoice Management
+              Revolutionize your invoice management
             </h1>
             <p className="text-lg text-center   text-[#595959] mb-6 lg:mx-40 mx-4">
               Take the hassle out of invoicing with our smart, efficient, and
@@ -370,7 +370,7 @@ const ProductsDetail = () => {
             </div>
 
             <h1 className="text-2xl md:text-4xl font-normal text-left ">
-              <span className="text-primary">Invoice</span> Management Solution
+              <span className="text-primary">Invoice</span> management solution
             </h1>
 
             <p className="text-lg text-[#909090] text-left ">
@@ -386,7 +386,7 @@ const ProductsDetail = () => {
               href="/contact"
               className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
             >
-              Free Consultation
+              Free consultation
               <svg
                 className="w-5 h-5  "
                 width="28"
