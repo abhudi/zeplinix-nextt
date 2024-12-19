@@ -234,7 +234,9 @@ const Footer = () => {
                 <li>+91 9270085057</li>
               </div>
               <div>
-                <li>info@zeplinix.com</li>
+                <a href="mailto:info@zeplinix.com">
+                  <li>info@zeplinix.com</li>
+                </a>
                 {/* <li>hr@zeplinix.com</li>
                 <li>sales@zeplinix.com</li> */}
               </div>

@@ -4,6 +4,7 @@
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
+import Link from "next/link";
 
 interface FormData {
   name: string;
@@ -14,6 +15,10 @@ interface FormData {
 }
 
 const GetInTouchForm: React.FC = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -21,7 +26,7 @@ const GetInTouchForm: React.FC = () => {
     phone: "",
     message: "",
   });
-
+  const [isAccepted, setIsAccepted] = useState(false);
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
   const [cooldown, setCooldown] = useState<number | null>(null);
@@ -53,6 +58,9 @@ const GetInTouchForm: React.FC = () => {
         [name]: value,
       });
     }
+  };
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsAccepted(e.target.checked);
   };
 
   const handleSubmit = async (e: FormEvent) => {
@@ -138,12 +146,26 @@ const GetInTouchForm: React.FC = () => {
       {
         icon: "/contact/icons/second.png",
         alt: "Email Icon",
-        text: "sales@zeplinix.com",
+        text: (
+          <a
+            href="mailto:sales@zeplinix.com"
+            className="flex items-center gap-1  "
+          >
+            sales@zeplinix.com
+          </a>
+        ),
       },
       {
         icon: "/contact/icons/second.png",
         alt: "Email Icon",
-        text: "hr@zeplinix.com",
+        text: (
+          <a
+            href="mailto:hr@zeplinix.com"
+            className="flex items-center gap-1  "
+          >
+            hr@zeplinix.com
+          </a>
+        ),
       },
     ],
     [
@@ -238,6 +260,245 @@ const GetInTouchForm: React.FC = () => {
                 maxLength={255}
               ></textarea>
 
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  className="mt-1 w-4 h-4 cursor-pointer" // Use Tailwind classes to set size
+                  checked={isAccepted}
+                  onChange={handleCheckboxChange}
+                />
+                <label
+                  htmlFor="terms"
+                  className="text-md flex text-gray-50 items-center gap-1 cursor-pointer"
+                >
+                  I accept{" "}
+                  <span className="text-gray-400 " onClick={openPopup}>
+                    terms and conditions
+                  </span>
+                </label>
+
+                {isPopupOpen && (
+                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative overflow-y-auto max-h-[80vh] slim-scroll">
+                      <h2 className="text-lg font-bold mb-4">
+                        Terms and Conditions
+                      </h2>
+                      <div className="text-sm text-gray-700">
+                        {/* Introduction */}
+                        <section id="introduction" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            Introduction
+                          </h2>
+                          <p className="text-[#909090]">
+                            Welcome to Zeplinix Technologies Private Limited
+                            &quot;Zeplinix
+                            &quot;,&quot;we&quot;,&quot;our&quot;,or
+                            &quot;us&quot;. By accessing or using our website
+                            www.zeplinix.com and services, you agree to be bound
+                            by these Terms of Service &quot;Terms&quot;. If you
+                            do not agree to these Terms, please do not use our
+                            website or services.
+                          </p>
+                        </section>
+
+                        {/* Acceptance of Terms */}
+                        <section id="acceptance" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            1. Acceptance of Terms
+                          </h2>
+                          <p className="text-[#909090]">
+                            By accessing or using our website, you confirm that
+                            you are at least 18 years of age and have the legal
+                            authority to enter into these Terms.
+                          </p>
+                        </section>
+
+                        {/* Services */}
+                        <section id="services" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            2. Services
+                          </h2>
+                          <p className="text-[#909090]">
+                            Zeplinix provides software products, graphic, media,
+                            and services across various domains, including but
+                            not limited to CRM, warranty management, real
+                            estate, and marketing solutions.
+                          </p>
+                        </section>
+
+                        {/* User Responsibilities */}
+                        <section id="user-responsibilities" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            3. User Responsibilities
+                          </h2>
+                          <ul className="list-disc list-inside text-[#909090]">
+                            <li>
+                              Use our website and services only for lawful
+                              purposes.
+                            </li>
+                            <li>
+                              Provide accurate and complete information when
+                              creating an account or interacting with us.
+                            </li>
+                            <li>
+                              Refrain from attempting to disrupt or harm our
+                              website or services.
+                            </li>
+                          </ul>
+                        </section>
+
+                        {/* Intellectual Property */}
+                        <section id="intellectual-property" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            4. Intellectual Property
+                          </h2>
+                          <p className="text-[#909090]">
+                            All content, designs, trademarks, logos, and
+                            software on this website are the property of
+                            Zeplinix or its licensors and are protected under
+                            applicable intellectual property laws.
+                          </p>
+                        </section>
+
+                        {/* Privacy Policy */}
+                        <section id="privacy-policy" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            5. Privacy Policy
+                          </h2>
+                          <p className="text-[#909090]">
+                            Our Privacy Policy governs the collection, use, and
+                            storage of your personal data. By using our
+                            services, you agree to the terms outlined in our
+                            Privacy Policy.
+                          </p>
+                        </section>
+
+                        {/* Limitation of Liability */}
+                        <section id="limitation-liability" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            6. Limitation of Liability
+                          </h2>
+                          <p className="text-[#909090]">
+                            To the fullest extent permitted by law, Zeplinix
+                            shall not be liable for any direct, indirect,
+                            incidental, special, or consequential damages
+                            resulting from your use of or inability to use our
+                            services.
+                          </p>
+                        </section>
+
+                        {/* Indemnification */}
+                        <section id="indemnification" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            7. Indemnification
+                          </h2>
+                          <p className="text-[#909090]">
+                            You agree to indemnify and hold Zeplinix, its
+                            officers, employees, and affiliates harmless from
+                            any claims, damages, or expenses arising from your
+                            use of our services or your violation of these
+                            Terms.
+                          </p>
+                        </section>
+
+                        {/* Termination */}
+                        <section id="termination" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            8. Termination
+                          </h2>
+                          <p className="text-[#909090]">
+                            We reserve the right to terminate or suspend your
+                            access to our services without prior notice for
+                            violations of these Terms or any applicable law.
+                          </p>
+                        </section>
+
+                        {/* Governing Law */}
+                        <section id="governing-law" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            9. Governing Law
+                          </h2>
+                          <p className="text-[#909090]">
+                            These Terms are governed by the laws of India. Any
+                            disputes arising from these Terms shall be resolved
+                            exclusively in the courts of Pune/Maharashtra,
+                            India.
+                          </p>
+                        </section>
+
+                        {/* Payment Terms */}
+                        <section id="payment-terms" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            10. Payment Terms
+                          </h2>
+                          <ul className="list-disc list-inside text-[#909090]">
+                            <li>
+                              Fees and Charges: You agree to pay all applicable
+                              fees and charges as outlined in the relevant
+                              service agreement or invoice.
+                            </li>
+                            <li>
+                              Late Payments: If payments are not received by the
+                              due date, we may charge interest on the overdue
+                              amount.
+                            </li>
+                          </ul>
+                        </section>
+
+                        {/* Refund Policy */}
+                        <section id="refund-policy" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            11. Refund Policy
+                          </h2>
+                          <p className="text-[#909090]">
+                            Refunds, if any, will be issued in accordance with
+                            the terms outlined in the relevant service
+                            agreement. In general, no refunds will be issued for
+                            services that have already been rendered.
+                          </p>
+                        </section>
+
+                        {/* Changes to Terms */}
+                        <section id="changes-terms" className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700">
+                            12. Changes to Terms
+                          </h2>
+                          <p className="text-[#909090]">
+                            We may update these Terms from time to time. Any
+                            changes will be posted on this page with the revised
+                            date. Continued use of our services after such
+                            changes constitutes acceptance of the updated Terms.
+                          </p>
+                        </section>
+
+                        {/* Contact Us */}
+                        <section className="mt-2">
+                          <h2 className="text-md font-bold text-gray-700 underline">
+                            Contact Us
+                          </h2>
+                          <p className="text-gray-700">
+                            If you have any questions or concerns regarding
+                            these Terms, please contact us at:
+                          </p>
+                          <p className="text-gray-700">
+                            Email:{" "}
+                            <Link href="mailto:support@zeplinix.com">
+                              support@zeplinix.com
+                            </Link>
+                          </p>
+                        </section>
+                      </div>
+                      <button
+                        className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                        onClick={closePopup}
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
               <button
                 className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700"
                 type="submit"
