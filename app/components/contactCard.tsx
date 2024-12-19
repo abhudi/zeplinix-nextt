@@ -5,6 +5,7 @@ import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
 import Link from "next/link";
+import ConsultationModal from "./Leads";
 
 interface FormData {
   name: string;
@@ -195,7 +196,7 @@ const GetInTouchForm: React.FC = () => {
               <span className="inline-block bg-red-600 w-3 h-3 rounded-full mx-1"></span>
             </h2>
             <p className="text-gray-300 mt-3 mb-6 md:mb-10 mx-1 text-center lg:text-left">
-              We are here for you! How can we help you?
+              Your connection to seamless support and solutions.
             </p>
             {responseMessage && (
               <p
@@ -260,11 +261,11 @@ const GetInTouchForm: React.FC = () => {
                 maxLength={255}
               ></textarea>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center  gap-2">
                 <input
                   type="checkbox"
                   id="terms"
-                  className="mt-1 w-4 h-4 cursor-pointer" // Use Tailwind classes to set size
+                  className=" w-4 h-4 cursor-pointer" // Use Tailwind classes to set size
                   checked={isAccepted}
                   onChange={handleCheckboxChange}
                 />
@@ -273,7 +274,10 @@ const GetInTouchForm: React.FC = () => {
                   className="text-md flex text-gray-50 items-center gap-1 cursor-pointer"
                 >
                   I accept{" "}
-                  <span className="text-gray-400 " onClick={openPopup}>
+                  <span
+                    className="text-gray-400 hover:underline transition"
+                    onClick={openPopup}
+                  >
                     terms and conditions
                   </span>
                 </label>
@@ -555,6 +559,8 @@ const GetInTouchForm: React.FC = () => {
             ))}
           </div>
         </div>
+
+        <ConsultationModal />
       </div>
     </>
   );

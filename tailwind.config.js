@@ -46,6 +46,8 @@ module.exports = {
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.3) 0%, rgba(128, 32, 39, 0) 100%)",
+        consultant:
+          "linear-gradient(360deg,_#303030_0%,_rgba(150,_150,_150,_0.16)_100%)",
       },
 
       borderWidth: {
