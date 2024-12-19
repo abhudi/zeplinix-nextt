@@ -232,3 +232,20 @@ body {
   bottom: 8px;
   right: 8px;
 }
+
+.dashboard {
+  display: flex;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+}

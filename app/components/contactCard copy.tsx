@@ -4,6 +4,7 @@
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface FormData {
   name: string;
@@ -11,6 +12,7 @@ interface FormData {
   subject: string;
   phone: string;
   message: string;
+  captcha: string; // New field for storing captcha response
 }
 
 const GetInTouchForm: React.FC = () => {
@@ -20,6 +22,7 @@ const GetInTouchForm: React.FC = () => {
     subject: "",
     phone: "",
     message: "",
+    captcha: "", // Initialize captcha
   });
 
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
@@ -31,28 +34,17 @@ const GetInTouchForm: React.FC = () => {
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-    if (name === "phone") {
-      // Allow only numeric input for phone
-      const numericValue = value.replace(/[^0-9]/g, "");
-      setFormData({
-        ...formData,
-        [name]: numericValue,
-      });
-    } else if (name === "message") {
-      // Limit message length to 255 characters
-      if (value.length <= 255) {
-        setFormData({
-          ...formData,
-          [name]: value,
-        });
-      }
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
-    }
+  const handleCaptchaChange = (value: string | null) => {
+    setFormData({
+      ...formData,
+      captcha: value || "", // Set captcha response
+    });
   };
 
   const handleSubmit = async (e: FormEvent) => {
@@ -62,33 +54,23 @@ const GetInTouchForm: React.FC = () => {
       return; // Exit early if it's already submitting or in cooldown
     }
 
+    if (!formData.captcha) {
+      setResponseMessage("Please complete the CAPTCHA.");
+      return;
+    }
+
     setIsSubmitting(true); // Lock the button immediately
 
-    const { name, email, subject, phone, message } = formData;
+    const { name, email, subject, phone, message, captcha } = formData;
 
     try {
-      const response = await fetch(
-        "https://zeplinix.in/zeplinix-api/send-email-api",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "x-api-key": "6Lf3o4kqAAAAAOBO5t19TZH345346pxtrjaVUWGw7L5otr",
-            "Access-Control-Allow-Credentials": "true",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":
-              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            subject,
-            phone,
-            message,
-          }),
-        }
-      );
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, subject, phone, message, captcha }), // Send captcha data
+      });
 
       if (response.ok) {
         setIsSuccess(true);
@@ -101,6 +83,7 @@ const GetInTouchForm: React.FC = () => {
           subject: "",
           phone: "",
           message: "",
+          captcha: "", // Reset captcha response after submission
         });
       } else {
         setIsSuccess(false);
@@ -235,8 +218,16 @@ const GetInTouchForm: React.FC = () => {
                 onChange={handleChange}
                 className="w-full p-3 rounded bg-[#303030] text-white placeholder-gray-400 h-32"
                 required
-                maxLength={255}
+                maxLength={25574}
               ></textarea>
+
+              {/* CAPTCHA */}
+              <div className="my-4">
+                <ReCAPTCHA
+                  sitekey="6LdWg58qAAAAAC_0etHnVlUFigfg_TpRzXu-5yl7" // Add your reCAPTCHA site key here
+                  onChange={handleCaptchaChange}
+                />
+              </div>
 
               <button
                 className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700"

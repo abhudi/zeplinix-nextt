@@ -21,7 +21,7 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-glass backdrop-blur-md text-white p-4 rounded-lg shadow-lg w-[98%]  flex flex-col items-center text-center z-50">
+    <div className="fixed bottom-4 sm:left-1/2 sm:transform sm:-translate-x-1/2 lg:left-auto lg:transform-none lg:right-[10px] md:right-[10px] bg-glass backdrop-blur-md text-white p-4 rounded-lg shadow-lg lg:w-[20%] md:w-[20%] w-[100%] flex flex-col items-center text-center z-50">
       <p className="mb-4">
         At Zeplinix Technologies, we respect your privacy. We do not use cookies
         to track, store, or collect any personal data or browsing behavior. Your
