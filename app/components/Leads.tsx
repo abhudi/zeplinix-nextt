@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function ConsultationModal() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => {

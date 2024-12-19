@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ServiceSliderBox from "../components/ServiceSliderBox";
 
-const serviceDetails = () => {
+const ServiceDetails = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [selectedContact, setSelectedContact] = useState<
     "email" | "phone" | "both" | ""
@@ -619,4 +619,4 @@ const serviceDetails = () => {
   );
 };
 
-export default serviceDetails;
+export default ServiceDetails;
