@@ -7,6 +7,49 @@ import ProductCard from "../components/ProductCard";
 // import "./css/standardproduct.css";
 
 const ProductsDetail = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [selectedContact, setSelectedContact] = useState<
+    "email" | "phone" | "both" | ""
+  >("");
+  const [showEmailOTP, setShowEmailOTP] = useState<boolean>(false);
+  // const [showPhoneOTP, setShowPhoneOTP] = useState<boolean>(false);
+  const [emailVerified, setEmailVerified] = useState<boolean>(false);
+  // const [phoneVerified, setPhoneVerified] = useState<boolean>(false);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleRadioChange = (value: "email" | "phone" | "both") => {
+    setSelectedContact(value);
+    setShowEmailOTP(false);
+    // setShowPhoneOTP(false);
+    setEmailVerified(false);
+    // setPhoneVerified(false);
+  };
+
+  const handleVerifyEmail = () => {
+    setShowEmailOTP(true);
+  };
+
+  // const handleVerifyPhone = () => {
+  //   setShowPhoneOTP(true);
+  // };
+
+  const handleOTPChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    type: "email" | "phone"
+  ) => {
+    const otp = e.target.value;
+    if (otp.length === 6) {
+      if (type === "email") {
+        setShowEmailOTP(false);
+        setEmailVerified(true);
+      }
+    }
+  };
   const ServiceData = () => {
     const [activeTab, setActiveTab] = useState<number>(0);
 
@@ -433,11 +476,11 @@ const ProductsDetail = () => {
               businesses to attract, manage, and retain top talent.
             </p>
 
-            <Link
-              href="/contact"
-              className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline"
+            <p
+              onClick={handleToggle}
+              className="text-red-500 flex gap-2 items-center font-semibold   justify-center md:justify-start hover:underline cursor-pointer"
             >
-              Free consultation
+              Free Consultation
               <svg
                 className="w-5 h-5  "
                 width="28"
@@ -452,7 +495,169 @@ const ProductsDetail = () => {
                   fill="#E63946"
                 />
               </svg>
-            </Link>
+            </p>
+            {isOpen && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md ">
+                <div
+                  className="rounded-lg shadow-lg p-8 w-full max-w-lg md:max-w-xl lg:max-w-2xl relative "
+                  style={{
+                    background:
+                      "linear-gradient(360deg, #303030 0%, rgba(150, 150, 150, 0.16) 100%)",
+                  }}
+                >
+                  {/* Modal Header (Close Button) */}
+                  <button
+                    onClick={handleToggle}
+                    className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+                  >
+                    &times;
+                  </button>
+
+                  {/* Modal Content */}
+                  <div className="">
+                    <div className="justify-center">
+                      <Image
+                        src="/consultation.svg" // Replace with the actual image path
+                        alt="Consultation"
+                        className="w-20 h-20 mb-4 mx-auto"
+                        width={50}
+                        height={50}
+                      />
+                    </div>
+                    <h2 className="text-fs-30 font-normal text-white text-center">
+                      I need consultation on bohohr
+                    </h2>
+                    <p className="text-[#A0A0A0] text-fs-18 mb-4 text-center">
+                      Let us know your preferred way to discuss your boho{" "}
+                      <br className="hidden lg:block md:block" />
+                      product needs.
+                    </p>
+                    <div className="text-left text-white">
+                      <p>How should we reach you?</p>
+                    </div>
+                    <div className="flex gap-4 mt-4 mb-7">
+                      <label className="flex items-center space-x-2 text-white">
+                        <input
+                          type="radio"
+                          name="contact"
+                          value="email"
+                          onChange={() => handleRadioChange("email")}
+                        />
+                        <span className="text-[#A0A0A0]">Email</span>
+                      </label>
+                      <label className="flex items-center space-x-2 text-white">
+                        <input
+                          type="radio"
+                          name="contact"
+                          value="phone"
+                          onChange={() => handleRadioChange("phone")}
+                        />
+                        <span className="text-[#A0A0A0]">Phone Number</span>
+                      </label>
+                      <label className="flex items-center space-x-2 text-white">
+                        <input
+                          type="radio"
+                          name="contact"
+                          value="both"
+                          onChange={() => handleRadioChange("both")}
+                        />
+                        <span className="text-[#A0A0A0]">
+                          Both (Email and Phone)
+                        </span>
+                      </label>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                      {/* Input Fields with Icons */}
+                      <div className="col-span-1 relative">
+                        <input
+                          type="email"
+                          placeholder="Enter your email"
+                          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring bg-transparent placeholder-white"
+                        />
+                        {selectedContact === "email" ||
+                        selectedContact === "both" ? (
+                          emailVerified ? (
+                            <p className="text-green-500 mt-2">
+                              OTP added successfully
+                            </p>
+                          ) : showEmailOTP ? (
+                            <input
+                              type="text"
+                              maxLength={6}
+                              placeholder="Enter OTP"
+                              onChange={(e) => handleOTPChange(e, "email")}
+                              className="w-full px-3 py-2 mt-2 border rounded-md focus:outline-none focus:ring bg-transparent placeholder-white"
+                            />
+                          ) : (
+                            <button
+                              onClick={handleVerifyEmail}
+                              className="text-blue-500 underline mt-2"
+                            >
+                              Verify
+                            </button>
+                          )
+                        ) : null}
+                      </div>
+                      {/* Phone Input */}
+                      <div className="col-span-1 relative">
+                        <input
+                          type="tel"
+                          placeholder="Enter your phone number"
+                          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring bg-transparent placeholder-white"
+                        />
+                      </div>
+                      <div className="col-span-1 relative">
+                        <input
+                          type="date"
+                          placeholder="Select Date"
+                          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring bg-transparent  text-white appearance-none"
+                          style={{
+                            colorScheme: "dark", // Ensures white text and icon on supported browsers
+                          }}
+                        />
+                      </div>
+                      <div className="col-span-1 relative">
+                        <input
+                          type="time"
+                          placeholder="Select time"
+                          className="w-full px-2 py-2 border rounded-md focus:outline-none focus:ring bg-transparent text-white"
+                          style={{
+                            colorScheme: "dark", // Ensures white text and icon on supported browsers
+                          }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Consent Checkbox */}
+                    <div className="flex items-start mt-4">
+                      <input
+                        type="checkbox"
+                        className="mt-1 mr-2 w-5 h-5"
+                        id="consent"
+                      />
+                      <label htmlFor="consent" className="text-sm text-white">
+                        <i>
+                          {" "}
+                          I consent to be contacted by{" "}
+                          <b>Zeplinix Technologies</b> via selected methods and
+                          agree to the{" "}
+                          <Link href="/privacy-policy" target="blank">
+                            Privacy Policy
+                          </Link>
+                          .
+                        </i>
+                      </label>
+                    </div>
+
+                    {/* Submit Button */}
+                    <button className="bg-[#E63946] text-white px-6 py-2 mt-4 rounded-md shadow hover:bg-red-600 transition w-full">
+                      Book Appointment
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

@@ -559,8 +559,6 @@ const GetInTouchForm: React.FC = () => {
             ))}
           </div>
         </div>
-
-        <ConsultationModal />
       </div>
     </>
   );
