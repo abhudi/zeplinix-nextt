@@ -14,7 +14,7 @@ const ServiceDetails = () => {
   // const [showPhoneOTP, setShowPhoneOTP] = useState<boolean>(false);
   const [emailVerified, setEmailVerified] = useState<boolean>(false);
   // const [phoneVerified, setPhoneVerified] = useState<boolean>(false);
-
+  const [isConfirmationOpen, setIsConfirmationOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -48,6 +48,20 @@ const ServiceDetails = () => {
         setEmailVerified(true);
       }
     }
+  };
+  const handleBookAppointment = () => {
+    // Add validation logic for all fields here if necessary
+    const isFormValid = selectedContact && emailVerified; // Example validation
+
+    if (isFormValid) {
+      setIsConfirmationOpen(true); // Show the confirmation popup
+    } else {
+      alert("Please fill all fields and verify your email.");
+    }
+  };
+
+  const closeConfirmationPopup = () => {
+    setIsConfirmationOpen(false);
   };
   const ServiceData = () => {
     const [activeTab, setActiveTab] = useState<number>(0);
@@ -585,8 +599,52 @@ const ServiceDetails = () => {
                     </div>
 
                     {/* Submit Button */}
-                    <button className="bg-[#E63946] text-white px-6 py-2 mt-4 rounded-md shadow hover:bg-red-600 transition w-full">
+                    <button
+                      onClick={handleBookAppointment}
+                      className="bg-[#E63946] text-white px-6 py-2 mt-4 rounded-md shadow hover:bg-red-600 transition w-full"
+                    >
                       Book Appointment
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+            {isConfirmationOpen && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
+                <div
+                  className="rounded-lg shadow-lg p-8 w-full max-w-lg relative"
+                  style={{
+                    background:
+                      "linear-gradient(360deg, #303030 0%, rgba(150, 150, 150, 0.16) 100%)",
+                  }}
+                >
+                  <button
+                    onClick={closeConfirmationPopup}
+                    className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+                  >
+                    &times;
+                  </button>
+                  <div className="text-center">
+                    <Image
+                      src="/thanks.svg" // Update with your image path
+                      alt="Thank You"
+                      className="w-40 h-40 mb-4 mx-auto"
+                      width={50}
+                      height={50}
+                    />
+                    <h2 className="text-white text-xl font-semibold mb-2">
+                      Thank You for Reaching Out!
+                    </h2>
+                    <p className="text-[#A0A0A0] text-sm">
+                      We have received your request and will contact you shortly
+                      to consult your graphic designing service needs. Stay
+                      tuned!
+                    </p>
+                    <button
+                      onClick={closeConfirmationPopup}
+                      className="bg-[#E63946] text-white px-10 py-2 mt-4 rounded-md shadow hover:bg-red-600 transition"
+                    >
+                      Okay!
                     </button>
                   </div>
                 </div>
