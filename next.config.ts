@@ -4,7 +4,7 @@ import { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: "export", // This generates static HTML files for hosting
+  // output: "export", // This generates static HTML files for hosting
   images: {
     unoptimized: true, // Required for static export if using the Image component
   },
