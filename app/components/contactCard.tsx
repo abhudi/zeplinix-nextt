@@ -503,7 +503,7 @@ const GetInTouchForm: React.FC = () => {
                   </div>
                 )}
               </div>
-              <button
+              {/* <button
                 className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700"
                 onClick={(e) => {
                   e.preventDefault(); // Prevents default form submission behavior
@@ -516,9 +516,9 @@ const GetInTouchForm: React.FC = () => {
                   : isSubmitting
                   ? "Submitting..."
                   : "Submit"}
-              </button>
+              </button> */}
 
-              {/* <button
+              <button
                 className="bg-red-600 text-white p-3 rounded shadow-lg w-full hover:bg-red-700 "
                 type="submit"
                 disabled={isSubmitting || cooldown !== null}
@@ -528,7 +528,7 @@ const GetInTouchForm: React.FC = () => {
                   : isSubmitting
                   ? "Submitting..."
                   : "Submit"}
-              </button> */}
+              </button>
             </div>
           </form>
 
