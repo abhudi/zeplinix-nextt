@@ -12,6 +12,7 @@
     "@progress/kendo-react-dateinputs": "^9.1.0",
     "dotenv": "^16.4.7",
     "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
     "mongoose": "^8.9.1",
     "next": "15.0.3",
     "next-auth": "^4.24.11",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@types/gsap": "^1.20.2",
+    "@types/locomotive-scroll": "^4.1.4",
     "@types/node": "^20",
     "@types/node-fetch": "^2.6.12",
     "@types/nodemailer": "^6.4.17",

@@ -94,6 +94,21 @@ const ProductCard = () => {
         "/core-technology/bootstrap.svg",
       ],
     },
+    {
+      id: 7,
+      title: "ZepMov",
+      image: "/products/zepmov.png",
+      description:
+        "ZepMov is a feature-rich movie website designed to provide users with a seamless and engaging platform for exploring, discovering movies. Whether you’re a casual movie-goer or a cinephile, ZepMov offers a user-friendly experience with comprehensive tools and features tailored to movie enthusiasts.",
+      buttonLabel: "Marketing Tool",
+      coreTech: "Core Technology",
+      linkHref: "/zepmov-detail/",
+      technologyImages: [
+        "/core-technology/js.webp",
+        "/core-technology/node.svg",
+        "/core-technology/react.svg",
+      ],
+    },
   ];
 
   // State for the carousel to keep track of the current slide index

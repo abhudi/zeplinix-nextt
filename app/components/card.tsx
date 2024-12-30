@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface RenewalCardProps {
   imageSrc: string;
@@ -40,7 +41,7 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
             {description}
           </p>
         </div>
-        <a
+        <Link
           href={linkHref}
           className="flex items-center text-left text-[#E63946] hover:underline font-bold gap-1"
         >
@@ -59,7 +60,7 @@ const RenewalCard: React.FC<RenewalCardProps> = ({
               fill="#E63946"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );
