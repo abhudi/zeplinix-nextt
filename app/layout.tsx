@@ -2,6 +2,7 @@ import "./globals.css"; // Ensure this imports your global styles
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import CookieBanner from "./components/CookieBanner";
+
 // import Loader from "./components/Loader";
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
         {/* Main content */}
         <main className="flex-1">{children}</main>
         <CookieBanner />
+
         {/* Footer */}
         <Footer />
       </body>

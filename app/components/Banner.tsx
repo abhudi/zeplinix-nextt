@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import FireworksCanvas from "./Fireworks";
 
 const Banner: React.FC = () => {
   return (
@@ -124,6 +125,10 @@ const Banner: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="absolute z-99">
+        <FireworksCanvas />
       </div>
     </div>
   );
