@@ -68,11 +68,14 @@ const FireworksCanvas = () => {
       ctx.fillRect(0, 0, w, h);
 
       // Draw "Happy New Year" text at the top
-      const fontSize = Math.min(w / 15, 60);
-      ctx.font = `bold ${fontSize}px Arial`;
-      ctx.fillStyle = "#FFFFFF";
-      ctx.textAlign = "center";
-      ctx.fillText("Happy New Year", w / 2, fontSize + 20); // Position the text at the top
+      if (w > 600) {
+        // Only draw the text if the screen width is greater than 600px
+        const fontSize = Math.min(w / 15, 60);
+        ctx.font = `bold ${fontSize}px Arial`;
+        ctx.fillStyle = "#FFFFFF";
+        ctx.textAlign = "center";
+        ctx.fillText("Happy New Year", w / 2, 200); // Position the text at the top
+      }
 
       ctx.globalCompositeOperation = "lighter";
       particles.forEach((p) => p.draw(ctx));
