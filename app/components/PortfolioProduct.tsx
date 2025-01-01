@@ -20,11 +20,11 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
   const [selectedTab, setSelectedTab] = useState<string>("All");
 
   // Group cards into pairs (kept as is)
-  const cardRows = data.reduce((rows: CardData[][], card, index) => {
-    if (index % 2 === 0) rows.push([]);
-    rows[rows.length - 1].push(card);
-    return rows;
-  }, []);
+  // const cardRows = data.reduce((rows: CardData[][], card, index) => {
+  //   if (index % 2 === 0) rows.push([]);
+  //   rows[rows.length - 1].push(card);
+  //   return rows;
+  // }, []);
 
   // Filter cards based on selected tab
   const filteredCards =
@@ -33,30 +33,31 @@ const PortfolioProduct: React.FC<{ data: CardData[] }> = ({ data }) => {
       : data.filter((card) =>
           card.buttonLabel.toLowerCase().includes(selectedTab.toLowerCase())
         );
-
+  // Group filtered cards into pairs
+  const cardRows = filteredCards.reduce((rows: CardData[][], card, index) => {
+    if (index % 2 === 0) rows.push([]);
+    rows[rows.length - 1].push(card);
+    return rows;
+  }, []);
   return (
     <div className="space-y-10 lg:mx-9 mx-4">
       {/* Tab Navigation */}
       <div className="flex flex-wrap sm:flex-nowrap space-x-4 sm:space-x-6 mb-6">
-        {[
-          "All",
-          "Web application",
-          "AI Tool",
-          "CRM Platform",
-          "Analytics Platform",
-          "Marketing Tool",
-          "Dev Tool",
-        ].map((tab) => (
-          <button
-            key={tab}
-            className={`px-6 py-2 rounded-full w-full sm:w-auto mb-2 sm:mb-0 ${
-              selectedTab === tab ? "bg-[#E63946] text-white" : "text-[#909090]"
-            }`}
-            onClick={() => setSelectedTab(tab)}
-          >
-            {tab}
-          </button>
-        ))}
+        {["All", "Ease Series", "IQ Series", "Media", "Ecommerce"].map(
+          (tab) => (
+            <button
+              key={tab}
+              className={`px-6 py-2 rounded-full w-full sm:w-auto mb-2 sm:mb-0 ${
+                selectedTab === tab
+                  ? "bg-[#E63946] text-white"
+                  : "text-[#909090]"
+              }`}
+              onClick={() => setSelectedTab(tab)}
+            >
+              {tab}
+            </button>
+          )
+        )}
       </div>
 
       {/* Display filtered cards */}
@@ -139,7 +140,7 @@ const cardData: CardData[] = [
     image: "/products/convertiq.png",
     description:
       "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
-    buttonLabel: "Web application",
+    buttonLabel: "IQ Series",
     coreTech: "Core Technology",
     linkHref: "/convertiq-detail/",
     technologyImages: [
@@ -154,7 +155,7 @@ const cardData: CardData[] = [
     image: "/products/hrease.png",
     description:
       "BohoHR is an all-in-one HR management platform designed to simplify and automate your workforce operations. From recruitment and onboarding to performance evaluations, payroll, and employee engagement, BohoHR streamlines every aspect of employee management. ",
-    buttonLabel: "AI Tool",
+    buttonLabel: "Ease Series",
     coreTech: "Core Technology",
     linkHref: "/hr-detail/",
     technologyImages: [
@@ -169,7 +170,7 @@ const cardData: CardData[] = [
     image: "/products/evalflow.png",
     description:
       "Evalflow make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency, efficiency, and data-driven decision-making.",
-    buttonLabel: "CRM Platform",
+    buttonLabel: "Ease Series",
     coreTech: "Core Technology",
     linkHref: "/evalflow-detail/",
     technologyImages: [
@@ -184,7 +185,7 @@ const cardData: CardData[] = [
     image: "/products/stockiq.png",
     description:
       "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
-    buttonLabel: "Analytics Platform",
+    buttonLabel: "Ease Series",
     coreTech: "Core Technology",
     linkHref: "/stockiq-detail/",
     technologyImages: [
@@ -199,7 +200,7 @@ const cardData: CardData[] = [
     image: "/products/301io.png",
     description:
       "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike. ",
-    buttonLabel: "Marketing Tool",
+    buttonLabel: "Ease Series",
     coreTech: "Core Technology",
     linkHref: "/predictease-detail/",
     technologyImages: [
@@ -214,7 +215,7 @@ const cardData: CardData[] = [
     image: "/products/invoicemanager.png",
     description:
       "Invoice Management is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
-    buttonLabel: "Dev Tool",
+    buttonLabel: "Ease Series",
     coreTech: "Core Technology",
     linkHref: "/invoicemanagement-detail/",
     technologyImages: [
@@ -229,7 +230,7 @@ const cardData: CardData[] = [
     image: "/products/zepmov.png",
     description:
       "ZepMov is a feature-rich movie website designed to provide users with a seamless and engaging platform for exploring, discovering movies. Whether you’re a casual movie-goer or a cinephile, ZepMov offers a user-friendly experience with comprehensive tools and features tailored to movie enthusiasts.",
-    buttonLabel: "Marketing Tool",
+    buttonLabel: "Media",
     coreTech: "Core Technology",
     linkHref: "/zepmov-detail/",
     technologyImages: [
