@@ -29,10 +29,10 @@ const ClientSlider: React.FC = () => {
     //   src: "/clients/reckitt.png",
     //   alt: "Logo 4",
     // },
-    {
-      src: "/clients/digitalzone.png",
-      alt: "Logo 4",
-    },
+    // {
+    //   src: "/clients/digitalzone.png",
+    //   alt: "Logo 4",
+    // },
   ];
 
   // Replicate the logo array to simulate infinite scrolling
