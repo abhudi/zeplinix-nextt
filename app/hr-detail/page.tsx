@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ProductCard from "../components/ProductCard";
+// import ProductCard from "../components/ProductCard";
 // import "./css/standardproduct.css";
 
 const ProductsDetail = () => {
@@ -746,7 +746,7 @@ const ProductsDetail = () => {
         {/* Call to Action */}
         <ServiceBox />
 
-        <ProductCard />
+{/*         <ProductCard /> */}
       </div>
     </>
   );
