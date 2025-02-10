@@ -164,21 +164,21 @@ const cardData: CardData[] = [
       "/core-technology/bootstrap.svg",
     ],
   },
-  {
-    id: 3,
-    title: "Evalflow",
-    image: "/products/evalflow.png",
-    description:
-      "Evalflow make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency, efficiency, and data-driven decision-making.",
-    buttonLabel: "Ease Series",
-    coreTech: "Core Technology",
-    linkHref: "/evalflow-detail/",
-    technologyImages: [
-      "/core-technology/js.webp",
-      "/core-technology/node.svg",
-      "/core-technology/react.svg",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Evalflow",
+  //   image: "/products/evalflow.png",
+  //   description:
+  //     "Evalflow make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency, efficiency, and data-driven decision-making.",
+  //   buttonLabel: "Ease Series",
+  //   coreTech: "Core Technology",
+  //   linkHref: "/evalflow-detail/",
+  //   technologyImages: [
+  //     "/core-technology/js.webp",
+  //     "/core-technology/node.svg",
+  //     "/core-technology/react.svg",
+  //   ],
+  // },
   // {
   //   id: 4,
   //   title: "StockIQ",
