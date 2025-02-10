@@ -4,21 +4,21 @@ import Link from "next/link";
 
 const ProductCard = () => {
   const cardData = [
-    {
-      id: 1,
-      title: "Convert IQ",
-      image: "/products/convertiq.png",
-      description:
-        "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
-      buttonLabel: "Web application",
-      coreTech: "Core Technology",
-      linkHref: "/convertiq-detail/",
-      technologyImages: [
-        "/core-technology/php.svg",
-        "/core-technology/ci.svg",
-        "/core-technology/bootstrap.svg",
-      ],
-    },
+    // {
+    //   id: 1,
+    //   title: "Convert IQ",
+    //   image: "/products/convertiq.png",
+    //   description:
+    //     "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
+    //   buttonLabel: "Web application",
+    //   coreTech: "Core Technology",
+    //   linkHref: "/convertiq-detail/",
+    //   technologyImages: [
+    //     "/core-technology/php.svg",
+    //     "/core-technology/ci.svg",
+    //     "/core-technology/bootstrap.svg",
+    //   ],
+    // },
     {
       id: 2,
       title: "BohoHR",
@@ -34,51 +34,51 @@ const ProductCard = () => {
         "/core-technology/bootstrap.svg",
       ],
     },
-    {
-      id: 3,
-      title: "Evalflow",
-      image: "/products/evalflow.png",
-      description:
-        "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
-      buttonLabel: "CRM Platform",
-      coreTech: "Core Technology",
-      linkHref: "/evalflow-detail/",
-      technologyImages: [
-        "/core-technology/js.webp",
-        "/core-technology/node.svg",
-        "/core-technology/react.svg",
-      ],
-    },
-    {
-      id: 4,
-      title: "StockIQ",
-      image: "/products/stockiq.png",
-      description:
-        "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
-      buttonLabel: "Analytics Platform",
-      coreTech: "Core Technology",
-      linkHref: "/datasense-detail/",
-      technologyImages: [
-        "/core-technology/js.webp",
-        "/core-technology/node.svg",
-        "/core-technology/react.svg",
-      ],
-    },
-    {
-      id: 5,
-      title: "Predictease",
-      image: "/products/301io.png",
-      description:
-        "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike.",
-      buttonLabel: "Marketing Tool",
-      coreTech: "Core Technology",
-      linkHref: "/predictease-detail/",
-      technologyImages: [
-        "/core-technology/php.svg",
-        "/core-technology/ci.svg",
-        "/core-technology/bootstrap.svg",
-      ],
-    },
+    // {
+    //   id: 3,
+    //   title: "Evalflow",
+    //   image: "/products/evalflow.png",
+    //   description:
+    //     "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
+    //   buttonLabel: "CRM Platform",
+    //   coreTech: "Core Technology",
+    //   linkHref: "/evalflow-detail/",
+    //   technologyImages: [
+    //     "/core-technology/js.webp",
+    //     "/core-technology/node.svg",
+    //     "/core-technology/react.svg",
+    //   ],
+    // },
+    // {
+    //   id: 4,
+    //   title: "StockIQ",
+    //   image: "/products/stockiq.png",
+    //   description:
+    //     "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
+    //   buttonLabel: "Analytics Platform",
+    //   coreTech: "Core Technology",
+    //   linkHref: "/datasense-detail/",
+    //   technologyImages: [
+    //     "/core-technology/js.webp",
+    //     "/core-technology/node.svg",
+    //     "/core-technology/react.svg",
+    //   ],
+    // },
+    // {
+    //   id: 5,
+    //   title: "Predictease",
+    //   image: "/products/301io.png",
+    //   description:
+    //     "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike.",
+    //   buttonLabel: "Marketing Tool",
+    //   coreTech: "Core Technology",
+    //   linkHref: "/predictease-detail/",
+    //   technologyImages: [
+    //     "/core-technology/php.svg",
+    //     "/core-technology/ci.svg",
+    //     "/core-technology/bootstrap.svg",
+    //   ],
+    // },
     {
       id: 6,
       title: "Invoice Management",
@@ -94,21 +94,21 @@ const ProductCard = () => {
         "/core-technology/bootstrap.svg",
       ],
     },
-    {
-      id: 7,
-      title: "ZepMov",
-      image: "/products/zepmov.png",
-      description:
-        "ZepMov is a feature-rich movie website designed to provide users with a seamless and engaging platform for exploring, discovering movies. Whether you’re a casual movie-goer or a cinephile, ZepMov offers a user-friendly experience with comprehensive tools and features tailored to movie enthusiasts.",
-      buttonLabel: "Marketing Tool",
-      coreTech: "Core Technology",
-      linkHref: "/zepmov-detail/",
-      technologyImages: [
-        "/core-technology/js.webp",
-        "/core-technology/node.svg",
-        "/core-technology/react.svg",
-      ],
-    },
+    // {
+    //   id: 7,
+    //   title: "ZepMov",
+    //   image: "/products/zepmov.png",
+    //   description:
+    //     "ZepMov is a feature-rich movie website designed to provide users with a seamless and engaging platform for exploring, discovering movies. Whether you’re a casual movie-goer or a cinephile, ZepMov offers a user-friendly experience with comprehensive tools and features tailored to movie enthusiasts.",
+    //   buttonLabel: "Marketing Tool",
+    //   coreTech: "Core Technology",
+    //   linkHref: "/zepmov-detail/",
+    //   technologyImages: [
+    //     "/core-technology/js.webp",
+    //     "/core-technology/node.svg",
+    //     "/core-technology/react.svg",
+    //   ],
+    // },
   ];
 
   // State for the carousel to keep track of the current slide index
