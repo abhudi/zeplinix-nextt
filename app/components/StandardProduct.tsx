@@ -14,14 +14,14 @@ interface CardData {
 }
 
 const cardsData: CardData[] = [
-  {
-    imageSrc: "/homepage/products/convertiq.png",
-    title: "Convert IQ",
-    description:
-      "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
-    linkText: "Explore More",
-    linkHref: "/convertiq-detail",
-  },
+  // {
+  //   imageSrc: "/homepage/products/convertiq.png",
+  //   title: "Convert IQ",
+  //   description:
+  //     "ConvertIQ empowers businesses to automate lead generation and marketing, improving efficiency and delivering personalized customer experiences. With AI-driven insights, enhance lead conversion rates and maximize customer lifetime value.",
+  //   linkText: "Explore More",
+  //   linkHref: "/convertiq-detail",
+  // },
   {
     imageSrc: "/homepage/products/bohohr.png",
     title: "Boho HR",
@@ -30,30 +30,30 @@ const cardsData: CardData[] = [
     linkText: "Explore More",
     linkHref: "/hr-detail",
   },
-  {
-    imageSrc: "/homepage/products/evalflow.png",
-    title: "Evalflow",
-    description:
-      "Make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency.",
-    linkText: "Explore More",
-    linkHref: "/evalflow-detail",
-  },
-  {
-    imageSrc: "/homepage/products/stockiq.png",
-    title: "StockIQ",
-    description:
-      "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
-    linkText: "Explore More",
-    linkHref: "/stockiq-detail",
-  },
-  {
-    imageSrc: "/homepage/products/protectease.png",
-    title: "PredictEase",
-    description:
-      "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike.",
-    linkText: "Explore More",
-    linkHref: "/predictease-detail",
-  },
+  // {
+  //   imageSrc: "/homepage/products/evalflow.png",
+  //   title: "Evalflow",
+  //   description:
+  //     "Make informed decisions and foster better client relationships with our Scorecard Management Tool, a powerful solution designed to evaluate and rate clients based on multiple factors. With real-time insights and automated scoring, our tool ensures transparency.",
+  //   linkText: "Explore More",
+  //   linkHref: "/evalflow-detail",
+  // },
+  // {
+  //   imageSrc: "/homepage/products/stockiq.png",
+  //   title: "StockIQ",
+  //   description:
+  //     "StockIQ is the next-generation ERP solution designed to simplify and optimize inventory management, enabling businesses to maintain a streamlined and efficient supply chain with advanced AI/ML technology.",
+  //   linkText: "Explore More",
+  //   linkHref: "/stockiq-detail",
+  // },
+  // {
+  //   imageSrc: "/homepage/products/protectease.png",
+  //   title: "PredictEase",
+  //   description:
+  //     "Simplify warranty management with Predictease, a comprehensive platform designed to handle everything from warranty purchases to claims. With an intuitive interface and robust backend, Predictease ensures a seamless experience for customers and businesses alike.",
+  //   linkText: "Explore More",
+  //   linkHref: "/predictease-detail",
+  // },
   {
     imageSrc: "/homepage/products/invoice.png",
     title: "Invoice Management",
