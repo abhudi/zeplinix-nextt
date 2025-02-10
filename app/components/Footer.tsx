@@ -170,11 +170,11 @@ const Footer = () => {
   ];
 
   const discoverData = [
-    { text: "ConverIQ", link: "/convertiq-detail" },
+    // { text: "ConverIQ", link: "/convertiq-detail" },
     { text: "BohoHR", link: "/hr-detail" },
-    { text: "EvalFlow", link: "/evalflow-detail" },
-    { text: "StockIQ", link: "/stockiq-detail" },
-    { text: "Predictease", link: "/predictease-detail" },
+    // { text: "EvalFlow", link: "/evalflow-detail" },
+    // { text: "StockIQ", link: "/stockiq-detail" },
+    // { text: "Predictease", link: "/predictease-detail" },
     { text: "Invoice Management", link: "/invoicemanagement-detail" },
   ];
 
