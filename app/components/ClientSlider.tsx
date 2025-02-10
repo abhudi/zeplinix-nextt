@@ -13,26 +13,26 @@ interface Logo {
 
 const ClientSlider: React.FC = () => {
   const logosData: Logo[] = [
-    // {
-    //   src: "/clients/centricity.png",
-    //   alt: "Logo 1",
-    // },
-    // {
-    //   src: "/clients/techmahindra.png",
-    //   alt: "Logo 2",
-    // },
-    // {
-    //   src: "/clients/jktyre.png",
-    //   alt: "Logo 3",
-    // },
+    {
+      src: "/clients/billefy.svg",
+      alt: "Logo 1",
+    },
+    {
+      src: "/clients/dinezy.svg",
+      alt: "Logo 2",
+    },
+    {
+      src: "/clients/sportify.svg",
+      alt: "Logo 3",
+    },
     // {
     //   src: "/clients/reckitt.png",
     //   alt: "Logo 4",
     // },
-    // {
-    //   src: "/clients/digitalzone.png",
-    //   alt: "Logo 4",
-    // },
+    {
+      src: "/clients/digitalzone.png",
+      alt: "Logo 4",
+    },
   ];
 
   // Replicate the logo array to simulate infinite scrolling
